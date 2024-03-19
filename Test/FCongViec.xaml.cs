@@ -32,12 +32,12 @@ namespace Test
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Nhận việc thành công");
-            TimKiemCongViec timKiemCongViec = new TimKiemCongViec();
+            FTimKiemCongViec timKiemCongViec = new FTimKiemCongViec();
             this.Close();           
         }
         private void Button_Click1(object sender, RoutedEventArgs e)
         {
-            TimKiemCongViec timKiemCongViec = new TimKiemCongViec();
+            FTimKiemCongViec timKiemCongViec = new FTimKiemCongViec();
             this.Close();
             
         }

@@ -68,36 +68,36 @@
     </ApplicationDefinition>
     <Compile Include="UngvienDAO.cs" />
     <Compile Include="Congty.cs" />
-    <Compile Include="CongViec.xaml.cs">
-      <DependentUpon>CongViec.xaml</DependentUpon>
+    <Compile Include="UCCongViec.xaml.cs">
+      <DependentUpon>UCCongViec.xaml</DependentUpon>
     </Compile>
     <Compile Include="Connection.cs" />
     <Compile Include="FCongViec.xaml.cs">
       <DependentUpon>FCongViec.xaml</DependentUpon>
     </Compile>
-    <Compile Include="HoSoDangKi.xaml.cs">
-      <DependentUpon>HoSoDangKi.xaml</DependentUpon>
+    <Compile Include="FHoSoDangKi.xaml.cs">
+      <DependentUpon>FHoSoDangKi.xaml</DependentUpon>
     </Compile>
     <Compile Include="TaiKhoan.cs" />
-    <Compile Include="TimKiemCongViec.xaml.cs">
-      <DependentUpon>TimKiemCongViec.xaml</DependentUpon>
+    <Compile Include="FTimKiemCongViec.xaml.cs">
+      <DependentUpon>FTimKiemCongViec.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Trangchu.xaml.cs">
-      <DependentUpon>Trangchu.xaml</DependentUpon>
+    <Compile Include="FNhanVien.xaml.cs">
+      <DependentUpon>FNhanVien.xaml</DependentUpon>
     </Compile>
     <Compile Include="UngVien.cs" />
     <Compile Include="FVP_CongTy.xaml.cs">
       <DependentUpon>FVP_CongTy.xaml</DependentUpon>
     </Compile>
-    <Page Include="CongViec.xaml">
+    <Page Include="UCCongViec.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Dangki.xaml">
+    <Page Include="FDangki.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Dangnhap.xaml">
+    <Page Include="FDangnhap.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -105,11 +105,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="HoSoDangKi.xaml">
+    <Page Include="FHoSoDangKi.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainWindow.xaml">
+    <Page Include="FTrangChu.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -117,25 +117,25 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Dangki.xaml.cs">
-      <DependentUpon>Dangki.xaml</DependentUpon>
+    <Compile Include="FDangki.xaml.cs">
+      <DependentUpon>FDangki.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Dangnhap.xaml.cs">
-      <DependentUpon>Dangnhap.xaml</DependentUpon>
+    <Compile Include="FDangnhap.xaml.cs">
+      <DependentUpon>FDangnhap.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="FTrangChu.xaml.cs">
+      <DependentUpon>FTrangChu.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Theme\Textbox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="TimKiemCongViec.xaml">
+    <Page Include="FTimKiemCongViec.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Trangchu.xaml">
+    <Page Include="FNhanVien.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -194,28 +194,10 @@
     <Resource Include="Images\profile.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="menu.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="profile.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\magnifier.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="magnifier.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\office-building.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="office-building.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="user.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="home.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\shield.png" />
@@ -237,16 +219,10 @@
     <Resource Include="Images\ct4.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="ct1.png" />
+    <Resource Include="Images\icons8-quit-48.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="ct2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="ct3.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="ct4.png" />
+    <Resource Include="icons8-quit-48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
