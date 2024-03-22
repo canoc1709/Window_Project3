@@ -18,7 +18,7 @@ namespace Test
         }
         public void Loadthongtin(string username, string password)
         {
-
+            string s = "hello";
         }
     }
 }
