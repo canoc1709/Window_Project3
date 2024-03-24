@@ -15,7 +15,7 @@
                   Margin="147,30,0,342"
                   Style="{StaticResource ModernTextBox}" Grid.ColumnSpan="3" 
             />
-        <Button Content="" HorizontalAlignment="Left" Margin="548,43,0,0" VerticalAlignment="Top" Height="33" Width="33" BorderBrush="{x:Null}">
+        <Button x:Name="btnTimkiem" Content="" HorizontalAlignment="Left" Margin="548,43,0,0" VerticalAlignment="Top" Height="33" Width="33" BorderBrush="{x:Null}" Click="btnTimKiem_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/magnifier.png"/>
             </Button.Background>
@@ -23,13 +23,7 @@
         </Button>
 
         <StackPanel Margin="0,103,0,0" >
-            <ListView BorderBrush="{x:Null}" Height="338">
-                <local:UCCongViec Width="745" Foreground="{x:Null}" Title=" Công ty A:&#xD;&#xA;&#x9;-Công việc:&#xD;&#xA;&#x9;-Lương: 6.100.000&#xD;&#xA;&#x9;-Yêu cầu...&#xD;&#xA;" URL="\office-building.png "></local:UCCongViec>
-                <local:UCCongViec Width="745" Foreground="{x:Null}" Title=" Công ty B:&#xD;&#xA;&#x9;-Công việc:&#xD;&#xA;&#x9;-Lương: 7.200.000&#xD;&#xA;&#x9;-Yêu cầu...&#xD;&#xA;" URL="\ct1.png "></local:UCCongViec>
-                <local:UCCongViec Width="745" Foreground="{x:Null}" Title=" Công ty C:&#xD;&#xA;&#x9;-Công việc:&#xD;&#xA;&#x9;-Lương: 8.010.000&#xD;&#xA;&#x9;-Yêu cầu...&#xD;&#xA;" URL="\ct2.png "></local:UCCongViec>
-                <local:UCCongViec Width="745" Foreground="{x:Null}" Title=" Công ty D:&#xD;&#xA;&#x9;-Công việc:&#xD;&#xA;&#x9;-Lương: 10.450.000&#xD;&#xA;&#x9;-Yêu cầu...&#xD;&#xA;" URL="\ct3.png "></local:UCCongViec>
-                <local:UCCongViec Width="745" Foreground="{x:Null}" Title=" Công ty E:&#xD;&#xA;&#x9;-Công việc:&#xD;&#xA;&#x9;-Lương: 43.040.000&#xD;&#xA;&#x9;-Yêu cầu...&#xD;&#xA;" URL="\ct4.png "></local:UCCongViec>
-                <local:UCCongViec Width="745" Foreground="{x:Null}" Title=" Công ty F:&#xD;&#xA;&#x9;-Công việc:&#xD;&#xA;&#x9;-Lương: 6.760.000&#xD;&#xA;&#x9;-Yêu cầu...&#xD;&#xA;" URL="\office-building.png "></local:UCCongViec>
+            <ListView x:Name="ltvCongviec" BorderBrush="{x:Null}" Height="338">
             </ListView>
         </StackPanel>
         <Button Content="Quay lại" HorizontalAlignment="Left" Margin="23,10,0,0" VerticalAlignment="Top" Height="37" Width="96" Background="{x:Null}" BorderBrush="#FFB74747" Foreground="#FFFB8686" FontSize="16" FontWeight="Bold" Click="Button_Click"/>

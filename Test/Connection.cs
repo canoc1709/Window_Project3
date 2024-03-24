@@ -11,8 +11,8 @@ namespace Test
 {
     internal class Connection
     {
-        // string strcon = @"Data Source=DESKTOP-K8C76HP;Initial Catalog=QLCongviec;Integrated Security=True;Encrypt=False";
-        string strcon = "Data Source=LAPTOP-GPLGAEAL\\YORDLEYUU;Initial Catalog=WindowForm;Integrated Security=True";
+        string strcon = @"Data Source=DESKTOP-K8C76HP;Initial Catalog=QLCongviec;Integrated Security=True;Encrypt=False";
+        //string strcon = "Data Source=LAPTOP-GPLGAEAL\\YORDLEYUU;Initial Catalog=WindowForm;Integrated Security=True";
         SqlConnection conn = null;
         public void ThucThi(string s)
         {
@@ -35,20 +35,16 @@ namespace Test
                 conn.Close();
             }
         }
-        public UngVien load(string s)
+        public DataTable load(string s)
         {
-            UngVien ungvien = new UngVien();
+            DataTable dt = new DataTable();
             try
             {
-                
+                conn = new SqlConnection(strcon);
                 conn.Open();
-                SqlCommand cmd = new SqlCommand(); 
-                SqlDataReader reader = cmd.ExecuteReader();
-                if(reader.HasRows)
-                {
-
-                }
-                return ungvien;
+                SqlDataAdapter adapter = new SqlDataAdapter(s, conn);
+                adapter.Fill(dt);
+                return dt;
             }
             catch (Exception ex)
             {

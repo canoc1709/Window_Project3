@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Test
 {
-    internal class UngVien
+    public class UngVien
     {
 		private int id;
 		public int ID
@@ -57,20 +58,17 @@ namespace Test
 			get { return sex; }
 			set { sex = value; }
 		}
-		private string username;
-
-		public string Username
-		{
-			get { return username; }
-		}
-		private string password;
-
-		public string Password
-		{
-			get { return password; }
-		}
 
 		public UngVien() { }
+		public UngVien(DataRow dr)
+		{
+			ID = (int)dr[0];
+			Name = (string)dr[1];
+			Sex = (string)dr[2];
+			Birthdate = (DateTime)dr[3];
+			Phonenumber = (string)dr[4];
+			Mail = (string)dr[5];
+		}
 		public UngVien(int id,string name,string sex,string phonenumber,string mail, DateTime birthdate)
 		{
 			ID = id;

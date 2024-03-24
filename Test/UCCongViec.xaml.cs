@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -20,24 +21,27 @@ namespace Test
     /// </summary>
     public partial class UCCongViec : UserControl
     {
+        Congviec congviec = new Congviec();
+        public Button BtnChitiet
+        {
+            get { return btnChitiet; }
+            set { btnChitiet = value; }
+        }
         public UCCongViec()
         {
             InitializeComponent();
             this.DataContext = this;
         }
-        public string Title { get; set; }
-        public string URL { get; set; }
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        public UCCongViec(Congviec congviec)
         {
-
+            this.congviec = congviec;
+            InitializeComponent();
         }
- 
-        private void Button_Click_XemChiTiet(object sender, RoutedEventArgs e)
+        private void UCCongViec_Load(object sender, RoutedEventArgs e)
         {
-           
-            ChiTietCongViec chiTietCongViec = new ChiTietCongViec();
-            chiTietCongViec.Show();
-           
+            lblChucvu.Text += congviec.Chucvu;
+            lblLuong.Text += congviec.Luong.ToString();
+            lblTencty.Text += congviec.Tencty;
         }
     }
 }

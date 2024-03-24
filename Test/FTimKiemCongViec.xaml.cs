@@ -1,5 +1,7 @@
-﻿using System;
+﻿using MaterialDesignThemes.Wpf;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,11 +21,17 @@ namespace Test
     /// </summary>
     public partial class FTimKiemCongViec : Window
     {
+        CongviecDAO congviecDAO = new CongviecDAO();
+        UngVien ungvien = new UngVien();
         public FTimKiemCongViec()
         {
             InitializeComponent();
         }
-
+        public FTimKiemCongViec(UngVien ungvien)
+        {
+            this.ungvien = ungvien;
+            InitializeComponent();
+        }
         private void TextBlock_IsEnabledChanged(object sender, DependencyPropertyChangedEventArgs e)
         {
 
@@ -33,14 +41,32 @@ namespace Test
         {
 
         }
-
+        private void btnTimKiem_Click(object sender,RoutedEventArgs e)
+        {
+            DataTable dt = new DataTable();
+            dt = congviecDAO.LoadCongviec();
+            foreach(DataRow dr in dt.Rows)
+            {
+                Congviec congviec = new Congviec(dr);
+                UCCongViec ucCongViec = new UCCongViec(congviec);
+                ucCongViec.BtnChitiet.Click += (na, RoutedEventArgs) =>
+                {
+                    ChiTietCongViec chitiet = new ChiTietCongViec(congviec, ungvien);
+                    chitiet.Show();
+                };
+                ltvCongviec.Items.Add(ucCongViec);
+            }
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             FNhanVien trangchu = new FNhanVien();
             trangchu.Show();
             this.Close();
         }
-
-        
+        private void button_click(object sender, RoutedEventArgs e, Congviec congviec)
+        {
+            ChiTietCongViec chitiet = new ChiTietCongViec(congviec, ungvien);
+            chitiet.Show();
+        }
     }
 }

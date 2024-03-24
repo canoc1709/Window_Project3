@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Test"
+             Loaded="UCCongViec_Load"
              mc:Ignorable="d" Height="151" Width="650">
     <Grid>
         <Rectangle HorizontalAlignment="Center" Height="151" VerticalAlignment="Top" Width="650" RadiusY="58.656" RadiusX="58.656" Fill="#FF9C8181"/>
@@ -13,16 +14,15 @@
                     <ImageBrush ImageSource="{Binding URL}" Stretch="Uniform" />
                 </Rectangle.Fill>
             </Rectangle>
-           
+
         </StackPanel>
         <StackPanel Margin="225,0,165,0">
-            <TextBox Height="36" TextChanged="TextBox_TextChanged" Text="Tên công ty:" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18"/>
-            <TextBox Height="34" TextChanged="TextBox_TextChanged" Text="Công việc:" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18"/>
-            <TextBox Height="41" TextChanged="TextBox_TextChanged" Text="Lương:" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18"/>
-            <TextBox Height="39" TextChanged="TextBox_TextChanged" Text="Yêu cầu:" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18"/>
+            <TextBox x:Name="lblTencty" Height="68" Text="Tên công ty:" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18"/>
+            <TextBox x:Name="lblChucvu" Height="38" Text="Công việc:" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18"/>
+            <TextBox x:Name="lblLuong" Height="36" Text="Lương:" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18"/>
         </StackPanel>
         <StackPanel Margin="501,0,37,0" >
-            <Button Height="150" Width="110" Content="Xem chi tiết" Background="{x:Null}" BorderBrush="{x:Null}" Click="Button_Click_XemChiTiet"/>
+            <Button x:Name="btnChitiet" Height="150" Width="110" Content="Xem chi tiết" Background="{x:Null}" BorderBrush="{x:Null}"/>
         </StackPanel>
     </Grid>
 </UserControl>

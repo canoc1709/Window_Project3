@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +20,8 @@ namespace Test
     /// </summary>
     public partial class FDangnhap : Window
     {
+        UngvienDAO ungvienDAO = new UngvienDAO();
+        CongtyDAO congtyDAO = new CongtyDAO();
         public FDangnhap()
         {
             InitializeComponent();
@@ -58,18 +61,36 @@ namespace Test
         }
         private void Dangnhap_click(object sender, RoutedEventArgs e)
         {
+            DataTable dt = new DataTable();
             if (Check_Ungvien.IsChecked == true)
             {
-
-                FNhanVien trangchu = new FNhanVien();
-                trangchu.Show();
-                this.Close();
+                dt = ungvienDAO.Loadthongtin(txtUsername.Text.Trim(), txtPassword.Text.Trim());
+                UngVien ungvien = new UngVien();
+                foreach (DataRow dr in dt.Rows)
+                {
+                    ungvien = new UngVien(dr);
+                }
+                if (ungvien.ID != 0)
+                {
+                    FNhanVien trangchu = new FNhanVien(ungvien);
+                    trangchu.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("no acc");
+                }
             }
             else if(Check_Nhanvien.IsChecked == true)
             {
+                dt = congtyDAO.LoadCongty(txtUsername.Text.Trim(), txtPassword.Text.Trim());
                     FVP_CongTy vP_CongTy = new FVP_CongTy();
                     vP_CongTy.Show();
                     this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Vui long chon role");
             }
 
         }
