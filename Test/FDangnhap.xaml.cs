@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +20,7 @@ namespace Test
     /// </summary>
     public partial class FDangnhap : Window
     {
+        UngvienDAO ungvienDAO = new UngvienDAO();
         public FDangnhap()
         {
             InitializeComponent();
@@ -60,16 +62,33 @@ namespace Test
         {
             if (Check_Ungvien.IsChecked == true)
             {
-
-                FNhanVien trangchu = new FNhanVien();
-                trangchu.Show();
-                this.Close();
+                DataTable dt = new DataTable();
+                dt = ungvienDAO.Loadthongtin(txtUsername.Text, txtPassword.Text);
+                UngVien ungvien = new UngVien();
+                foreach (DataRow dr in dt.Rows)
+                {
+                    ungvien = new UngVien(dr);
+                }
+                if (ungvien.ID != 0)
+                {
+                    FNhanVien trangchu = new FNhanVien(ungvien);
+                    trangchu.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("no acc");
+                }
             }
             else if(Check_Nhanvien.IsChecked == true)
             {
                     FVP_CongTy vP_CongTy = new FVP_CongTy();
                     vP_CongTy.Show();
                     this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Vui long chon role");
             }
 
         }

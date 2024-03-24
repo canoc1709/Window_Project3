@@ -20,6 +20,36 @@ namespace Test
     /// </summary>
     public partial class FHoSoDangKi : UserControl
     {
+        public TextBox TxtTen
+        {
+            get { return txtHoTen_Dangky; }
+            set { txtHoTen_Dangky = value; }
+        }
+        public TextBox TxtGioitinh
+        {
+            get { return txtGioiTinh; }
+            set { txtGioiTinh = value; }
+        }
+        public TextBox TxtSdt
+        {
+            get { return txtSDT; }
+            set { txtSDT = value; }
+        }
+        public TextBox TxtMail
+        {
+            get { return txtEmail_Dangky; }
+            set { txtEmail_Dangky = value; }
+        }
+        public TextBox TxtNgaysinh
+        {
+            get { return txtNamSinh_Dangky; }
+            set { txtNamSinh_Dangky = value; }
+        }
+        public TextBox TxtKinhnghiem
+        {
+            get { return txtKinhNghiem; }
+            set { txtKinhNghiem = value; }
+        }
         public FHoSoDangKi()
         {
             InitializeComponent();

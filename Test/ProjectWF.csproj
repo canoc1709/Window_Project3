@@ -69,6 +69,9 @@
     <Compile Include="ChiTietCongViec.xaml.cs">
       <DependentUpon>ChiTietCongViec.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CongtyDAO.cs" />
+    <Compile Include="Congviec.cs" />
+    <Compile Include="CongviecDAO.cs" />
     <Compile Include="UC_ChiTietCongViec.xaml.cs">
       <DependentUpon>UC_ChiTietCongViec.xaml</DependentUpon>
     </Compile>
