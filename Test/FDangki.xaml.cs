@@ -19,7 +19,8 @@ namespace Test
     /// </summary>
     public partial class FDangki : Window
     {
-        UngvienDAO ungvienDAO;
+        UngvienDAO ungvienDAO = new UngvienDAO();
+        CongtyDAO congtyDAO = new CongtyDAO();
         public FDangki()
         {
             InitializeComponent();
@@ -35,8 +36,11 @@ namespace Test
         {
             if(rbtCheck_Ungvien.IsChecked == true)
             {
-                ungvienDAO = new UngvienDAO();
                 ungvienDAO.Themtaikhoan(txtUsername.Text, txtPassword.Text, txtMail.Text);
+            }
+            if(rbtCheckbox_Nhanvien.IsChecked == true)
+            {
+                congtyDAO.Themtaikhoan(txtUsername.Text, txtPassword.Text, txtMail.Text);
             }
             FDangnhap dangnhap = new FDangnhap();
             dangnhap.Show();

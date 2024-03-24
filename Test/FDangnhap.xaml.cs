@@ -63,7 +63,7 @@ namespace Test
             if (Check_Ungvien.IsChecked == true)
             {
                 DataTable dt = new DataTable();
-                dt = ungvienDAO.Loadthongtin(txtUsername.Text, txtPassword.Text);
+                dt = ungvienDAO.Loadthongtin(txtUsername.Text.Trim(), txtPassword.Text.Trim());
                 UngVien ungvien = new UngVien();
                 foreach (DataRow dr in dt.Rows)
                 {
