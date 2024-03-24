@@ -45,7 +45,7 @@
             </StackPanel>
         </Grid>
         <StackPanel Margin="205,75,0,0">
-            <local:FHoSoDangKi x:Name="ucThongtin" Loaded="HoSoDangKi_Loaded"/>
+            <local:FHoSoDangKi x:Name="ucThongtin"/>
 
         </StackPanel>
         <ComboBox HorizontalAlignment="Left" Margin="577,-49,0,0" VerticalAlignment="Top" Width="120"/>

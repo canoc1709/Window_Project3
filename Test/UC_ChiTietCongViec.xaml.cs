@@ -20,6 +20,41 @@ namespace Test
     /// </summary>
     public partial class UC_ChiTietCongViec : UserControl
     {
+        public TextBox TxtTencty
+        {
+            get { return txtTencty; }
+            set { txtTencty = value; }
+        }
+        public TextBox TxtLuong
+        {
+            get { return txtLuong; }
+            set { txtLuong = value; }
+        }
+        public TextBox TxtChucvu
+        {
+            get { return txtChucvu; }
+            set { txtChucvu = value; }
+        }
+        public TextBox TxtPhucloi
+        {
+            get { return txtPhucloi; }
+            set { txtPhucloi = value; }
+        }
+        public TextBox TxtMotacv
+        {
+            get { return txtMotacv; }
+            set { txtMotacv = value; }
+        }
+        public TextBox TxtYeucau
+        {
+            get { return txtYeucau; }
+            set { txtYeucau = value; }
+        }
+        public Button BtnDangki
+        {
+            get { return btnDangki; }
+            set { btnDangki = value; }
+        }
         public UC_ChiTietCongViec()
         {
             InitializeComponent();

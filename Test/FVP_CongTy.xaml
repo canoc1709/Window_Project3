@@ -34,7 +34,7 @@
                     <Label Content="Mô tả công việc" HorizontalAlignment="Left" Margin="10,166,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.245,-0.252" Width="133" FontSize="15" FontWeight="Bold"/>
                     <Label Content="Phúc lợi" HorizontalAlignment="Left" Margin="408,9,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.245,-0.252" Width="148" FontSize="20" FontWeight="Bold" Height="46" HorizontalContentAlignment="Center"/>
                     <Label Content="Lương" HorizontalAlignment="Left" Margin="10,128,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.245,-0.252" Width="133" FontSize="15" FontWeight="Bold"/>
-                    <TextBox Style="{StaticResource TxtLuong}" HorizontalAlignment="Left" Margin="140,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="148" Height="25"/>
+                    <TextBox Style="{StaticResource TxtLuong}" HorizontalAlignment="Left" Margin="140,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="25"/>
                     <TextBox Style="{StaticResource TxtMoTa}" HorizontalAlignment="Left" Margin="140,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Height="73"/>
                     <TextBox Style="{StaticResource TxtPhucLoi}" HorizontalAlignment="Left" Margin="408,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" Height="98"/>
                     <Button Margin="408,203,20,51" Content="Đăng tuyển" Background="#FFEBB2B2" BorderBrush="{x:Null}" FontSize="18"/>

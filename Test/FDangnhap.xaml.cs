@@ -21,6 +21,7 @@ namespace Test
     public partial class FDangnhap : Window
     {
         UngvienDAO ungvienDAO = new UngvienDAO();
+        CongtyDAO congtyDAO = new CongtyDAO();
         public FDangnhap()
         {
             InitializeComponent();
@@ -60,9 +61,9 @@ namespace Test
         }
         private void Dangnhap_click(object sender, RoutedEventArgs e)
         {
+            DataTable dt = new DataTable();
             if (Check_Ungvien.IsChecked == true)
             {
-                DataTable dt = new DataTable();
                 dt = ungvienDAO.Loadthongtin(txtUsername.Text.Trim(), txtPassword.Text.Trim());
                 UngVien ungvien = new UngVien();
                 foreach (DataRow dr in dt.Rows)
@@ -82,6 +83,7 @@ namespace Test
             }
             else if(Check_Nhanvien.IsChecked == true)
             {
+                dt = congtyDAO.LoadCongty(txtUsername.Text.Trim(), txtPassword.Text.Trim());
                     FVP_CongTy vP_CongTy = new FVP_CongTy();
                     vP_CongTy.Show();
                     this.Close();

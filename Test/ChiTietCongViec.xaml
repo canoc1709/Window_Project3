@@ -4,12 +4,12 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Test"
+        Loaded="ChiTietCongViec_Load"
         mc:Ignorable="d"
         Title="ChiTietCongViec" Height="450" Width="800">
     <Grid>
         <StackPanel>
-            <local:UC_ChiTietCongViec/>
-
+            <local:UC_ChiTietCongViec x:Name="ucChitiet" Height="439"/>
         </StackPanel>
 
     </Grid>

@@ -37,14 +37,22 @@ namespace Test
             if(rbtCheck_Ungvien.IsChecked == true)
             {
                 ungvienDAO.Themtaikhoan(txtUsername.Text, txtPassword.Text, txtMail.Text);
+                FDangnhap dangnhap = new FDangnhap();
+                dangnhap.Show();
+                this.Close();
             }
-            if(rbtCheckbox_Nhanvien.IsChecked == true)
+            else if(rbtCheckbox_Nhanvien.IsChecked == true)
             {
                 congtyDAO.Themtaikhoan(txtUsername.Text, txtPassword.Text, txtMail.Text);
+                FDangnhap dangnhap = new FDangnhap();
+                dangnhap.Show();
+                this.Close();
             }
-            FDangnhap dangnhap = new FDangnhap();
-            dangnhap.Show();
-            this.Close();
+            else
+            {
+                MessageBox.Show("Vui long chon role");
+            }
+
         }
 
         private void QuayLai_Click(object sender, RoutedEventArgs e)

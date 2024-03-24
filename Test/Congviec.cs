@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,8 +15,8 @@ namespace Test
             get { return id; }
             set { id = value; }
         }
-        private decimal luong;
-        public decimal Luong
+        private int luong;
+        public int Luong
         {
             get { return luong; }
             set { luong = value; }
@@ -51,7 +52,17 @@ namespace Test
             set { tencty = value; }
         }
         public Congviec() { }
-        public Congviec(int iD, decimal luong, string motacv, string yeucau, string phucloi, string chucvu, string tencty)
+        public Congviec(DataRow dr)
+        {
+            Tencty = (string)dr[0];
+            ID = (int)dr[1];
+            Chucvu = (string)dr[2];
+            Luong = (int)dr[3];
+            Motacv = (string)dr[4];
+            Yeucau = (string)dr[5];
+            Phucloi = (string)dr[6];
+        }
+        public Congviec(int iD, int luong, string motacv, string yeucau, string phucloi, string chucvu, string tencty)
         {
             ID = iD;
             Luong = luong;

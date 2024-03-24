@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -9,7 +10,7 @@ using System.Windows;
 
 namespace Test
 {
-    internal class Congty
+    public class Congty
     {
 		private int id;
 
@@ -27,7 +28,7 @@ namespace Test
 		}
 		private string phonenumber;
 
-		public string PhoneNumber
+		public string Phonenumber
 		{
 			get { return phonenumber; }
 			set { phonenumber = value; }
@@ -48,12 +49,20 @@ namespace Test
 		}
 
 		public Congty() { }
+		public Congty(DataRow dr)
+		{
+			ID = (int)dr[0];
+			Name = (string)dr[1];
+			Phonenumber = (string)dr[2];
+			Mail = (string)dr[3];
+			Address = (string)dr[4];
+		}
 		public Congty(string name, string phonenumber, string address, string mail)
 		{
-			this.name = name;
-			this.phonenumber = phonenumber;
-			this.address = address;
-			this.mail = mail;
+			Name = name;
+			Phonenumber = phonenumber;
+			Address = address;
+			Mail = mail;
 		}
 		public bool Checknull(object myObject)
 		{
