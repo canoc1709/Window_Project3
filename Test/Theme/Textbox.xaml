@@ -36,7 +36,866 @@
                                     </Style>
                                 </TextBlock.Style>
                             </TextBlock>
-                            
+
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type TextBox}"
+       x:Key="TxtDangNhap">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border CornerRadius="10"
+                        Background="#353340"
+                       Width="147" Height="25">
+                        <Grid>
+                            <Rectangle StrokeThickness="1"/>
+                            <TextBox Margin="1"
+                                 Text="{TemplateBinding Text}"
+                                 BorderThickness="0"
+                                 Background="Transparent"
+                                 VerticalContentAlignment="Center"
+                                 Padding="5"
+                                 Foreground="#CFCFCF"
+                                 x:Name="timkiem"/>
+                            <TextBlock IsHitTestVisible="False"
+                                   Text="Tên đăng nhập"
+                                   VerticalAlignment="Center"
+                                   Margin="10,0,0,0"
+                                   FontSize="11"
+                                   Foreground="DarkGray"
+                                   Grid.Column="1">
+                                <TextBlock.Style>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Text, ElementName=timkiem}" Value="">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                        <Setter Property="Visibility" Value="Hidden"/>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type TextBox}"
+    x:Key="TxtMatKhau">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border CornerRadius="10"
+                     Background="#353340"
+                    Width="147" Height="25">
+                        <Grid>
+                            <Rectangle StrokeThickness="1"/>
+                            <TextBox Margin="1"
+                              Text="{TemplateBinding Text}"
+                              BorderThickness="0"
+                              Background="Transparent"
+                              VerticalContentAlignment="Center"
+                              Padding="5"
+                              Foreground="#CFCFCF"
+                              x:Name="timkiem"/>
+                            <TextBlock IsHitTestVisible="False"
+                                Text="Mật khẩu"
+                                VerticalAlignment="Center"
+                                Margin="10,0,0,0"
+                                FontSize="11"
+                                Foreground="DarkGray"
+                                Grid.Column="1">
+                                <TextBlock.Style>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Text, ElementName=timkiem}" Value="">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                        <Setter Property="Visibility" Value="Hidden"/>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type TextBox}"
+ x:Key="TxtEmail">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border CornerRadius="10"
+                  Background="#353340"
+                 Width="147" Height="25">
+                        <Grid>
+                            <Rectangle StrokeThickness="1"/>
+                            <TextBox Margin="1"
+                           Text="{TemplateBinding Text}"
+                           BorderThickness="0"
+                           Background="Transparent"
+                           VerticalContentAlignment="Center"
+                           Padding="5"
+                           Foreground="#CFCFCF"
+                           x:Name="timkiem"/>
+                            <TextBlock IsHitTestVisible="False"
+                             Text="Email"
+                             VerticalAlignment="Center"
+                             Margin="10,0,0,0"
+                             FontSize="11"
+                             Foreground="DarkGray"
+                             Grid.Column="1">
+                                <TextBlock.Style>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Text, ElementName=timkiem}" Value="">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                        <Setter Property="Visibility" Value="Hidden"/>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type TextBox}"
+x:Key="TxtHoVaTen">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border CornerRadius="10"
+                 Background="#353340"
+                Width="147" Height="25">
+                        <Grid>
+                            <Rectangle StrokeThickness="1"/>
+                            <TextBox Margin="1"
+                          Text="{TemplateBinding Text}"
+                          BorderThickness="0"
+                          Background="Transparent"
+                          VerticalContentAlignment="Center"
+                          Padding="5"
+                          Foreground="#CFCFCF"
+                          x:Name="timkiem"/>
+                            <TextBlock IsHitTestVisible="False"
+                            Text="Họ và tên"
+                            VerticalAlignment="Center"
+                            Margin="10,0,0,0"
+                            FontSize="11"
+                            Foreground="DarkGray"
+                            Grid.Column="1">
+                                <TextBlock.Style>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Text, ElementName=timkiem}" Value="">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                        <Setter Property="Visibility" Value="Hidden"/>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type TextBox}"
+x:Key="TxtGioiTinh">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border CornerRadius="10"
+                 Background="#353340"
+                Width="147" Height="25">
+                        <Grid>
+                            <Rectangle StrokeThickness="1"/>
+                            <TextBox Margin="1"
+                          Text="{TemplateBinding Text}"
+                          BorderThickness="0"
+                          Background="Transparent"
+                          VerticalContentAlignment="Center"
+                          Padding="5"
+                          Foreground="#CFCFCF"
+                          x:Name="timkiem"/>
+                            <TextBlock IsHitTestVisible="False"
+                            Text="Giới tính"
+                            VerticalAlignment="Center"
+                            Margin="10,0,0,0"
+                            FontSize="11"
+                            Foreground="DarkGray"
+                            Grid.Column="1">
+                                <TextBlock.Style>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Text, ElementName=timkiem}" Value="">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                        <Setter Property="Visibility" Value="Hidden"/>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type TextBox}"
+x:Key="TxtNamSinh">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border CornerRadius="10"
+                 Background="#353340"
+                Width="147" Height="25">
+                        <Grid>
+                            <Rectangle StrokeThickness="1"/>
+                            <TextBox Margin="1"
+                          Text="{TemplateBinding Text}"
+                          BorderThickness="0"
+                          Background="Transparent"
+                          VerticalContentAlignment="Center"
+                          Padding="5"
+                          Foreground="#CFCFCF"
+                          x:Name="timkiem"/>
+                            <TextBlock IsHitTestVisible="False"
+                            Text="Năm sinh"
+                            VerticalAlignment="Center"
+                            Margin="10,0,0,0"
+                            FontSize="11"
+                            Foreground="DarkGray"
+                            Grid.Column="1">
+                                <TextBlock.Style>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Text, ElementName=timkiem}" Value="">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                        <Setter Property="Visibility" Value="Hidden"/>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type TextBox}"
+x:Key="TxtSDT">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border CornerRadius="10"
+                 Background="#353340"
+                Width="147" Height="25">
+                        <Grid>
+                            <Rectangle StrokeThickness="1"/>
+                            <TextBox Margin="1"
+                          Text="{TemplateBinding Text}"
+                          BorderThickness="0"
+                          Background="Transparent"
+                          VerticalContentAlignment="Center"
+                          Padding="5"
+                          Foreground="#CFCFCF"
+                          x:Name="timkiem"/>
+                            <TextBlock IsHitTestVisible="False"
+                            Text="Số điện thoại"
+                            VerticalAlignment="Center"
+                            Margin="10,0,0,0"
+                            FontSize="11"
+                            Foreground="DarkGray"
+                            Grid.Column="1">
+                                <TextBlock.Style>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Text, ElementName=timkiem}" Value="">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                        <Setter Property="Visibility" Value="Hidden"/>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type TextBox}"
+x:Key="TxtKinhNgiem">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border CornerRadius="10"
+                 Background="#353340"
+                Width="147" Height="25">
+                        <Grid>
+                            <Rectangle StrokeThickness="1"/>
+                            <TextBox Margin="1"
+                          Text="{TemplateBinding Text}"
+                          BorderThickness="0"
+                          Background="Transparent"
+                          VerticalContentAlignment="Center"
+                          Padding="5"
+                          Foreground="#CFCFCF"
+                          x:Name="timkiem"/>
+                            <TextBlock IsHitTestVisible="False"
+                            Text="Kinh nghiệm"
+                            VerticalAlignment="Center"
+                            Margin="10,0,0,0"
+                            FontSize="11"
+                            Foreground="DarkGray"
+                            Grid.Column="1">
+                                <TextBlock.Style>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Text, ElementName=timkiem}" Value="">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                        <Setter Property="Visibility" Value="Hidden"/>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type TextBox}"
+x:Key="TxtTenCongTy">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border CornerRadius="10"
+                 Background="#353340"
+                Width="147" Height="25">
+                        <Grid>
+                            <Rectangle StrokeThickness="1"/>
+                            <TextBox Margin="1"
+                          Text="{TemplateBinding Text}"
+                          BorderThickness="0"
+                          Background="Transparent"
+                          VerticalContentAlignment="Center"
+                          Padding="5"
+                          Foreground="#CFCFCF"
+                          x:Name="timkiem"/>
+                            <TextBlock IsHitTestVisible="False"
+                            Text="Tên công ty"
+                            VerticalAlignment="Center"
+                            Margin="10,0,0,0"
+                            FontSize="11"
+                            Foreground="DarkGray"
+                            Grid.Column="1">
+                                <TextBlock.Style>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Text, ElementName=timkiem}" Value="">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                        <Setter Property="Visibility" Value="Hidden"/>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type TextBox}"
+x:Key="TxtCongViec">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border CornerRadius="10"
+                 Background="#353340"
+                Width="147" Height="25">
+                        <Grid>
+                            <Rectangle StrokeThickness="1"/>
+                            <TextBox Margin="1"
+                          Text="{TemplateBinding Text}"
+                          BorderThickness="0"
+                          Background="Transparent"
+                          VerticalContentAlignment="Center"
+                          Padding="5"
+                          Foreground="#CFCFCF"
+                          x:Name="timkiem"/>
+                            <TextBlock IsHitTestVisible="False"
+                            Text="Công việc"
+                            VerticalAlignment="Center"
+                            Margin="10,0,0,0"
+                            FontSize="11"
+                            Foreground="DarkGray"
+                            Grid.Column="1">
+                                <TextBlock.Style>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Text, ElementName=timkiem}" Value="">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                        <Setter Property="Visibility" Value="Hidden"/>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type TextBox}"
+x:Key="TxtYeuCau">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border CornerRadius="10"
+                 Background="#353340"
+                Width="147" Height="25">
+                        <Grid>
+                            <Rectangle StrokeThickness="1"/>
+                            <TextBox Margin="1"
+                          Text="{TemplateBinding Text}"
+                          BorderThickness="0"
+                          Background="Transparent"
+                          VerticalContentAlignment="Center"
+                          Padding="5"
+                          Foreground="#CFCFCF"
+                          x:Name="timkiem"/>
+                            <TextBlock IsHitTestVisible="False"
+                            Text="Yêu cầu"
+                            VerticalAlignment="Center"
+                            Margin="10,0,0,0"
+                            FontSize="11"
+                            Foreground="DarkGray"
+                            Grid.Column="1">
+                                <TextBlock.Style>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Text, ElementName=timkiem}" Value="">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                        <Setter Property="Visibility" Value="Hidden"/>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type TextBox}"
+x:Key="TxtLuong">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border CornerRadius="10"
+                 Background="#353340"
+                Width="147" Height="25">
+                        <Grid>
+                            <Rectangle StrokeThickness="1"/>
+                            <TextBox Margin="1"
+                          Text="{TemplateBinding Text}"
+                          BorderThickness="0"
+                          Background="Transparent"
+                          VerticalContentAlignment="Center"
+                          Padding="5"
+                          Foreground="#CFCFCF"
+                          x:Name="timkiem"/>
+                            <TextBlock IsHitTestVisible="False"
+                            Text="Lương"
+                            VerticalAlignment="Center"
+                            Margin="10,0,0,0"
+                            FontSize="11"
+                            Foreground="DarkGray"
+                            Grid.Column="1">
+                                <TextBlock.Style>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Text, ElementName=timkiem}" Value="">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                        <Setter Property="Visibility" Value="Hidden"/>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type TextBox}"
+x:Key="TxtMoTa">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border 
+                 Background="#353340"
+                Width="218" Height="73">
+                        <Grid>
+                            <Rectangle StrokeThickness="1"/>
+                            <TextBox Margin="1"
+                          Text="{TemplateBinding Text}"
+                          BorderThickness="0"
+                          Background="Transparent"
+                          VerticalContentAlignment="Center"
+                          Padding="5"
+                          Foreground="#CFCFCF"
+                          x:Name="timkiem"/>
+                            <TextBlock IsHitTestVisible="False"
+                            Text="Mô tả công việc"
+                            VerticalAlignment="top"
+                            Margin="5,0,0,0"
+                            FontSize="11"
+                            Foreground="DarkGray"
+                            Grid.Column="1">
+                                <TextBlock.Style>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Text, ElementName=timkiem}" Value="">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                        <Setter Property="Visibility" Value="Hidden"/>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type TextBox}"
+x:Key="TxtPhucLoi">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border 
+                 Background="#353340"
+                Width="158" Height="98">
+                        <Grid>
+                            <Rectangle StrokeThickness="1"/>
+                            <TextBox Margin="1"
+                          Text="{TemplateBinding Text}"
+                          BorderThickness="0"
+                          Background="Transparent"
+                          VerticalContentAlignment="Top"
+                          Padding="5"
+                          Foreground="#CFCFCF"
+                          x:Name="timkiem"/>
+                            <TextBlock IsHitTestVisible="False"
+                            Text="Phúc lợi nhận được"
+                            VerticalAlignment="Top"
+                            Margin="5,0,0,0"
+                            FontSize="11"
+                            Foreground="DarkGray"
+                            Grid.Column="1">
+                                <TextBlock.Style>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Text, ElementName=timkiem}" Value="">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                        <Setter Property="Visibility" Value="Hidden"/>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type TextBox}"
+x:Key="TxtTenCongTyCT">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border 
+                 Background="{x:Null}"
+                Width="147" Height="25">
+                        <Grid>
+                            <Rectangle StrokeThickness="1"/>
+                            <TextBox Margin="1"
+                          Text="{TemplateBinding Text}"
+                          BorderThickness="0"
+                          Background="Transparent"
+                          VerticalContentAlignment="Center"
+                          Padding="5"
+                          Foreground="Black"
+                          x:Name="timkiem"/>
+                            <TextBlock IsHitTestVisible="False"
+                            Text="Tên công ty"
+                            VerticalAlignment="Center"
+                            Margin="10,0,0,0"
+                            FontSize="11"
+                            Foreground="DarkGray"
+                            Grid.Column="1">
+                                <TextBlock.Style>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Text, ElementName=timkiem}" Value="">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                        <Setter Property="Visibility" Value="Hidden"/>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type TextBox}"
+x:Key="TxtCongViecCT">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border 
+                 Background="{x:Null}"
+                Width="147" Height="25">
+                        <Grid>
+                            <Rectangle StrokeThickness="1"/>
+                            <TextBox Margin="1"
+                          Text="{TemplateBinding Text}"
+                          BorderThickness="0"
+                          Background="Transparent"
+                          VerticalContentAlignment="Center"
+                          Padding="5"
+                          Foreground="Black"
+                          x:Name="timkiem"/>
+                            <TextBlock IsHitTestVisible="False"
+                            Text="Công việc"
+                            VerticalAlignment="Center"
+                            Margin="10,0,0,0"
+                            FontSize="11"
+                            Foreground="DarkGray"
+                            Grid.Column="1">
+                                <TextBlock.Style>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Text, ElementName=timkiem}" Value="">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                        <Setter Property="Visibility" Value="Hidden"/>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type TextBox}"
+x:Key="TxtYeuCauCT">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border 
+                 Background="{x:Null}"
+                Width="147" Height="25">
+                        <Grid>
+                            <Rectangle StrokeThickness="1"/>
+                            <TextBox Margin="1"
+                          Text="{TemplateBinding Text}"
+                          BorderThickness="0"
+                          Background="Transparent"
+                          VerticalContentAlignment="Center"
+                          Padding="5"
+                          Foreground="Black"
+                          x:Name="timkiem"/>
+                            <TextBlock IsHitTestVisible="False"
+                            Text="Yêu cầu"
+                            VerticalAlignment="Center"
+                            Margin="10,0,0,0"
+                            FontSize="11"
+                            Foreground="DarkGray"
+                            Grid.Column="1">
+                                <TextBlock.Style>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Text, ElementName=timkiem}" Value="">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                        <Setter Property="Visibility" Value="Hidden"/>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type TextBox}"
+x:Key="TxtLuongCT">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border
+                Width="147" Height="25" Background="{x:Null}">
+                        <Grid>
+                            <Rectangle StrokeThickness="1"/>
+                            <TextBox Margin="1"
+                          Text="{TemplateBinding Text}"
+                          BorderThickness="0"
+                          Background="Transparent"
+                          VerticalContentAlignment="Center"
+                          Padding="5"
+                          Foreground="Black"
+                          x:Name="timkiem"/>
+                            <TextBlock IsHitTestVisible="False"
+                            Text="Lương"
+                            VerticalAlignment="Center"
+                            Margin="10,0,0,0"
+                            FontSize="11"
+                            Foreground="DarkGray"
+                            Grid.Column="1">
+                                <TextBlock.Style>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Text, ElementName=timkiem}" Value="">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                        <Setter Property="Visibility" Value="Hidden"/>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type TextBox}"
+x:Key="TxtMoTaCT">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border 
+                 Background="{x:Null}"
+                Width="298" Height="140">
+                        <Grid>
+                            <Rectangle StrokeThickness="1"/>
+                            <TextBox Margin="1"
+                          Text="{TemplateBinding Text}"
+                          BorderThickness="0"
+                          Background="Transparent"
+                          VerticalContentAlignment="Top"
+                          Padding="5"
+                          Foreground="Black"
+                          x:Name="timkiem"/>
+                            <TextBlock IsHitTestVisible="False"
+                            Text="Mô tả công việc"
+                            VerticalAlignment="top"
+                            Margin="100,0,0,0"
+                            FontSize="11"
+                            Foreground="DarkGray"
+                            Grid.Column="1">
+                                <TextBlock.Style>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Text, ElementName=timkiem}" Value="">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                        <Setter Property="Visibility" Value="Hidden"/>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type TextBox}"
+x:Key="TxtPhucLoiCT">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Border 
+                 Background="{x:Null}"
+                Width="298" Height="140">
+                        <Grid>
+                            <Rectangle StrokeThickness="1"/>
+                            <TextBox Margin="1"
+                          Text="{TemplateBinding Text}"
+                          BorderThickness="0"
+                          Background="Transparent"
+                          VerticalContentAlignment="Top"
+                          Padding="5"
+                          Foreground="Black"
+                          x:Name="timkiem"/>
+                            <TextBlock IsHitTestVisible="False"
+                            Text="Phúc lợi nhận được"
+                            VerticalAlignment="Top"
+                            Margin="100,0,0,0"
+                            FontSize="11"
+                            Foreground="DarkGray"
+                            Grid.Column="1">
+                                <TextBlock.Style>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Text, ElementName=timkiem}" Value="">
+                                                <Setter Property="Visibility" Value="Visible"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                        <Setter Property="Visibility" Value="Hidden"/>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+
                         </Grid>
                     </Border>
                 </ControlTemplate>

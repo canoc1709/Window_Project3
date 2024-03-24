@@ -22,7 +22,7 @@
             <TextBox Height="39" TextChanged="TextBox_TextChanged" Text="Yêu cầu:" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18"/>
         </StackPanel>
         <StackPanel Margin="501,0,37,0" >
-            <Button Height="150" Width="110" Content="Xem chi tiết" Background="{x:Null}" BorderBrush="{x:Null}"/>
+            <Button Height="150" Width="110" Content="Xem chi tiết" Background="{x:Null}" BorderBrush="{x:Null}" Click="Button_Click_XemChiTiet"/>
         </StackPanel>
     </Grid>
 </UserControl>

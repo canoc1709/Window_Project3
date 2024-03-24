@@ -40,5 +40,7 @@ namespace Test
             trangchu.Show();
             this.Close();
         }
+
+        
     }
 }

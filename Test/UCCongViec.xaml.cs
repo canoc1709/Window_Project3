@@ -27,23 +27,17 @@ namespace Test
         }
         public string Title { get; set; }
         public string URL { get; set; }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            FCongViec fCongViec = new FCongViec();
-            fCongViec.Show();
-            
-        }
-
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+ 
+        private void Button_Click_XemChiTiet(object sender, RoutedEventArgs e)
         {
-            FCongViec fCongViec = new FCongViec();
-            fCongViec.Show();
+           
+            ChiTietCongViec chiTietCongViec = new ChiTietCongViec();
+            chiTietCongViec.Show();
+           
         }
     }
 }

@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons8-quit-48.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("magnifier.png")]
 
 

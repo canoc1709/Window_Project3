@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Test"
-        mc:Ignorable="d" Height="450" Width="800" Icon="/magnifier.png" ResizeMode="NoResize" Title="Tìm kiếm">
+        mc:Ignorable="d" Height="450" Width="800" ResizeMode="NoResize" Title="Tìm kiếm">
     <Grid Background="White" Margin="0,10,0,-16">
         <Grid.ColumnDefinitions>
 
@@ -13,12 +13,13 @@
                   VerticalContentAlignment="Center"
                   HorizontalAlignment="Left"
                   Margin="147,30,0,342"
-                  Style="{StaticResource ModernTextBox}" Grid.ColumnSpan="3"
+                  Style="{StaticResource ModernTextBox}" Grid.ColumnSpan="3" 
             />
         <Button Content="" HorizontalAlignment="Left" Margin="548,43,0,0" VerticalAlignment="Top" Height="33" Width="33" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/magnifier.png"/>
             </Button.Background>
+
         </Button>
 
         <StackPanel Margin="0,103,0,0" >

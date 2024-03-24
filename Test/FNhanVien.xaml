@@ -8,7 +8,7 @@
         Title="Trangchu"
          Height="600" Width="1080" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" Foreground="White">
     <Grid Background="#FFEFEEEC">
-        <Grid Height="70" VerticalAlignment="Top" Background="#FF1284BF" >
+        <Grid Height="75" VerticalAlignment="Top" Background="#FF1284BF" >
             <Button Background="#FF7C9AA9" FontSize="22" HorizontalAlignment="Left" Margin="901,19,0,19" Width="153" Content="Đăng xuất" BorderBrush="{x:Null}" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" Click="Button_Click" />
         </Grid>
         <Grid Width="200" HorizontalAlignment="Left" Background="#FF073365">

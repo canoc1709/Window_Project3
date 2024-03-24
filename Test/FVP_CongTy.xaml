@@ -11,22 +11,22 @@
             <Image x:Name="imgCongTy"
             Source="Images/profile.png"/>
         </StackPanel>
-        <TextBox x:Name="txtTenCongTy" Margin="208,10,10,0" TextWrapping="Wrap" Text="CÔNG TY TRÁCH NHIỆM HỮU HẠN BA THÀNH VIÊN" Width="582" Height="72" FontFamily="Segoe Print" FontSize="20" TextAlignment="Center" FontWeight="Bold" VerticalAlignment="Top" Background="#E6E6FA"/>
-        <TextBox Margin="50,187,598,0" TextWrapping="Wrap" Text="Số điện thoại" VerticalAlignment="Top" Height="30" FontSize="16"/>
-        <TextBox HorizontalAlignment="Left" Margin="50,271,0,0" TextWrapping="Wrap" Text="Mail" VerticalAlignment="Top" Width="152" Height="30" FontSize="16"/>
-        <TextBox HorizontalAlignment="Left" Margin="50,359,0,0" TextWrapping="Wrap" Text="Địa chỉ" VerticalAlignment="Top" Width="152" Height="30" FontSize="16"/>
+        <TextBox x:Name="txtTenCongTy" Margin="208,10,10,0" TextWrapping="Wrap" Text="CÔNG TY TRÁCH NHIỆM HỮU HẠN BA THÀNH VIÊN" Width="582" Height="72" FontFamily="Segoe Print" FontSize="20" TextAlignment="Center" FontWeight="Bold" VerticalAlignment="Top" Background="#FF8E8EFD"/>
+        <TextBox Style="{StaticResource TxtSDT}" Margin="24,261,621,0" TextWrapping="Wrap" Text="Số điện thoại" VerticalAlignment="Top" Height="25" FontSize="11"/>
+        <TextBox Style="{StaticResource TxtEmail}" HorizontalAlignment="Left" Margin="20,316,0,0" TextWrapping="Wrap" Text="Mail" VerticalAlignment="Top" Width="159" Height="30"/>
+        <TextBox Style="{StaticResource TxtHoVaTen}" HorizontalAlignment="Left" Margin="27,0,0,0" TextWrapping="Wrap" Text="Họ và tên" VerticalAlignment="Center" Width="152" Height="30"/>
         <Image x:Name ="iconMail" HorizontalAlignment="Left" Height="31" Margin="24,394,0,0" VerticalAlignment="Top" Width="31" Source="Images/"/>
         <Image x:Name="iconAddress"  HorizontalAlignment="Left" Height="31" Margin="280,394,0,0" VerticalAlignment="Top" Width="31" RenderTransformOrigin="1.27,0.516"/>
         <Image x:Name="iconPhone" HorizontalAlignment="Left" Height="31" Margin="554,394,0,0" VerticalAlignment="Top" Width="31" RenderTransformOrigin="1.27,0.516"/>
         <TabControl Margin="208,87,10,45">
-            <TabItem Header="Tuyển việc" Width="80" Height="30" Background="#E6E6FA">
+            <TabItem Header="Tuyển việc" Width="80" Height="30" Background="{x:Null}" BorderBrush="Black">
                 <Grid Background="#F8F8FF" Height="283">
                     <Grid.ColumnDefinitions>
 
                     </Grid.ColumnDefinitions>
-                    <TextBox HorizontalAlignment="Left" Margin="143,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Height="20"/>
-                    <TextBox HorizontalAlignment="Left" Margin="143,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Height="19"/>
-                    <TextBox HorizontalAlignment="Left" Margin="143,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Height="19"/>
+                    <TextBox Style="{StaticResource TxtTenCongTy}" HorizontalAlignment="Left" Margin="105,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Height="26"/>
+                    <TextBox Style="{StaticResource TxtCongViec}" HorizontalAlignment="Left" Margin="105,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Height="28"/>
+                    <TextBox Style="{StaticResource TxtYeuCau}" HorizontalAlignment="Left" Margin="105,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Height="25"/>
 
                     <Label Content="Tên công ty" HorizontalAlignment="Left" Margin="10,17,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.245,-0.252" Width="133" FontSize="15" FontWeight="Bold" Grid.ColumnSpan="2"/>
                     <Label Content="Công việc" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.245,-0.252" Width="133" FontSize="15" FontWeight="Bold" Height="35" Grid.ColumnSpan="2"/>
@@ -34,13 +34,13 @@
                     <Label Content="Mô tả công việc" HorizontalAlignment="Left" Margin="10,166,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.245,-0.252" Width="133" FontSize="15" FontWeight="Bold"/>
                     <Label Content="Phúc lợi" HorizontalAlignment="Left" Margin="408,9,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.245,-0.252" Width="148" FontSize="20" FontWeight="Bold" Height="46" HorizontalContentAlignment="Center"/>
                     <Label Content="Lương" HorizontalAlignment="Left" Margin="10,128,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.245,-0.252" Width="133" FontSize="15" FontWeight="Bold"/>
-                    <TextBox HorizontalAlignment="Left" Margin="143,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Height="19"/>
-                    <TextBox HorizontalAlignment="Left" Margin="143,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Height="73"/>
-                    <TextBox HorizontalAlignment="Left" Margin="408,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" Height="98"/>
+                    <TextBox Style="{StaticResource TxtLuong}" HorizontalAlignment="Left" Margin="140,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="148" Height="25"/>
+                    <TextBox Style="{StaticResource TxtMoTa}" HorizontalAlignment="Left" Margin="140,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Height="73"/>
+                    <TextBox Style="{StaticResource TxtPhucLoi}" HorizontalAlignment="Left" Margin="408,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" Height="98"/>
                     <Button Margin="408,203,20,51" Content="Đăng tuyển" Background="#FFEBB2B2" BorderBrush="{x:Null}" FontSize="18"/>
                 </Grid>
             </TabItem>
-            <TabItem Header="Xem hồ sơ" Width="80" Height="30" Background="#E6E6FA">
+            <TabItem Header="Xem hồ sơ" Width="80" Height="30" Background="{x:Null}" BorderBrush="Black" OpacityMask="#FFF3AFAF">
                 <Grid Background="#F8F8FF">
                 </Grid>
             </TabItem>
