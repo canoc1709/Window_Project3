@@ -75,6 +75,9 @@
     <Compile Include="FDanhSachLoc.xaml.cs">
       <DependentUpon>FDanhSachLoc.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FLocTimKiem.xaml.cs">
+      <DependentUpon>FLocTimKiem.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UC_ChiTietCongViec.xaml.cs">
       <DependentUpon>UC_ChiTietCongViec.xaml</DependentUpon>
     </Compile>
@@ -103,6 +106,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="FDanhSachLoc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FLocTimKiem.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -247,6 +254,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\sort.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\salary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\salarywhite.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.5.0.1-ci577\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.5.0.1-ci577\build\MaterialDesignThemes.targets')" />

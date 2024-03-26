@@ -20,6 +20,6 @@
         <Button Content="Quay lại" HorizontalAlignment="Left" Margin="136,444,0,0" VerticalAlignment="Top" Height="29" Width="86" Background="#FFE2A8A8" Click="QuayLai_Click"/>
         <RadioButton x:Name="rbtCheck_Ungvien" Content="Ứng viên" HorizontalAlignment="Left" Height="16" Margin="83,368,0,0" VerticalAlignment="Top" Width="86" Foreground="#FF00FFFA"/>
         <RadioButton x:Name="rbtCheckbox_Nhanvien" Content="Nhân viên" HorizontalAlignment="Left" Height="16" Margin="189,368,0,0" VerticalAlignment="Top" Width="86" Foreground="#FF00FFFA"/>
-
+        
     </Grid>
 </Window>

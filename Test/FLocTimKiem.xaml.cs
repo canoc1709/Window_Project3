@@ -15,17 +15,13 @@ using System.Windows.Shapes;
 namespace Test
 {
     /// <summary>
-    /// Interaction logic for FDanhSachLoc.xaml
+    /// Interaction logic for FLocTimKiem.xaml
     /// </summary>
-    public partial class FDanhSachLoc : Window
+    public partial class FLocTimKiem : Window
     {
-        public FDanhSachLoc()
+        public FLocTimKiem()
         {
             InitializeComponent();
-        }
-        private void sortLuong_click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
