@@ -94,5 +94,41 @@ namespace Test
             }
 
         }
+
+        private void txtUsername_MouseEnter(object sender, MouseEventArgs e)
+        {
+            if (txtUsername.Text == "Username")
+            {
+                txtUsername.Text = "";
+                txtUsername.Foreground = base.Foreground;
+            }
+        }
+
+        private void txtPassword_MouseEnter(object sender, MouseEventArgs e)
+        {
+            if (txtPassword.Text == "Password")
+            {
+                txtPassword.Text = "";
+                txtPassword.Foreground = base.Foreground;
+            }
+        }
+
+        private void txtUsername_MouseLeave(object sender, MouseEventArgs e)
+        {
+            if (txtUsername.Text == "")
+            {
+                txtUsername.Text = "Username";
+
+            }
+        }
+
+        private void txtPassword_MouseLeave(object sender, MouseEventArgs e)
+        {
+            if (txtPassword.Text == "")
+            {
+                txtPassword.Text = "Password";
+
+            }
+        }
     }
 }

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Controls;
+using System.Windows.Media.Media3D;
 namespace Test
 {
     /// <summary>
@@ -68,7 +69,91 @@ namespace Test
         private void txtUsername_TextChanged(object sender, TextChangedEventArgs e)
         {
        
-            MessageBox.Show(txtUsername.Text);
+           
+        }
+
+        private void txtUsername_MouseEnter(object sender, MouseEventArgs e)
+        {
+            if(txtUsername.Text=="Username")
+            {
+                txtUsername.Text = "";
+                txtUsername.Foreground=base.Foreground;
+            }
+        }
+
+        private void txtPassword_MouseEnter(object sender, MouseEventArgs e)
+        {
+            if (txtPassword.Text == "Password")
+            {
+                txtPassword.Text = "";
+                txtPassword.Foreground = base.Foreground;
+            }
+        }
+
+        
+
+        private void txtMail_MouseEnter(object sender, MouseEventArgs e)
+        {
+            if (txtMail.Text == "Email")
+            {
+                txtMail.Text = "";
+                txtMail.Foreground = base.Foreground;
+            }
+        }
+
+        private void Họ_và_tên_MouseEnter(object sender, MouseEventArgs e)
+        {
+            if (txtPassword1.Text == "Password")
+            {
+                txtPassword1.Text = "";
+                txtPassword1.Foreground = base.Foreground;
+            }
+        }
+
+        private void txtUsername_MouseLeave(object sender, MouseEventArgs e)
+        {
+            if (txtUsername.Text == "")
+            {
+                txtUsername.Text = "Username";
+                
+            }
+        }
+
+        private void txtPassword_MouseLeave(object sender, MouseEventArgs e)
+        {
+            if (txtPassword.Text == "")
+            {
+                txtPassword.Text = "Password";
+
+            }
+        }
+
+        private void txtPassword1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            
+        }
+
+        private void txtMail_TextChanged(object sender, TextChangedEventArgs e)
+        {
+           
+        }
+
+        private void txtPassword1_MouseLeave(object sender, MouseEventArgs e)
+        {
+            if (txtPassword1.Text == "")
+            {
+                txtPassword1.Text = "Password";
+
+            }
+        }
+
+        private void txtMail_MouseLeave(object sender, MouseEventArgs e)
+        {
+            if (txtMail.Text == "")
+            {
+                txtMail.Text = "Email";
+
+            }
         }
     }
 }

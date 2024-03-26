@@ -211,7 +211,6 @@ C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\UC_ChiTietCongViec
 C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\ChiTietCongViec.g.cs
 C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\ChiTietCongViec.baml
 C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\UC_ChiTietCongViec.baml
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\Theme\Button.baml
 C:\Users\Yordle\OneDrive\Desktop\WindowForm_Project\Test\bin\Debug\Test.exe.config
 C:\Users\Yordle\OneDrive\Desktop\WindowForm_Project\Test\bin\Debug\Test.exe
 C:\Users\Yordle\OneDrive\Desktop\WindowForm_Project\Test\bin\Debug\Test.pdb
@@ -261,3 +260,7 @@ C:\Users\Yordle\OneDrive\Desktop\WindowForm_Project\Test\obj\Debug\FDanhSachLoc.
 C:\Users\Yordle\OneDrive\Desktop\WindowForm_Project\Test\obj\Debug\FDanhSachLoc.baml
 C:\Users\Yordle\OneDrive\Desktop\WindowForm_Project\Test\obj\Debug\FLocTimKiem.g.cs
 C:\Users\Yordle\OneDrive\Desktop\WindowForm_Project\Test\obj\Debug\FLocTimKiem.baml
+C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\FDanhSachLoc.g.cs
+C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\FLocTimKiem.g.cs
+C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\FDanhSachLoc.baml
+C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\FLocTimKiem.baml

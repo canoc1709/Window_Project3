@@ -3,14 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Test"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-             StartupUri="FLocTimKiem.xaml">
+             StartupUri="FDangnhap.xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Theme/Textbox.xaml"/>
             </ResourceDictionary.MergedDictionaries>
-           
-
         </ResourceDictionary>
     </Application.Resources>
 </Application>
