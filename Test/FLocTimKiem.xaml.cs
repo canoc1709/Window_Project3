@@ -23,5 +23,18 @@ namespace Test
         {
             InitializeComponent();
         }
+
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                DragMove();
+            }
+        }
+
+        private void btnQuit_click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

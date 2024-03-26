@@ -257,7 +257,5 @@ C:\Users\Yordle\OneDrive\Desktop\WindowForm_Project\Test\obj\Debug\ProjectWF.csp
 C:\Users\Yordle\OneDrive\Desktop\WindowForm_Project\Test\obj\Debug\ProjectWF.csproj.CopyComplete
 C:\Users\Yordle\OneDrive\Desktop\WindowForm_Project\Test\obj\Debug\Test.exe
 C:\Users\Yordle\OneDrive\Desktop\WindowForm_Project\Test\obj\Debug\Test.pdb
-C:\Users\Yordle\OneDrive\Desktop\WindowForm_Project\Test\obj\Debug\FDanhSachLoc.g.cs
-C:\Users\Yordle\OneDrive\Desktop\WindowForm_Project\Test\obj\Debug\FDanhSachLoc.baml
 C:\Users\Yordle\OneDrive\Desktop\WindowForm_Project\Test\obj\Debug\FLocTimKiem.g.cs
 C:\Users\Yordle\OneDrive\Desktop\WindowForm_Project\Test\obj\Debug\FLocTimKiem.baml

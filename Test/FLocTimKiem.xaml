@@ -72,7 +72,7 @@
                                 <ContentPresenter ContentSource="Header"
                                                   TextBlock.Foreground="#D3D7DC"
                                                   TextBlock.FontFamily="Rubik Medium"
-                                                  TextBlock.FontSize="18"
+                                                  TextBlock.FontSize="20"
                                                   HorizontalAlignment="Left"
                                                   VerticalAlignment="Center"
                                                   Margin="40,0,0,0"/>
@@ -139,7 +139,7 @@
         <Border
         Width="750"
         CornerRadius="15"
-        Background="#524E4F" Margin="25,0,25,10">
+        Background="#FF52504E" Margin="25,0,25,10" MouseDown="Border_MouseDown">
             <Border.Effect>
                 <DropShadowEffect Color="#000000"
                           Opacity="0.5"
@@ -147,6 +147,7 @@
                           ShadowDepth="2"
                           BlurRadius="25"/>
             </Border.Effect>
+            
         </Border>
         <!--// Menu Border//-->
         <Border Height="40"
@@ -165,11 +166,11 @@
         VerticalAlignment="Top"
         HorizontalAlignment="Center"
         Margin="0,80,350,0">
-            <MenuItem Header="Lọc theo yêu cầu" 
+            <MenuItem Header="Lọc theo lương" 
         Style="{StaticResource Services_MenuItem_With_Dropdown}" Width="282">
                 <MenuItem.Icon>
                     <Image Source="Images/salarywhite.png"
-                           Stretch="Uniform"/>  
+                           Stretch="Uniform"/>
                 </MenuItem.Icon>
             </MenuItem>
 
@@ -192,23 +193,58 @@
                 HorizontalAlignment="Center"
                 Margin="350,80,0,0">
             <MenuItem Header="Lọc theo yêu cầu" 
-                Style="{StaticResource Services_MenuItem_With_Dropdown}" Width="282"/>
+                Style="{StaticResource Services_MenuItem_With_Dropdown}" Width="285">
+                <MenuItem.Icon>
+                    <Image Source="Images/tick.png"
+                           Stretch="Uniform"/>
+                </MenuItem.Icon>
+            </MenuItem>
 
         </Menu>
-        <Border
-                Width="300"
-                Background="#363435"
-                BorderBrush="#363435"
-                BorderThickness="3"
-                Margin="75,134,425,26"
-                CornerRadius="10"/>
-        <Border
-            Width="300"
-            Background="#363435"
-            BorderBrush="#363435"
-            BorderThickness="3"
-            Margin="425,134,75,26"
-            CornerRadius="10"/>
+        <StackPanel Margin="425,134,75,180" Background="#363435">
+            <RadioButton x:Name="rdb_LuongTang" Width="268" Margin="0,10,0,0">
+                <WrapPanel>
+                    <Image Source="Images/boy.png" Width="40" Height="40" Margin="10,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="Tuyển Nam" Foreground="#D7D3DC" HorizontalContentAlignment="Center" FontSize="22" Width="170"/>
+                </WrapPanel>
+            </RadioButton>
+            <RadioButton x:Name="rdb_LuongGiam" Width="268" Margin="0,30,0,0">
+                <WrapPanel>
+                    <Image Source="Images/girl.png" Width="40" Height="40" Margin="10,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="Tuyển Nữ" Foreground="#D7D3DC" HorizontalContentAlignment="Center" FontSize="22" Width="170"/>
+                </WrapPanel>
+            </RadioButton>
+        </StackPanel>
+        <StackPanel x:Name="stP_LocTheoYeuCau" Margin="75,134,425,180" Background="#363435">
+            <RadioButton x:Name="rdb_LuongTangDan" Width="268" Margin="0,10,0,0">
+                <WrapPanel>
+                    <Image Source="Images/up_arrow.png" Width="40" Height="40" Margin="10,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="Lương tăng dần" Foreground="#D7D3DC" HorizontalContentAlignment="Center" FontSize="22" Width="170"/>
+                </WrapPanel>
+            </RadioButton>
+            <RadioButton x:Name="rdb_LuongGiamDan" Width="268" Margin="0,30,0,0">
+                <WrapPanel>
+                    <Image Source="Images/down_arrow.png" Width="40" Height="40" Margin="10,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Label Content="Lương giảm dần" Foreground="#D7D3DC" HorizontalContentAlignment="Center" FontSize="22" Width="170"/>
+                </WrapPanel>
+            </RadioButton>
+            
+        </StackPanel>
+        <StackPanel Margin="320,347,324,34">
+            <Button Content="LỌC" 
+                FontFamily="Arial Black" 
+                FontSize="30" 
+                TextElement.Foreground="#D7D3DC"
+                Background="#363435" Height="73"/>
+        </StackPanel>
+        <StackPanel Margin="700,5,25,388">
+            <Button Width="50" Height="50" Background="Transparent" Click="btnQuit_click">
+                <Image Source="Images/quit.png"
+                       Stretch="Uniform"/>
+            </Button>
+        </StackPanel>
+        
+
 
 
     </Grid>
