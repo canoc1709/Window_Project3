@@ -166,51 +166,6 @@ C:\Users\Yordle\OneDrive\Desktop\WindowForm_Project3\Test\obj\Debug\FTimKiemCong
 C:\Users\Yordle\OneDrive\Desktop\WindowForm_Project3\Test\obj\Debug\FTimKiemCongViec.baml
 C:\Users\Yordle\OneDrive\Desktop\WindowForm_Project3\Test\obj\Debug\FDangnhap.g.cs
 C:\Users\Yordle\OneDrive\Desktop\WindowForm_Project3\Test\obj\Debug\FDangnhap.baml
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\ProjectWF.csproj.AssemblyReference.cache
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\Theme\Textbox.baml
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\UCCongViec.g.cs
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\FDangki.g.cs
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\FDangnhap.g.cs
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\FHoSoDangKi.g.cs
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\FTrangChu.g.cs
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\FTimKiemCongViec.g.cs
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\FNhanVien.g.cs
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\FVP_CongTy.g.cs
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\App.g.cs
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\Test_MarkupCompile.cache
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\Test_MarkupCompile.lref
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\Test.exe
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\Test.pdb
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\bin\Debug\Test.exe.config
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\bin\Debug\Test.exe
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\bin\Debug\Test.pdb
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\bin\Debug\MaterialDesignColors.dll
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\bin\Debug\MaterialDesignThemes.Wpf.dll
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\bin\Debug\Microsoft.Xaml.Behaviors.dll
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\bin\Debug\MaterialDesignColors.pdb
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\bin\Debug\MaterialDesignThemes.Wpf.pdb
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\bin\Debug\MaterialDesignThemes.Wpf.xml
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\bin\Debug\Microsoft.Xaml.Behaviors.pdb
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\bin\Debug\Microsoft.Xaml.Behaviors.xml
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\App.baml
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\UCCongViec.baml
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\FDangki.baml
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\FDangnhap.baml
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\FHoSoDangKi.baml
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\FTrangChu.baml
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\FTimKiemCongViec.baml
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\FNhanVien.baml
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\FVP_CongTy.baml
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\Test.g.resources
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\Test.Properties.Resources.resources
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\ProjectWF.csproj.GenerateResource.cache
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\ProjectWF.csproj.CoreCompileInputs.cache
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\ProjectWF.csproj.CopyComplete
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\UC_ChiTietCongViec.g.cs
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\ChiTietCongViec.g.cs
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\ChiTietCongViec.baml
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\UC_ChiTietCongViec.baml
 C:\Users\Yordle\OneDrive\Desktop\WindowForm_Project\Test\bin\Debug\Test.exe.config
 C:\Users\Yordle\OneDrive\Desktop\WindowForm_Project\Test\bin\Debug\Test.exe
 C:\Users\Yordle\OneDrive\Desktop\WindowForm_Project\Test\bin\Debug\Test.pdb
@@ -260,7 +215,3 @@ C:\Users\Yordle\OneDrive\Desktop\WindowForm_Project\Test\obj\Debug\FDanhSachLoc.
 C:\Users\Yordle\OneDrive\Desktop\WindowForm_Project\Test\obj\Debug\FDanhSachLoc.baml
 C:\Users\Yordle\OneDrive\Desktop\WindowForm_Project\Test\obj\Debug\FLocTimKiem.g.cs
 C:\Users\Yordle\OneDrive\Desktop\WindowForm_Project\Test\obj\Debug\FLocTimKiem.baml
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\FDanhSachLoc.g.cs
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\FLocTimKiem.g.cs
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\FDanhSachLoc.baml
-C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\FLocTimKiem.baml
