@@ -19,9 +19,15 @@ namespace Test
         public DataTable LoadCongty(string username, string password)
         {
             DataTable dt = new DataTable();
-            string s = string.Format("select * from Congty where username = 'quan123' and password = 'quan123'", username, password);
+            string s = string.Format("select * from Congty where username = '{0}' and password = '{1}'", username, password);
             dt = connection.load(s);
             return dt;
+        }
+        public void Sua(Congty congty)
+        {
+            string s = string.Format("update Congty set TenCT = '{0}', Sdt = '{1}', Mail = '{2}', Diachi = '{3}' where ID = {4}", 
+                congty.Name, congty.Phonenumber, congty.Mail, congty.Address, congty.ID);
+            connection.ThucThi(s);
         }
     }
 }

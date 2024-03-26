@@ -72,5 +72,15 @@ namespace Test
             Chucvu = chucvu;
             Tencty = tencty;
         }
+
+        public Congviec(int luong, string motacv, string yeucau, string phucloi, string chucvu, string tencty)
+        {
+            Luong = luong;
+            Motacv = motacv;
+            Yeucau = yeucau;
+            Phucloi = phucloi;
+            Chucvu = chucvu;
+            Tencty = tencty;
+        }
     }
 }

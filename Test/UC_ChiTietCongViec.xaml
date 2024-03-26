@@ -11,16 +11,19 @@
             <Image HorizontalAlignment="Left" Height="146" Margin="79,38,0,0" VerticalAlignment="Top" Width="135" Source="./Images/office-building.png">
 
             </Image>
-            <TextBox x:Name="txtTencty" Style="{StaticResource TxtTenCongTyCT}" HorizontalAlignment="Left" Margin="258,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="25"/>
-            <TextBox x:Name="txtChucvu" Style="{StaticResource TxtCongViecCT}" HorizontalAlignment="Left" Margin="258,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="25"/>
-            <TextBox x:Name="txtYeucau" Style="{StaticResource TxtYeuCauCT}" HorizontalAlignment="Left" Margin="258,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="25"/>
-            <TextBox x:Name="txtLuong" Style="{StaticResource TxtLuongCT}" HorizontalAlignment="Left" Margin="258,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="25" Background="{x:Null}"/>
-            <TextBox x:Name="txtMotacv" Style="{StaticResource TxtMoTaCT}" HorizontalAlignment="Left" Margin="468,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" Height="122" />
-            <TextBox x:Name="txtPhucloi" Style="{StaticResource TxtPhucLoiCT}" HorizontalAlignment="Left" Margin="50,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" Height="122"/>
+            <TextBox x:Name="txtTencty"  HorizontalAlignment="Left" Margin="258,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="25" IsReadOnly="True"/>
+            <TextBox x:Name="txtChucvu" HorizontalAlignment="Left" Margin="258,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="25" IsReadOnly="True"/>
+            <TextBox x:Name="txtYeucau"  HorizontalAlignment="Left" Margin="258,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="25" IsReadOnly="True"/>
+            <TextBox x:Name="txtLuong"  HorizontalAlignment="Left" Margin="258,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="25" IsReadOnly="True"/>
+            <TextBox x:Name="txtMotacv"  HorizontalAlignment="Left" Margin="468,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" Height="122" IsReadOnly="True"/>
+            <TextBox x:Name="txtPhucloi"  HorizontalAlignment="Left" Margin="50,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" Height="122" IsReadOnly="True"/>
             <Label Content="Quyền lợi công việc:" HorizontalAlignment="Left" Margin="123,0,0,0" VerticalAlignment="Center" Width="152" FontSize="16" Foreground="#FFC10F0F"/>
-            <Button x:Name="btnDangki"   Content="NHẬN CÔNG&#xD;&#xA; VIỆC" HorizontalAlignment="Left" Margin="674,36,0,0" VerticalAlignment="Top" Height="50" Width="92" Background="#FF7DD4D6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+            <Button x:Name="btnDangki"   Content="NHẬN CÔNG&#xD;&#xA; VIỆC" HorizontalAlignment="Left" Margin="674,36,0,0" VerticalAlignment="Top" Height="50" Width="92" Background="#FF7DD4D6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             <Label Content="Mô tả công việc:" HorizontalAlignment="Left" Margin="551,0,0,0" VerticalAlignment="Center" Width="152" FontSize="16" Foreground="#FFC10F0F"/>
             <Button Content="Quay lại" HorizontalAlignment="Left" Margin="52,371,0,0" VerticalAlignment="Top" Height="29" Width="94" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFFB8686" FontSize="16" FontWeight="Bold" />
+            <Button x:Name="btnSua" Content="Sua" HorizontalAlignment="Left" Margin="674,99,0,0" VerticalAlignment="Top" Height="25" Width="92"/>
+            <Button x:Name="btnXoa" Content="Xoa" HorizontalAlignment="Left" Margin="674,136,0,0" VerticalAlignment="Top" Height="24" Width="92"/>
+            <Button x:Name="btnLuu" Content="Luu" HorizontalAlignment="Left" Margin="571,99,0,0" VerticalAlignment="Top" Height="25" Width="92"/>
         </Grid>
     </Grid>
 </UserControl>

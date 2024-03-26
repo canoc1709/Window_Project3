@@ -64,7 +64,7 @@ namespace Test
             DataTable dt = new DataTable();
             if (Check_Ungvien.IsChecked == true)
             {
-                dt = ungvienDAO.Loadthongtin(txtUsername.Text.Trim(), txtPassword.Text.Trim());
+                dt = ungvienDAO.Loadthongtin(txtUsername.Text, txtPassword.Text);
                 UngVien ungvien = new UngVien();
                 foreach (DataRow dr in dt.Rows)
                 {
@@ -83,10 +83,22 @@ namespace Test
             }
             else if(Check_Nhanvien.IsChecked == true)
             {
-                dt = congtyDAO.LoadCongty(txtUsername.Text.Trim(), txtPassword.Text.Trim());
-                    FVP_CongTy vP_CongTy = new FVP_CongTy();
+                dt = congtyDAO.LoadCongty(txtUsername.Text, txtPassword.Text);
+                Congty congty = new Congty();
+                foreach(DataRow dr in dt.Rows)
+                {
+                    congty = new Congty(dr);
+                }
+                if(congty.ID != 0)
+                {
+                    FVP_CongTy vP_CongTy = new FVP_CongTy(congty);
                     vP_CongTy.Show();
                     this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("no acc");
+                }
             }
             else
             {

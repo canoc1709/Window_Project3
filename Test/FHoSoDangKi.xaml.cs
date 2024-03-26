@@ -50,6 +50,21 @@ namespace Test
             get { return txtKinhNghiem; }
             set { txtKinhNghiem = value; }
         }
+        public DatePicker DtpNgaysinh
+        {
+            get { return dtpNgaysinh; }
+            set { dtpNgaysinh = value; }
+        }
+        public Button BtnSua
+        {
+            get { return btnSua; }
+            set { btnSua = value; }
+        }
+        public Button BtnLuu
+        {
+            get { return btnLuu; }
+            set { btnLuu = value; }
+        }
         public FHoSoDangKi()
         {
             InitializeComponent();
