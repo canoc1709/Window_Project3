@@ -35,15 +35,12 @@ namespace Test
         }
         private void DangKy_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("This is DangKy_Click");
             if(rbtCheck_Ungvien.IsChecked == true)
             {
-                //MessageBox.Show(txtUsername + "  " + txtPassword);
-                //ungvienDAO.Themtaikhoan(txtUsername.Text, txtPassword.Text, txtMail.Text);
-                //FDangnhap dangnhap = new FDangnhap();
-                //dangnhap.Show();
-                //this.Close();
-                MessageBox.Show(txtUsername.Text + "  " + txtPassword.Text);
+                ungvienDAO.Themtaikhoan(txtUsername.Text, txtPassword.Text, txtMail.Text);
+                FDangnhap dangnhap = new FDangnhap();
+                dangnhap.Show();
+                this.Close();
             }
             else if(rbtCheckbox_Nhanvien.IsChecked == true)
             {

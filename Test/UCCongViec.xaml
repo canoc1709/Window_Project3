@@ -17,9 +17,9 @@
 
         </StackPanel>
         <StackPanel Margin="225,0,165,0">
-            <TextBox x:Name="lblTencty" Height="68" Text="Tên công ty:" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18"/>
-            <TextBox x:Name="lblChucvu" Height="38" Text="Công việc:" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18"/>
-            <TextBox x:Name="lblLuong" Height="36" Text="Lương:" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18"/>
+            <TextBox x:Name="lblTencty" Height="68" Text="Tên công ty:" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18" IsReadOnly="True"/>
+            <TextBox x:Name="lblChucvu" Height="38" Text="Công việc:" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18" IsReadOnly="True"/>
+            <TextBox x:Name="lblLuong" Height="36" Text="Lương:" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18" IsReadOnly="True"/>
         </StackPanel>
         <StackPanel Margin="501,0,37,0" >
             <Button x:Name="btnChitiet" Height="150" Width="110" Content="Xem chi tiết" Background="{x:Null}" BorderBrush="{x:Null}"/>

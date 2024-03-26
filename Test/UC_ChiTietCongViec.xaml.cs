@@ -55,6 +55,21 @@ namespace Test
             get { return btnDangki; }
             set { btnDangki = value; }
         }
+        public Button BtnXoa
+        {
+            get { return btnXoa; }
+            set { btnXoa = value; }
+        }
+        public Button BtnSua
+        {
+            get { return btnSua; }
+            set { btnSua = value; }
+        }
+        public Button BtnLuu
+        {
+            get { return btnLuu; }
+            set { btnLuu = value; }
+        }
         public UC_ChiTietCongViec()
         {
             InitializeComponent();

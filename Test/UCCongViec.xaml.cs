@@ -39,9 +39,9 @@ namespace Test
         }
         private void UCCongViec_Load(object sender, RoutedEventArgs e)
         {
-            lblChucvu.Text += congviec.Chucvu;
-            lblLuong.Text += congviec.Luong.ToString();
-            lblTencty.Text += congviec.Tencty;
+            lblChucvu.Text = "Cong viec: " + congviec.Chucvu;
+            lblLuong.Text = "Luong:" + congviec.Luong.ToString();
+            lblTencty.Text = "Ten cong ty: " + congviec.Tencty;
         }
     }
 }

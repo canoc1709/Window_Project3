@@ -57,8 +57,9 @@ namespace Test
 			Mail = (string)dr[3];
 			Address = (string)dr[4];
 		}
-		public Congty(string name, string phonenumber, string address, string mail)
+		public Congty(int id, string name, string phonenumber, string address, string mail)
 		{
+			ID = id;
 			Name = name;
 			Phonenumber = phonenumber;
 			Address = address;

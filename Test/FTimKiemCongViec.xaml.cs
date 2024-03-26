@@ -23,6 +23,7 @@ namespace Test
     {
         CongviecDAO congviecDAO = new CongviecDAO();
         UngVien ungvien = new UngVien();
+        Congviec congviec = new Congviec();
         public FTimKiemCongViec()
         {
             InitializeComponent();
@@ -47,7 +48,7 @@ namespace Test
             dt = congviecDAO.LoadCongviec();
             foreach(DataRow dr in dt.Rows)
             {
-                Congviec congviec = new Congviec(dr);
+                congviec = new Congviec(dr);
                 UCCongViec ucCongViec = new UCCongViec(congviec);
                 ucCongViec.BtnChitiet.Click += (na, RoutedEventArgs) =>
                 {

@@ -6,6 +6,7 @@ using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Windows.Resources;
 
 namespace Test
 {
@@ -68,8 +69,9 @@ namespace Test
 			Birthdate = (DateTime)dr[3];
 			Phonenumber = (string)dr[4];
 			Mail = (string)dr[5];
+			Experience = (string)dr[6];
 		}
-		public UngVien(int id,string name,string sex,string phonenumber,string mail, DateTime birthdate)
+		public UngVien(int id,string name,string sex,string phonenumber,string mail, DateTime birthdate, string experience)
 		{
 			ID = id;
 			Name = name;
@@ -77,7 +79,8 @@ namespace Test
 			Phonenumber = phonenumber;
 			Mail = mail;
 			Birthdate = birthdate;
-		}
+			Experience = experience;
+        }
 		public bool Checknull(object myObject)
 		{
 			foreach(PropertyInfo pi in myObject.GetType().GetProperties())
