@@ -45,13 +45,16 @@ namespace Test
             this.Close();
             dangki.Show();
         }
-        private void DenTrangChu_Click(object sender, RoutedEventArgs e)
+        private void DenTrangChu_Click(object sender, RoutedEventArgs e)                                                                                     
         {
             FTrangChu main = new FTrangChu();
             main.Show();
             this.Close();
         }
 
-
+        private void BtnQuit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

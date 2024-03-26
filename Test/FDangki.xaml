@@ -12,7 +12,7 @@
         <Label Content="Email:" HorizontalAlignment="Left" Margin="33,315,0,0" VerticalAlignment="Top" OpacityMask="Black" Foreground="#FFE2CC39" FontFamily="Arial Black"/>
         <Label Content="Tên tài khoản:" HorizontalAlignment="Left" Margin="32,197,0,0" VerticalAlignment="Top" OpacityMask="Black" Foreground="#FFE2CC39" FontFamily="Arial Black"/>
         <Label Content="Mật khẩu:" HorizontalAlignment="Left" Margin="33,0,0,0" VerticalAlignment="Center" OpacityMask="Black" Foreground="#FFE2CC39" FontFamily="Arial Black"/>
-        <TextBox Style="{StaticResource TxtDangNhap}" x:Name="txtUsername" HorizontalAlignment="Left" Margin="169,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" Height="25" Background="White"/>
+        <TextBox x:Name="txtUsername" Style="{StaticResource TxtDangNhap}" HorizontalAlignment="Left" Margin="169,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" Height="25" Background="White" TextChanged="txtUsername_TextChanged"/>
         <TextBox Style="{StaticResource TxtMatKhau}" x:Name="txtPassword" HorizontalAlignment="Left" Margin="169,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" Height="25" Background="White"/>
         <TextBox Style="{StaticResource TxtMatKhau}" HorizontalAlignment="Left" Margin="169,275,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174"  Height="25" Background="White"/>
         <TextBox Style="{StaticResource TxtEmail}" x:Name="txtMail" HorizontalAlignment="Left" Margin="169,314,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" Background="White"/>

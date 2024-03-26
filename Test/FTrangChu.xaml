@@ -37,7 +37,7 @@
                        Foreground="White"
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center" Height="35" Width="150" FontSize="15" Content="Trang Chủ" Click="DenTrangChu_Click" BorderBrush="{x:Null}"/>
-            <Button x:Name="Quit_Button" Width="34" HorizontalAlignment="Left" Grid.Column="7" Margin="66,0,0,0" BorderBrush="{x:Null}" Height="35" VerticalAlignment="Top">
+            <Button x:Name="Quit_Button" Width="34" HorizontalAlignment="Left" Grid.Column="7" Margin="66,0,0,0" BorderBrush="{x:Null}" Height="35" VerticalAlignment="Top" Click="BtnQuit_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/icons8-quit-48.png"/>
                 </Button.Background>

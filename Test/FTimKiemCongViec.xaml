@@ -4,7 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Test"
+        xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d" Height="450" Width="800" ResizeMode="NoResize" Title="Tìm kiếm">
+
     <Grid Background="White" Margin="0,10,0,-16">
         <Grid.ColumnDefinitions>
 
@@ -19,12 +21,15 @@
             <Button.Background>
                 <ImageBrush ImageSource="/magnifier.png"/>
             </Button.Background>
-
         </Button>
+        <Button x:Name="btnLoc" Content ="" HorizontalAlignment="Left" Margin="622,43,0,0" VerticalAlignment="Top" Height="33" Width="33" BorderBrush="{x:Null}" RenderTransformOrigin="0.41,0.41">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/icons8-sort-50.png" />
 
+            </Button.Background>
+        </Button>
         <StackPanel Margin="0,103,0,0" >
-            <ListView x:Name="ltvCongviec" BorderBrush="{x:Null}" Height="338">
-            </ListView>
+            <ListView x:Name="ltvCongviec" BorderBrush="{x:Null}" Height="338" Width="800"/>
         </StackPanel>
         <Button Content="Quay lại" HorizontalAlignment="Left" Margin="23,10,0,0" VerticalAlignment="Top" Height="37" Width="96" Background="{x:Null}" BorderBrush="#FFB74747" Foreground="#FFFB8686" FontSize="16" FontWeight="Bold" Click="Button_Click"/>
     </Grid>
