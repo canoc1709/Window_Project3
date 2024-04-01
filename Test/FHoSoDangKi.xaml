@@ -4,27 +4,112 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Test"
-             mc:Ignorable="d" d:DesignWidth="875" Height="525">
+             mc:Ignorable="d" d:DesignWidth="875" Height="525"
+             Background="Transparent">
+            
     <Grid x:Name="ltv" Background="White" Margin="1,0,-1,0">
+        <Border>
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,2"
+                                     EndPoint="1,1">
+                    <GradientStop Color="#FFFFFF"
+                                  Offset="0.1"/>
+                    <GradientStop Color="#1e90ff"
+                                  Offset="1.5"/>
+                    
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
         <StackPanel Margin="24,6,646,312" HorizontalAlignment="Left" VerticalAlignment="Top" >
             <Image x:Name="imgNhanVien" Width="154" Height="191"
        Source="Images/profile.png"/>
         </StackPanel>
-
-        <Label x:Name="lbHoTen" Content="Họ tên" HorizontalAlignment="Left" Margin="276,63,0,0" VerticalAlignment="Top" Height="27" Width="54" x:FieldModifier="private"/>
-        <Label x:Name="lbNamSinh" Content="Năm sinh" HorizontalAlignment="Left" Margin="276,131,0,0" VerticalAlignment="Top" Height="28" Width="80" x:FieldModifier="private"/>
-        <Label x:Name="lbEmail" Content="Email" HorizontalAlignment="Left" Margin="276,164,0,0" VerticalAlignment="Top" Height="29" Width="81" x:FieldModifier="private"/>
-        <TextBox  x:Name="txtHoTen_Dangky" HorizontalAlignment="Left" Margin="376,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="159" RenderTransformOrigin="0.037,0.601" IsReadOnly="True" x:FieldModifier="private" />
-        <TextBox  x:Name="txtNamSinh_Dangky" HorizontalAlignment="Left" Margin="376,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="159" RenderTransformOrigin="0.15,0.445" IsReadOnly="True" x:FieldModifier="private"/>
-        <TextBox  x:Name="txtEmail_Dangky" HorizontalAlignment="Left" Margin="376,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="159" IsReadOnly="True" x:FieldModifier="private"/>
-        <Label x:Name="lbGioiTinh" Content="Giới tính" HorizontalAlignment="Left" Margin="276,95,0,0" VerticalAlignment="Top" Height="24" Width="63" x:FieldModifier="private"/>
-        <Label x:Name="lbSDT" Content="SĐT" HorizontalAlignment="Left" Margin="277,198,0,0" VerticalAlignment="Top" Height="28" Width="80" x:FieldModifier="private"/>
-        <Label x:Name="lbKinhNghiem" Content="Kinh nghiệm" HorizontalAlignment="Left" Margin="277,231,0,0" VerticalAlignment="Top" Height="29" Width="81" x:FieldModifier="private"/>
-        <TextBox  x:Name="txtGioiTinh" HorizontalAlignment="Left" Margin="376,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="159" RenderTransformOrigin="0.037,0.601" IsReadOnly="True" x:FieldModifier="private"/>
-        <TextBox  x:Name="txtSDT" HorizontalAlignment="Left" Margin="376,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="159" RenderTransformOrigin="0.15,0.445" IsReadOnly="True" x:FieldModifier="private"/>
-        <TextBox  x:Name="txtKinhNghiem" HorizontalAlignment="Left" Margin="376,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="159" IsReadOnly="True"/>
-        <Button x:Name="btnSua" Content="Sua" HorizontalAlignment="Left" Margin="350,293,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnLuu" Content="Luu" HorizontalAlignment="Left" Margin="479,293,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnChonAnh" Click="TaiAnh_Click" Content="Chọn ảnh" Margin="69,202,742,286" Height="37" Width="64" Background="#FFD2F7F3" BorderThickness="0" FontStyle="Normal"/>
+        <Button x:Name="btnSua" Content="Sửa" HorizontalAlignment="Left" Margin="300,340,0,0" VerticalAlignment="Top" Height="37" Width="64" Background="#FFD2F7F3" BorderThickness="0"/>
+        <Button x:Name="btnLuu" Content="Lưu" HorizontalAlignment="Left" Margin="396,340,0,0" VerticalAlignment="Top" Height="37" Width="64" Background="#FFD2F7F3" BorderThickness="0"/>
         <DatePicker x:Name="dtpNgaysinh" HorizontalAlignment="Left" Margin="552,133,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <StackPanel HorizontalAlignment="Left" Height="268" Margin="200,40,0,0" VerticalAlignment="Top" Width="81" RenderTransformOrigin="0.5,0.5">
+            <StackPanel.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.809"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="1.186"/>
+                </TransformGroup>
+            </StackPanel.RenderTransform>
+            <Label x:Name="lbHoTen" Content="Họ tên" HorizontalAlignment="Left" Margin="0,5,0,0" VerticalAlignment="Top" Height="27" Width="54" x:FieldModifier="private"/>
+            <Label x:Name="lbNamSinh" Content="Năm sinh" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Height="28" Width="80" x:FieldModifier="private"/>
+            <Label x:Name="lbEmail" Content="Email" HorizontalAlignment="Left" Margin="0,15,0,0" VerticalAlignment="Top" Height="29" Width="81" x:FieldModifier="private"/>
+            <Label x:Name="lbGioiTinh" Content="Giới tính" HorizontalAlignment="Left" Margin="0,20,0,0" VerticalAlignment="Top" Height="24" Width="63" x:FieldModifier="private"/>
+            <Label x:Name="lbSDT" Content="SĐT" HorizontalAlignment="Left" Margin="0,25,0,0" VerticalAlignment="Top" Height="28" Width="80" x:FieldModifier="private"/>
+            <Label x:Name="lbKinhNghiem" Content="Kinh nghiệm" HorizontalAlignment="Left" Margin="0,30,0,0" VerticalAlignment="Top" Height="29" Width="81" x:FieldModifier="private"/>
+
+
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="268" Margin="300,40,0,0" VerticalAlignment="Top" Width="200" RenderTransformOrigin="0.5,0.5">
+            <StackPanel.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.809"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="1.186"/>
+                </TransformGroup>
+            </StackPanel.RenderTransform>
+            <TextBox  x:Name="txtHoTen_Dangky" HorizontalAlignment="Left" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="159" RenderTransformOrigin="0.037,0.601" IsReadOnly="True" x:FieldModifier="private" Foreground="Black" FontWeight="Bold">
+                <TextBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFFFFF" 
+                  Offset="0.2"/>
+                        <GradientStop Color="#ffa500" Offset="1.5"/>
+                    </LinearGradientBrush>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox  x:Name="txtNamSinh_Dangky" HorizontalAlignment="Left" Margin="0,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="159" RenderTransformOrigin="0.15,0.445" IsReadOnly="True" x:FieldModifier="private" Foreground="Black" FontWeight="Bold">
+                <TextBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFFFFF" 
+                                        Offset="0.2"/>
+                        <GradientStop Color="#ffa500" Offset="1.5"/>
+                    </LinearGradientBrush>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox  x:Name="txtEmail_Dangky" HorizontalAlignment="Left" Margin="0,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="159" IsReadOnly="True" x:FieldModifier="private"  Foreground="Black" FontWeight="Bold">
+                <TextBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFFFFF" 
+                    Offset="0.2"/>
+                        <GradientStop Color="#ffa500" Offset="1.5"/>
+                    </LinearGradientBrush>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox  x:Name="txtGioiTinh" HorizontalAlignment="Left" Margin="0,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="159" RenderTransformOrigin="0.037,0.601" IsReadOnly="True" x:FieldModifier="private"  Foreground="Black" FontWeight="Bold">
+                <TextBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFFFFF" 
+                    Offset="0.2"/>
+                        <GradientStop Color="#ffa500" Offset="1.5"/>
+                    </LinearGradientBrush>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox  x:Name="txtSDT" HorizontalAlignment="Left" Margin="0,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="159" RenderTransformOrigin="0.15,0.445" IsReadOnly="True" x:FieldModifier="private"  Foreground="Black" FontWeight="Bold">
+                <TextBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFFFFF" 
+                    Offset="0.2"/>
+                        <GradientStop Color="#ffa500" Offset="1.5"/>
+                    </LinearGradientBrush>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox  x:Name="txtKinhNghiem" HorizontalAlignment="Left" Margin="0,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="159" IsReadOnly="True"  Foreground="Black" FontWeight="Bold">
+                <TextBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFFFFF" 
+                    Offset="0.2"/>
+                        <GradientStop Color="#ffa500" Offset="1.5"/>
+                    </LinearGradientBrush>
+                </TextBox.Background>
+            </TextBox>
+
+        </StackPanel>
     </Grid>
 </UserControl>

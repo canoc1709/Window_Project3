@@ -17,9 +17,9 @@
 
         </StackPanel>
         <StackPanel Margin="0,0,165,0">
-            <TextBox x:Name="lblTencty" Height="68" Text="Company:" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18" IsReadOnly="True" Width="485"/>
-            <TextBox x:Name="lblChucvu" Height="38" Text="Job:" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18" IsReadOnly="True"/>
-            <TextBox x:Name="lblLuong" Height="36" Text="Salary:" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18" IsReadOnly="True"/>
+            <TextBox x:Name="lblTencty" Height="68" Text="Company:" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18" IsReadOnly="True" Width="485" Foreground="#FFFFFF"/>
+            <TextBox x:Name="lblChucvu" Height="38" Text="Job:" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18" IsReadOnly="True" Foreground="#FFFFFF"/>
+            <TextBox x:Name="lblLuong" Height="36" Text="Salary:" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18" IsReadOnly="True" Foreground="#FFFFFF"/>
         </StackPanel>
         <StackPanel Margin="501,0,37,0" >
             <Button x:Name="btnChitiet" Height="150" Width="110" Content="Details" Background="{x:Null}" BorderBrush="{x:Null}"/>

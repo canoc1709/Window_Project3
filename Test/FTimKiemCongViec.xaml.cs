@@ -69,5 +69,11 @@ namespace Test
             ChiTietCongViec chitiet = new ChiTietCongViec(congviec, ungvien);
             chitiet.Show();
         }
+
+        private void btnLoc_Click(object sender, RoutedEventArgs e)
+        {
+            FLocTimKiem floctimkiem = new FLocTimKiem();
+            floctimkiem.Show();
+        }
     }
 }

@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Microsoft.Win32;
+using System.Windows.Media.Imaging;
+using System.Runtime.CompilerServices;
 
 namespace Test
 {
@@ -69,5 +72,22 @@ namespace Test
         {
             InitializeComponent();
         }
+
+        private void TaiAnh_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Title = "Chọn ảnh";
+            openFileDialog.Filter = "All supported graphics|*.jpg;*.jpeg;*.png|" +
+                                    "JPEG (*.jpg;*.jpeg)|*.jpg;*.jpeg|" +
+                                    "Portable Network Graphic (*.png)|*.png";
+            if (openFileDialog.ShowDialog() == true)
+            {
+                // Tạo một BitmapImage và đặt nó làm nguồn cho Image control.
+                BitmapImage bitmapImage = new BitmapImage(new Uri(openFileDialog.FileName));
+                imgNhanVien.Source = bitmapImage;
+            }
+        }
+        
+        
     }
 }
