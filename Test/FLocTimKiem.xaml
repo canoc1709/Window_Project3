@@ -135,80 +135,16 @@
 
 
     </Window.Resources>
-    <Grid>
-        <Border
-        Width="750"
-        CornerRadius="15"
-        Background="#524E4F" Margin="25,0,25,10">
-            <Border.Effect>
-                <DropShadowEffect Color="#000000"
-                          Opacity="0.5"
-                          Direction="90"
-                          ShadowDepth="2"
-                          BlurRadius="25"/>
-            </Border.Effect>
-        </Border>
-        <!--// Menu Border//-->
-        <Border Height="40"
-        Width="300"
-        Background="#363435"
-        BorderBrush="#363435"
-        BorderThickness="3"
-        VerticalAlignment="Top"
-        HorizontalAlignment="Center"
-        Margin="0,75,350,0"
-        CornerRadius="5"/>
-        <!--// Menu Loc theo luong-->
-        <Menu Height="30"
-        Width="300"
-        Background="#363435"
-        VerticalAlignment="Top"
-        HorizontalAlignment="Center"
-        Margin="0,80,350,0">
-            <MenuItem Header="Lọc theo yêu cầu" 
-        Style="{StaticResource Services_MenuItem_With_Dropdown}" Width="282">
-                <MenuItem.Icon>
-                    <Image Source="Images/salarywhite.png"
-                           Stretch="Uniform"/>  
-                </MenuItem.Icon>
-            </MenuItem>
-
-        </Menu>
-        <!--// Menu Border//-->
-        <Border Height="40"
-                Width="300"
-                Background="#363435"
-                BorderBrush="#363435"
-                BorderThickness="3"
-                VerticalAlignment="Top"
-                HorizontalAlignment="Center"
-                Margin="350,75,0,0"
-                CornerRadius="5"/>
-        <!--// Menu Loc theo yeu cau-->
-        <Menu Height="30"
-                Width="300"
-                Background="#363435"
-                VerticalAlignment="Top"
-                HorizontalAlignment="Center"
-                Margin="350,80,0,0">
-            <MenuItem Header="Lọc theo yêu cầu" 
-                Style="{StaticResource Services_MenuItem_With_Dropdown}" Width="282"/>
-
-        </Menu>
-        <Border
-                Width="300"
-                Background="#363435"
-                BorderBrush="#363435"
-                BorderThickness="3"
-                Margin="75,134,425,26"
-                CornerRadius="10"/>
-        <Border
-            Width="300"
-            Background="#363435"
-            BorderBrush="#363435"
-            BorderThickness="3"
-            Margin="425,134,75,26"
-            CornerRadius="10"/>
+    <Grid Background="White">
+        <Label Content="Lọc theo lương" HorizontalAlignment="Left" Height="47" Margin="100,99,0,0" VerticalAlignment="Top" Width="220" FontWeight="Bold" FontSize="22" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Content="Lọc theo yêu cầu" HorizontalAlignment="Left" Height="47" Margin="470,99,0,0" VerticalAlignment="Top" Width="220" FontWeight="Bold" FontSize="22" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <StackPanel HorizontalAlignment="Left" Height="171" Margin="81,187,0,0" VerticalAlignment="Top" Width="260" Background="White">
+            <RadioButton Content="Lương tăng dần" Width="112" Height="50" Background="Red" Margin="0,30,130,0"/>
+            <RadioButton Content="Lương giảm dần" Width="112" Height="50" Background="Green" Margin="0,30,130,0"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="171" Margin="450,187,0,0" VerticalAlignment="Top" Width="260" Background="White">
+           
+        </StackPanel>
 
 
     </Grid>

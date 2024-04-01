@@ -64,7 +64,7 @@ namespace Test
             DataTable dt = new DataTable();
             if (Check_Ungvien.IsChecked == true)
             {
-                dt = ungvienDAO.Loadthongtin(txtUsername.Text, txtPassword.Text);
+                dt = ungvienDAO.Loadthongtin(txtUsername.Text, PB_Password.Password);
                 UngVien ungvien = new UngVien();
                 foreach (DataRow dr in dt.Rows)
                 {
@@ -78,12 +78,12 @@ namespace Test
                 }
                 else
                 {
-                    MessageBox.Show("no acc");
+                    MessageBox.Show("Không tồn tại tài khoản!");
                 }
             }
             else if(Check_Nhanvien.IsChecked == true)
             {
-                dt = congtyDAO.LoadCongty(txtUsername.Text, txtPassword.Text);
+                dt = congtyDAO.LoadCongty(txtUsername.Text, PB_Password.Password);
                 Congty congty = new Congty();
                 foreach(DataRow dr in dt.Rows)
                 {
@@ -97,12 +97,12 @@ namespace Test
                 }
                 else
                 {
-                    MessageBox.Show("no acc");
+                    MessageBox.Show("Không tồn tại tài khoản trên!");
                 }
             }
             else
             {
-                MessageBox.Show("Vui long chon role");
+                MessageBox.Show("Vui lòng chọn chức vụ!");
             }
 
         }
@@ -118,11 +118,11 @@ namespace Test
 
         private void txtPassword_MouseEnter(object sender, MouseEventArgs e)
         {
-            if (txtPassword.Text == "Password")
+            /*if (txtPassword.Text == "Password")
             {
                 txtPassword.Text = "";
                 txtPassword.Foreground = base.Foreground;
-            }
+            }*/
         }
 
         private void txtUsername_MouseLeave(object sender, MouseEventArgs e)
@@ -136,11 +136,16 @@ namespace Test
 
         private void txtPassword_MouseLeave(object sender, MouseEventArgs e)
         {
-            if (txtPassword.Text == "")
+           /* if (txtPassword.Text == "")
             {
                 txtPassword.Text = "Password";
 
-            }
+            }*/
         }
+
+   
+
+
+     
     }
 }
