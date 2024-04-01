@@ -82,5 +82,12 @@ namespace Test
             txtMail.IsReadOnly = true;
             txtSdt.IsReadOnly = true;
         }
+
+        private void btnDangxuat_Click(object sender, RoutedEventArgs e)
+        {
+            FTrangChu fTrangChu = new FTrangChu();
+            fTrangChu.Show();
+            this.Close();
+        }
     }
 }

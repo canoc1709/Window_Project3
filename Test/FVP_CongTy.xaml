@@ -47,6 +47,15 @@
         </TabControl>
         <Button x:Name="btnSua" Content="Sua" HorizontalAlignment="Left" Margin="44,374,0,0" VerticalAlignment="Top" Click="btnSua_Click"/>
         <Button x:Name="btnLuu" Content="Luu" HorizontalAlignment="Left" Margin="118,374,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.833,0.754" Click="btnLuu_Click"/>
+        <Button Content="Đăng xuất" 
+                HorizontalAlignment="Left" 
+                Margin="621,394,0,0" 
+                VerticalAlignment="Top" 
+                Width="144" 
+                Height="30"
+                FontFamily="Rubik Medium"
+                FontSize="19"
+                Click="btnDangxuat_Click"/>
 
     </Grid>
 </Window>
