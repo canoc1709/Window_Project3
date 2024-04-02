@@ -11,6 +11,7 @@
     <Grid x:Name="ltv" Background="White" Margin="1,0,-1,0">
         <Border>
             <Border.Background>
+       
                 <LinearGradientBrush StartPoint="0,2"
                                      EndPoint="1,1">
                     <GradientStop Color="#FFFFFF"
@@ -47,7 +48,7 @@
 
 
         </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="268" Margin="300,40,0,0" VerticalAlignment="Top" Width="200" RenderTransformOrigin="0.5,0.5">
+        <StackPanel HorizontalAlignment="Left" Height="268" Margin="300,40,0,0" VerticalAlignment="Top" Width="167" RenderTransformOrigin="0.5,0.5">
             <StackPanel.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>

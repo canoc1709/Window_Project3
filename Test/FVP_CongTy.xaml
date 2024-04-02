@@ -8,6 +8,12 @@
         mc:Ignorable="d"
         Title="Van Phong Cong Ty" Height="450" Width="800">
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF9E8AFF" Offset="0.321"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <StackPanel Margin="20,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="159" Width="159" >
             <Image x:Name="imgCongTy"
             Source="Images/profile.png"/>
@@ -21,7 +27,7 @@
         <Image x:Name="iconPhone" HorizontalAlignment="Left" Height="31" Margin="554,394,0,0" VerticalAlignment="Top" Width="31" RenderTransformOrigin="1.27,0.516"/>
         <TabControl Margin="208,87,10,45">
             <TabItem Header="Tuyển việc" Width="80" Height="30" Background="{x:Null}" BorderBrush="Black">
-                <Grid Background="#F8F8FF" Height="283">
+                <Grid Background="White" Height="283">
                     <Grid.ColumnDefinitions>
 
                     </Grid.ColumnDefinitions>
@@ -35,7 +41,7 @@
                     <TextBox x:Name="txtLuong"  HorizontalAlignment="Left" Margin="105,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Height="25"/>
                     <TextBox x:Name="txtMotacv"  HorizontalAlignment="Left" Margin="140,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Height="73"/>
                     <TextBox x:Name="txtPhucloi"  HorizontalAlignment="Left" Margin="408,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" Height="98"/>
-                    <Button Margin="408,203,20,51" Content="Đăng tuyển" Background="#FFEBB2B2" BorderBrush="{x:Null}" FontSize="18" Click="btnDangtuyen_Click"/>
+                    <Button Margin="443,179,28,75" Content="Đăng tuyển" Background="#FFEBB2B2" BorderBrush="{x:Null}" FontSize="18" Click="btnDangtuyen_Click"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Xem hồ sơ" Width="80" Height="30" Background="{x:Null}" BorderBrush="Black" OpacityMask="#FFF3AFAF">
@@ -45,17 +51,17 @@
                 </Grid>
             </TabItem>
         </TabControl>
-        <Button x:Name="btnSua" Content="Sua" HorizontalAlignment="Left" Margin="44,374,0,0" VerticalAlignment="Top" Click="btnSua_Click"/>
-        <Button x:Name="btnLuu" Content="Luu" HorizontalAlignment="Left" Margin="118,374,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.833,0.754" Click="btnLuu_Click"/>
-        <Button Content="Đăng xuất" 
+        <Button x:Name="btnSua" Content="Sua" HorizontalAlignment="Left" Margin="27,374,0,0" VerticalAlignment="Top" Click="btnSua_Click" Background="#FFEBB2B2" Width="45" BorderBrush="{x:Null}" Height="20"/>
+        <Button x:Name="btnLuu" Content="Luu" Background="#FFEBB2B2" HorizontalAlignment="Left" Margin="134,374,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.833,0.754" Click="btnLuu_Click" Width="45" BorderBrush="{x:Null}" Height="20"/>
+        <Button Content="Đăng xuất" Background="#FFEBB2B2"
                 HorizontalAlignment="Left" 
-                Margin="621,394,0,0" 
+                Margin="685,394,0,0" 
                 VerticalAlignment="Top" 
-                Width="144" 
+                Width="105" 
                 Height="30"
                 FontFamily="Rubik Medium"
                 FontSize="19"
-                Click="btnDangxuat_Click"/>
+                Click="btnDangxuat_Click" BorderBrush="{x:Null}"/>
 
     </Grid>
 </Window>

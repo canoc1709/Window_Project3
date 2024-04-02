@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("magnifier.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons8-planet-100.png")]
 
 

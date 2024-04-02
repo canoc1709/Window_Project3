@@ -227,9 +227,7 @@ C:\Users\HAI DANG\source\repos\Window_Project3\Test\bin\Debug\MaterialDesignThem
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\bin\Debug\Microsoft.Xaml.Behaviors.pdb
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\bin\Debug\Microsoft.Xaml.Behaviors.xml
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\ProjectWF.csproj.AssemblyReference.cache
-C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\Theme\Textbox.baml
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\ChiTietCongViec.g.cs
-C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\FDanhSachLoc.g.cs
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\FLocTimKiem.g.cs
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\UCCongViec.g.cs
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\FDangki.g.cs
@@ -246,7 +244,6 @@ C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\Test_MarkupCompile
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\Test_MarkupCompile.lref
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\App.baml
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\ChiTietCongViec.baml
-C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\FDanhSachLoc.baml
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\FLocTimKiem.baml
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\UCCongViec.baml
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\FDangki.baml
