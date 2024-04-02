@@ -6,25 +6,23 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
        TextElement.FontWeight="Regular"
-       TextElement.FontSize="13"
        TextOptions.TextFormattingMode="Ideal"
        TextOptions.TextRenderingMode="Auto"
        Background="{DynamicResource MaterialDesignPaper}"
        FontFamily="{DynamicResource MaterialDesignFont}"
         mc:Ignorable="d"
-        Title="Dangnhap" Height="446" Width="310" MouseDown="Grid_MouseDown">
-    <Grid Background="Black" Margin="0,10,0,0" HorizontalAlignment="Center" Width="812" VerticalAlignment="Center">
+        Title="Dangnhap" Height="463" Width="310" MouseDown="Grid_MouseDown">
+    <Grid Background="Black" Margin="0,10,0,0" HorizontalAlignment="Center" Width="812" >
 
-        <Rectangle HorizontalAlignment="Left" Height="495" Margin="208,-28,0,0" VerticalAlignment="Top" Width="376" Fill="#0F0F2D" RadiusX="42" RadiusY="42" Grid.RowSpan="3"/>
+        <Rectangle HorizontalAlignment="Left" Height="465" Margin="252,-28,0,0" VerticalAlignment="Top" Width="312" Fill="#FF2B2B44" RadiusX="42" RadiusY="42"/>
         <StackPanel Margin="228,34,31,33" Grid.RowSpan="3"/>
         <Label Content="Đăng nhập" HorizontalAlignment="Left" Margin="328,58,0,0" VerticalAlignment="Top" Width="152" Foreground="#FF00FFFA" Height="44" FontSize="24" FontFamily="Arial Black" FontWeight="Bold" Background="{x:Null}"/>
-        <Image HorizontalAlignment="Left" Height="30" Margin="290,145,0,0" VerticalAlignment="Top" Width="32" Source="./Images/tk.png"/>
-        <Image HorizontalAlignment="Left" Height="30" Margin="290,204,0,0" VerticalAlignment="Top" Width="31" Source="./Images/locked.png"/>
-        <TextBox x:Name="txtUsername" HorizontalAlignment="Center" Margin="0,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" BorderBrush="#FF2F5EEC" CaretBrush="#FF23C7E6" Background="#FFD2F7F3" Height="25" TextChanged="TextBox_TextChanged_1" VerticalContentAlignment="Center" Text="Username" MouseEnter="txtUsername_MouseEnter" MouseLeave="txtUsername_MouseLeave"/>
-        <PasswordBox Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" x:Name="PB_Password" HorizontalAlignment="Center" Margin="0,210,0,0" VerticalAlignment="Top" Width="148" Height="31" CaretBrush="#FF23C7E6" BorderBrush="#FF2F5EEC" MouseEnter="txtPassword_MouseEnter" MouseLeave="txtPassword_MouseLeave" Background="#FFD2F7F3" Password="" materialDesign:HintAssist.Hint="Password" VerticalContentAlignment="Center" FontSize="10" />
-        <Button Content="Quay lại" HorizontalAlignment="Left" Margin="281,251,0,0" VerticalAlignment="Top" Click="Button_Click" Height="29" Width="94" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFFB8686" FontSize="16" FontWeight="Bold"/>
-        <Button Content="Đăng kí" HorizontalAlignment="Left" Margin="422,251,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.505,0.603" Background="{x:Null}" Width="94" BorderBrush="{x:Null}" Foreground="#FFFB8686" FontSize="16" FontWeight="Bold" Height="33" Click="Button_Click_2"/>
-        <Button Content="Đăng nhập" HorizontalAlignment="Left" Margin="348,289,0,0" VerticalAlignment="Top" Width="104" Height="27" Background="#FF232323" RenderTransformOrigin="0.515,0.519" BorderBrush="{x:Null}"  Foreground="#FFFB8686" FontSize="16" Click="Dangnhap_click">
+        <Image HorizontalAlignment="Left" Height="35" Margin="281,148,0,0" VerticalAlignment="Top" Width="32" Source="./Images/tk.png" RenderTransformOrigin="0.556,1.528"/>
+        <Image HorizontalAlignment="Left" Height="32" Margin="282,216,0,0" VerticalAlignment="Top" Width="31" Source="./Images/locked.png"/>
+
+        <Button Content="Quay lại" HorizontalAlignment="Left" Margin="281,283,0,0" VerticalAlignment="Top" Click="Button_Click" Height="29" Width="94" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFFB8686" FontSize="16" FontWeight="Bold"/>
+        <Button Content="Đăng kí" HorizontalAlignment="Left" Margin="427,283,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.505,0.603" Background="{x:Null}" Width="94" BorderBrush="{x:Null}" Foreground="#FFFB8686" FontSize="16" FontWeight="Bold" Height="33" Click="Button_Click_2"/>
+        <Button Content="Đăng nhập" HorizontalAlignment="Left" Margin="348,321,0,0" VerticalAlignment="Top" Width="104" Height="27" Background="#FF232323" RenderTransformOrigin="0.515,0.519" BorderBrush="{x:Null}"  Foreground="#FFFB8686" FontSize="16" Click="Dangnhap_click">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -46,10 +44,13 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <RadioButton x:Name="Check_Ungvien" Content="Ứng viên" HorizontalAlignment="Left" Height="16" Margin="318,102,0,0" VerticalAlignment="Top" Width="86" Foreground="#FF00FFFA"/>
-        <RadioButton x:Name="Check_Nhanvien" Content="Nhân viên" HorizontalAlignment="Left" Height="16" Margin="418,102,0,0" VerticalAlignment="Top" Width="86" Foreground="#FF00FFFA"/>
+        <RadioButton x:Name="Check_Ungvien" Content="Ứng viên" HorizontalAlignment="Left" Height="16" Margin="305,102,0,0" VerticalAlignment="Top" Width="86" Foreground="#FF00FFFA" BorderBrush="White" Background="White" OpacityMask="White"/>
+        <RadioButton x:Name="Check_Nhanvien" Content="Nhân viên" HorizontalAlignment="Left" Height="16" Margin="418,102,0,0" VerticalAlignment="Top" Width="86" Foreground="#FF00FFFA" BorderBrush="White" Background="White" OpacityMask="White"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="764,132,0,0" VerticalAlignment="Top"/>
-
+        <StackPanel Margin="318,148,308,162">
+            <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Username" Margin="5 5 5 27" x:Name="txtUsername" TextWrapping="Wrap" Width="177" BorderBrush="#FF2F5EEC" CaretBrush="#FF23C7E6" Background="#FFD2F7F3" Height="36" VerticalContentAlignment="Center" HorizontalContentAlignment="Left"    />
+            <PasswordBox Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" x:Name="PB_Password" CaretBrush="#FF23C7E6" BorderBrush="#FF2F5EEC"  Background="#FFD2F7F3" materialDesign:HintAssist.Hint="Password" Height="36" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"  Margin="5 5 5 27"/>
+        </StackPanel>
 
 
 

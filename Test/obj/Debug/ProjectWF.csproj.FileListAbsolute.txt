@@ -322,9 +322,7 @@ C:\Users\Yordle\OneDrive\Desktop\WF_PROJECT\Test\bin\Debug\MaterialDesignThemes.
 C:\Users\Yordle\OneDrive\Desktop\WF_PROJECT\Test\bin\Debug\Microsoft.Xaml.Behaviors.pdb
 C:\Users\Yordle\OneDrive\Desktop\WF_PROJECT\Test\bin\Debug\Microsoft.Xaml.Behaviors.xml
 C:\Users\Yordle\OneDrive\Desktop\WF_PROJECT\Test\obj\Debug\ProjectWF.csproj.AssemblyReference.cache
-C:\Users\Yordle\OneDrive\Desktop\WF_PROJECT\Test\obj\Debug\Theme\Textbox.baml
 C:\Users\Yordle\OneDrive\Desktop\WF_PROJECT\Test\obj\Debug\ChiTietCongViec.g.cs
-C:\Users\Yordle\OneDrive\Desktop\WF_PROJECT\Test\obj\Debug\FDanhSachLoc.g.cs
 C:\Users\Yordle\OneDrive\Desktop\WF_PROJECT\Test\obj\Debug\FLocTimKiem.g.cs
 C:\Users\Yordle\OneDrive\Desktop\WF_PROJECT\Test\obj\Debug\UCCongViec.g.cs
 C:\Users\Yordle\OneDrive\Desktop\WF_PROJECT\Test\obj\Debug\FDangki.g.cs
@@ -341,7 +339,6 @@ C:\Users\Yordle\OneDrive\Desktop\WF_PROJECT\Test\obj\Debug\Test_MarkupCompile.ca
 C:\Users\Yordle\OneDrive\Desktop\WF_PROJECT\Test\obj\Debug\Test_MarkupCompile.lref
 C:\Users\Yordle\OneDrive\Desktop\WF_PROJECT\Test\obj\Debug\App.baml
 C:\Users\Yordle\OneDrive\Desktop\WF_PROJECT\Test\obj\Debug\ChiTietCongViec.baml
-C:\Users\Yordle\OneDrive\Desktop\WF_PROJECT\Test\obj\Debug\FDanhSachLoc.baml
 C:\Users\Yordle\OneDrive\Desktop\WF_PROJECT\Test\obj\Debug\FLocTimKiem.baml
 C:\Users\Yordle\OneDrive\Desktop\WF_PROJECT\Test\obj\Debug\UCCongViec.baml
 C:\Users\Yordle\OneDrive\Desktop\WF_PROJECT\Test\obj\Debug\FDangki.baml

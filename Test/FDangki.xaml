@@ -3,23 +3,30 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Test"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
+          TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+          TextElement.FontWeight="Regular"
+          TextOptions.TextFormattingMode="Ideal"
+          TextOptions.TextRenderingMode="Auto"
+          Background="{DynamicResource MaterialDesignPaper}"
+          FontFamily="{DynamicResource MaterialDesignFont}"
         Title="Dangki" Height="517" Width="367" MouseDown="Grid_MouseDown" >
-    <Grid Background="#0F0F2D">
+    <Grid Background="#FF2B2B44">
         <Image HorizontalAlignment="Center" Height="97" Margin="0,38,0,0" VerticalAlignment="Top" Width="96" Source="./Images/teamwork.png"/>
-        <Label Content="Xác nhận mật khẩu:" HorizontalAlignment="Left" Margin="32,276,0,0" VerticalAlignment="Top" OpacityMask="Black" Foreground="#FFE2CC39" FontFamily="Arial Black"/>
-        <Label Content="Email:" HorizontalAlignment="Left" Margin="33,315,0,0" VerticalAlignment="Top" OpacityMask="Black" Foreground="#FFE2CC39" FontFamily="Arial Black"/>
-        <Label Content="Tên tài khoản:" HorizontalAlignment="Left" Margin="32,197,0,0" VerticalAlignment="Top" OpacityMask="Black" Foreground="#FFE2CC39" FontFamily="Arial Black"/>
-        <Label Content="Mật khẩu:" HorizontalAlignment="Left" Margin="33,0,0,0" VerticalAlignment="Center" OpacityMask="Black" Foreground="#FFE2CC39" FontFamily="Arial Black"/>
-        <TextBox x:Name="txtUsername"  HorizontalAlignment="Left" Margin="169,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" Height="25" Background="White" TextChanged="txtUsername_TextChanged" MouseEnter="txtUsername_MouseEnter" Text="Username" Foreground="Black" MouseLeave="txtUsername_MouseLeave" />
-        <TextBox  x:Name="txtPassword" HorizontalAlignment="Left" Margin="169,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" Height="25" Background="White" MouseEnter="txtPassword_MouseEnter" Text="Password" Foreground="Black" MouseLeave="txtPassword_MouseLeave"/>
-        <TextBox x:Name="txtPassword1"  HorizontalAlignment="Left" Margin="169,275,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174"  Height="25" Background="White" Text="Password" MouseEnter="Họ_và_tên_MouseEnter" Foreground="Black" TextChanged="txtPassword1_TextChanged" MouseLeave="txtPassword1_MouseLeave"/>
-        <TextBox  x:Name="txtMail" HorizontalAlignment="Left" Margin="169,314,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" Background="White" Height="25" Text="Email" MouseEnter="txtMail_MouseEnter" Foreground="Black" TextChanged="txtMail_TextChanged" MouseLeave="txtMail_MouseLeave"/>
+        <Label Content="Xác nhận mật khẩu:" HorizontalAlignment="Left" Margin="15,266,0,0" VerticalAlignment="Top" OpacityMask="Black" Foreground="#FFE2CC39" FontFamily="Arial Black" FontSize="14" RenderTransformOrigin="0.794,0.686"/>
+        <Label Content="Email:" HorizontalAlignment="Left" Margin="18,311,0,0" VerticalAlignment="Top" OpacityMask="Black" Foreground="#FFE2CC39" FontFamily="Arial Black" RenderTransformOrigin="1.054,-0.443" FontSize="14"/>
+        <Label Content="Tên tài khoản:" HorizontalAlignment="Left" Margin="15,182,0,0" VerticalAlignment="Top" OpacityMask="Black" Foreground="#FFE2CC39" FontFamily="Arial Black" Height="25" FontSize="14"/>
+        <Label Content="Mật khẩu:" HorizontalAlignment="Left" Margin="15,226,0,0" VerticalAlignment="Top" OpacityMask="Black" Foreground="#FFE2CC39" FontFamily="Arial Black" FontSize="14"/>
         <Button Content="Đăng kí" HorizontalAlignment="Left" Margin="136,400,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.17,0.603" Height="29" Width="86" Background="#FFE2A8A8" Click="DangKy_Click"/>
         <Button Content="Quay lại" HorizontalAlignment="Left" Margin="136,444,0,0" VerticalAlignment="Top" Height="29" Width="86" Background="#FFE2A8A8" Click="QuayLai_Click"/>
-        <RadioButton x:Name="rbtCheck_Ungvien" Content="Ứng viên" HorizontalAlignment="Left" Height="16" Margin="83,368,0,0" VerticalAlignment="Top" Width="86" Foreground="#FF00FFFA"/>
-        <RadioButton x:Name="rbtCheckbox_Nhanvien" Content="Nhân viên" HorizontalAlignment="Left" Height="16" Margin="189,368,0,0" VerticalAlignment="Top" Width="86" Foreground="#FF00FFFA"/>
-
+        <RadioButton x:Name="rbtCheck_Ungvien" Content="Ứng viên" HorizontalAlignment="Left" Height="27" Margin="62,368,0,0" VerticalAlignment="Top" Width="86" Foreground="#FF00FFFA" BorderBrush="White" OpacityMask="White" Background="White"/>
+        <RadioButton x:Name="rbtCheckbox_Nhanvien" Content="Nhân viên" HorizontalAlignment="Left" Height="27" Margin="219,368,0,0" VerticalAlignment="Top" Width="86" Foreground="#FF00FFFA" BorderBrush="White" Background="White" OpacityMask="White"/>
+        <StackPanel Margin="167,169,10,138" >
+            <TextBox x:Name="txtUsername"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Username" Background="White" Height="35" Margin="0 5" VerticalContentAlignment="Center" Width="170"/>
+            <PasswordBox x:Name="txtPassword"  Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" materialDesign:HintAssist.Hint="Password" Background="White" Height="35" Margin="0 5" VerticalContentAlignment="Center" Width="168"/>
+            <PasswordBox x:Name="txtPassword1" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" materialDesign:HintAssist.Hint="Password" Background="White" Height="35" Margin="0 5" VerticalContentAlignment="Center"  Width="167"/>
+            <TextBox x:Name="txtMail"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Emal" Background="White" Height="35" Margin="0 5" Width="170" VerticalContentAlignment="Center" />
+        </StackPanel>
     </Grid>
 </Window>

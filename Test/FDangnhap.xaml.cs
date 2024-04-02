@@ -116,36 +116,12 @@ namespace Test
             }
         }
 
-        private void txtPassword_MouseEnter(object sender, MouseEventArgs e)
+        
+
+  
+        private void txtUsername_TextChanged(object sender, TextChangedEventArgs e)
         {
-            /*if (txtPassword.Text == "Password")
-            {
-                txtPassword.Text = "";
-                txtPassword.Foreground = base.Foreground;
-            }*/
+
         }
-
-        private void txtUsername_MouseLeave(object sender, MouseEventArgs e)
-        {
-            if (txtUsername.Text == "")
-            {
-                txtUsername.Text = "Username";
-
-            }
-        }
-
-        private void txtPassword_MouseLeave(object sender, MouseEventArgs e)
-        {
-           /* if (txtPassword.Text == "")
-            {
-                txtPassword.Text = "Password";
-
-            }*/
-        }
-
-   
-
-
-     
     }
 }
