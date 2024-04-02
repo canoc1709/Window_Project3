@@ -72,9 +72,6 @@
     <Compile Include="CongtyDAO.cs" />
     <Compile Include="Congviec.cs" />
     <Compile Include="CongviecDAO.cs" />
-    <Compile Include="FDanhSachLoc.xaml.cs">
-      <DependentUpon>FDanhSachLoc.xaml</DependentUpon>
-    </Compile>
     <Compile Include="FLocTimKiem.xaml.cs">
       <DependentUpon>FLocTimKiem.xaml</DependentUpon>
     </Compile>
@@ -102,10 +99,6 @@
       <DependentUpon>FVP_CongTy.xaml</DependentUpon>
     </Compile>
     <Page Include="ChiTietCongViec.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="FDanhSachLoc.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
