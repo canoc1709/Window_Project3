@@ -6,6 +6,7 @@
              xmlns:local="clr-namespace:Test"
              mc:Ignorable="d" d:DesignWidth="875" Height="525"
              Background="Transparent">
+    
             
     <Grid x:Name="ltv" Background="White" Margin="1,0,-1,0">
         <Border>

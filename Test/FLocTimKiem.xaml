@@ -9,8 +9,33 @@
         WindowStyle="None"
         AllowsTransparency="True"
         Background="Transparent">
+
     <Window.Resources>
-        <Style x:Key="Main_MenuItem"
+        <!-- This style is used for buttons, to remove the WPF default 'animated' mouse over effect -->
+            <Style x:Key="MyButtonStyle" TargetType="Button">
+                <Setter Property="OverridesDefaultStyle" Value="True"/>
+                <Setter Property="Margin" Value="5"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border Name="border" 
+                        BorderThickness="1"
+                        Padding="4,2" 
+                        BorderBrush="DarkGray" 
+                        CornerRadius="3" 
+                        Background="{TemplateBinding Background}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="border" Property="BorderBrush" Value="Black" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style x:Key="Main_MenuItem"
                TargetType="MenuItem">
             <Setter Property="Template">
                 <Setter.Value>
@@ -135,17 +160,78 @@
 
 
     </Window.Resources>
-    <Grid Background="White">
-        <Label Content="Lọc theo lương" HorizontalAlignment="Left" Height="47" Margin="100,99,0,0" VerticalAlignment="Top" Width="220" FontWeight="Bold" FontSize="22" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <Label Content="Lọc theo yêu cầu" HorizontalAlignment="Left" Height="47" Margin="470,99,0,0" VerticalAlignment="Top" Width="220" FontWeight="Bold" FontSize="22" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <StackPanel HorizontalAlignment="Left" Height="171" Margin="81,187,0,0" VerticalAlignment="Top" Width="260" Background="White">
-            <RadioButton Content="Lương tăng dần" Width="112" Height="50" Background="Red" Margin="0,30,130,0"/>
-            <RadioButton Content="Lương giảm dần" Width="112" Height="50" Background="Green" Margin="0,30,130,0"/>
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,2"
+                    EndPoint="1,1">
+                <GradientStop Color="#FFFFFF"
+                    Offset="0.5"/>
+                <GradientStop Color="#1e90ff"
+                    Offset="1.5"/>
+
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="Lọc theo lương" HorizontalAlignment="Left" Height="47" Margin="100,99,0,0" VerticalAlignment="Top" Width="220" FontWeight="Bold" FontSize="22" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Consolas" BorderBrush="#FFE01D1D">
+            <Label.Background>
+                <LinearGradientBrush StartPoint="0,2"
+                     EndPoint="1,1">
+                    <GradientStop Color="#FFFFFF"
+                  Offset="0.1"/>
+                    <GradientStop Color="#1e90ff"
+                  Offset="1.5"/>
+
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Label Content="Lọc theo yêu cầu" HorizontalAlignment="Left" Height="47" Margin="470,99,0,0" VerticalAlignment="Top" Width="220" FontWeight="Bold" FontSize="22" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Consolas">
+            <Label.Background>
+                <LinearGradientBrush StartPoint="0,2"
+                                    EndPoint="1,1">
+                    <GradientStop Color="#FFFFFF"
+                                    Offset="0.1"/>
+                    <GradientStop Color="#1e90ff"
+                                    Offset="1.5"/>
+
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <StackPanel HorizontalAlignment="Left" Height="171" Margin="81,187,0,0" VerticalAlignment="Top" Width="260">
+            <StackPanel.Background>
+                <LinearGradientBrush StartPoint="0,2"
+                                    EndPoint="1,1">
+                    <LinearGradientBrush.Transform>
+                        <TransformGroup>
+                            <ScaleTransform CenterX="5" CenterY="5"/>
+                            <SkewTransform CenterX="5" CenterY="5"/>
+                            <RotateTransform CenterX="5" CenterY="5"/>
+                            <TranslateTransform X="0.1"/>
+                        </TransformGroup>
+                    </LinearGradientBrush.Transform>
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform X="0"/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="Orange"
+                                    Offset="0.3"/>
+                    <GradientStop Color="White"
+                                    Offset="1"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <RadioButton Content="Lương tăng dần" Width="206" Height="50" Background="White" Margin="45,0,0,0" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Consolas"/>
+            <RadioButton Content="Lương giảm dần" Width="206" Height="50" Background="White" Margin="45,30,0,0" FontSize="18" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Consolas"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" Height="171" Margin="450,187,0,0" VerticalAlignment="Top" Width="260" Background="White">
-           
-        </StackPanel>
 
+        </StackPanel>
+        <Button x:Name="btnok_Loc" Width="50" Height="40" Margin="0,370,0,0" BorderThickness="0" BorderBrush="Transparent" Style="{StaticResource MyButtonStyle}" Foreground="Transparent" Click="btnok_Loc_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/ok.png"/>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>

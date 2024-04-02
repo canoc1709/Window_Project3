@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using static MaterialDesignThemes.Wpf.Theme;
 
 namespace Test
 {
@@ -22,6 +23,13 @@ namespace Test
         public FLocTimKiem()
         {
             InitializeComponent();
+        }
+
+        
+
+        private void btnok_Loc_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
