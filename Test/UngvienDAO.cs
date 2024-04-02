@@ -27,7 +27,7 @@ namespace Test
         public void Sua(UngVien ungvien)
         {
             string s = string.Format("update Ungvien set Ten = '{0}', Gioitinh = '{1}', Ngaysinh = '{2}', Sdt = '{3}', Mail = '{4}', Kinhnghiem = '{5}' where ID = {6}",
-                ungvien.Name, ungvien.Sex, ungvien.Birthdate, ungvien.Phonenumber, ungvien.Mail, ungvien.Experience, ungvien.ID);
+                ungvien.Name, ungvien.Sex, ungvien.Birthdate.ToString("MM/dd/yyyy"), ungvien.Phonenumber, ungvien.Mail, ungvien.Experience, ungvien.ID);
             connection.ThucThi(s);
         }
     }

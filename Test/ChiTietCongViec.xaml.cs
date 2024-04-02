@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -48,6 +49,7 @@ namespace Test
             ucChitiet.TxtPhucloi.Text += congviec.Phucloi;
             ucChitiet.TxtYeucau.Text += congviec.Phucloi;
             ucChitiet.TxtMotacv.Text += congviec.Motacv;
+            ucChitiet.btnExit.Click += btnExit_Click;
             ucChitiet.BtnDangki.Click += btnDangki_Click;
             ucChitiet.btnSua.Click += btnSua_Click;
             ucChitiet.BtnLuu.Click += BtnLuu_Click;
@@ -59,7 +61,9 @@ namespace Test
             {
                 ucChitiet.BtnSua.Visibility = Visibility.Hidden;
                 ucChitiet.BtnXoa.Visibility = Visibility.Hidden;
+                ucChitiet.BtnLuu.Visibility = Visibility.Hidden;
             }
+            load(congviec);
         }
         private void btnDangki_Click(object sender, RoutedEventArgs e)
         {
@@ -67,24 +71,40 @@ namespace Test
         }
         private void btnSua_Click(object sender, RoutedEventArgs e)
         {
-                ucChitiet.txtYeucau.IsReadOnly = false;
-                ucChitiet.txtPhucloi.IsReadOnly = false;
-                ucChitiet.txtLuong.IsReadOnly = false;
-                ucChitiet.txtMotacv.IsReadOnly = false;
-                ucChitiet.txtChucvu.IsReadOnly = false;
-
+            ucChitiet.txtYeucau.IsReadOnly = false;
+            ucChitiet.txtPhucloi.IsReadOnly = false;
+            ucChitiet.txtLuong.IsReadOnly = false;
+            ucChitiet.txtMotacv.IsReadOnly = false;
+            ucChitiet.txtChucvu.IsReadOnly = false;
         }
         private void BtnLuu_Click(object sender, RoutedEventArgs e)
         {
             int id = (int)congviec.ID;
             congviec = new Congviec(id, int.Parse(ucChitiet.txtLuong.Text), ucChitiet.TxtMotacv.Text, ucChitiet.TxtYeucau.Text, ucChitiet.TxtPhucloi.Text,
-ucChitiet.TxtChucvu.Text, ucChitiet.TxtTencty.Text);
+                ucChitiet.TxtChucvu.Text, ucChitiet.TxtTencty.Text);
             congviecDAO.Sua(congviec);
             ucChitiet.txtYeucau.IsReadOnly = true;
             ucChitiet.txtPhucloi.IsReadOnly = true;
             ucChitiet.txtLuong.IsReadOnly = true;
             ucChitiet.txtMotacv.IsReadOnly = true;
             ucChitiet.txtChucvu.IsReadOnly = true;
+        }
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            this.DialogResult = true;
+        }
+        private void load(Congviec congviec)
+        {
+            ucChitiet.ListView.Items.Clear();
+            DataTable dt = new DataTable();
+            dt = congviecDAO.LoadUngvien(congviec);
+            foreach(DataRow dr in dt.Rows)
+            {
+                ungvien = new UngVien(dr);
+                Button btn = new Button();
+                btn.Content = ungvien.Print();
+                ucChitiet.ListView.Items.Add(btn);
+            }
         }
     }
 }

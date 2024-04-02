@@ -20,10 +20,12 @@
             <Label Content="Quyền lợi công việc:" HorizontalAlignment="Left" Margin="123,0,0,0" VerticalAlignment="Center" Width="152" FontSize="16" Foreground="#FFC10F0F"/>
             <Button x:Name="btnDangki"   Content="NHẬN CÔNG&#xD;&#xA; VIỆC" HorizontalAlignment="Left" Margin="674,36,0,0" VerticalAlignment="Top" Height="50" Width="92" Background="#FF7DD4D6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             <Label Content="Mô tả công việc:" HorizontalAlignment="Left" Margin="551,0,0,0" VerticalAlignment="Center" Width="152" FontSize="16" Foreground="#FFC10F0F"/>
-            <Button Content="Quay lại" HorizontalAlignment="Left" Margin="52,371,0,0" VerticalAlignment="Top" Height="29" Width="94" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFFB8686" FontSize="16" FontWeight="Bold" />
+            <Button x:Name="btnExit" Content="Quay lại" HorizontalAlignment="Left" Margin="52,371,0,0" VerticalAlignment="Top" Height="29" Width="94" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFFB8686" FontSize="16" FontWeight="Bold" IsDefault="True"/>
             <Button x:Name="btnSua" Content="Sua" HorizontalAlignment="Left" Margin="674,99,0,0" VerticalAlignment="Top" Height="25" Width="92"/>
             <Button x:Name="btnXoa" Content="Xoa" HorizontalAlignment="Left" Margin="674,136,0,0" VerticalAlignment="Top" Height="24" Width="92"/>
             <Button x:Name="btnLuu" Content="Luu" HorizontalAlignment="Left" Margin="571,99,0,0" VerticalAlignment="Top" Height="25" Width="92"/>
+            <ListView x:Name="listview" Margin="0,386,0,0">
+            </ListView>
         </Grid>
     </Grid>
 </UserControl>

@@ -30,6 +30,13 @@ namespace Test
             dt = connection.load(s);
             return dt;
         }
+        public DataTable LoadUngvien(Congviec congviec)
+        {
+            DataTable dt = new DataTable();
+            string s = string.Format("select uv.* from Hoso hs inner join Ungvien uv on hs.MaUV = uv.ID where hs.MaTV = {0}",congviec.ID);
+            dt = connection.load(s);    
+            return dt;
+        }
         public void Dangki(int idcv, int iduv)
         {
             string s = string.Format("insert into HoSo(MaTV, MaUV, Tinhtrang) values ({0},{1},'Chua chap nhan')", idcv, iduv);

@@ -70,6 +70,16 @@ namespace Test
             get { return btnLuu; }
             set { btnLuu = value; }
         }
+        public Button BtnExit
+        {
+            get { return btnExit; }
+            set { btnExit = value; }
+        }
+        public ListView ListView
+        {
+            get { return listview; }
+            set { listview = value; }
+        }
         public UC_ChiTietCongViec()
         {
             InitializeComponent();

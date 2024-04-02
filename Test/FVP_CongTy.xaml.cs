@@ -41,21 +41,18 @@ namespace Test
             txtSdt.Text = congty.Phonenumber;
             txtTenCongTy.Text = congty.Name;
             load(congty);
+
         }
         private void load(Congty congty)
         {
+            ltvCongviec.Items.Clear();
             DataTable dt = new DataTable();
             congviec = new Congviec();
             dt = congviecDAO.LoadCongviec(congty);
             foreach(DataRow dr in dt.Rows)
             {
                 congviec = new Congviec(dr);
-                UCCongViec ucCongViec = new UCCongViec(congviec);
-                ucCongViec.BtnChitiet.Click += (na, RoutedEventArgs) =>
-                {
-                    ChiTietCongViec chitiet = new ChiTietCongViec(congviec, congty);
-                    chitiet.Show();
-                };
+                UCCongViec ucCongViec = new UCCongViec(congviec, congty);
                 ltvCongviec.Items.Add(ucCongViec);
             }
         }

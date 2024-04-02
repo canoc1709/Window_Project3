@@ -49,12 +49,7 @@ namespace Test
             foreach(DataRow dr in dt.Rows)
             {
                 congviec = new Congviec(dr);
-                UCCongViec ucCongViec = new UCCongViec(congviec);
-                ucCongViec.BtnChitiet.Click += (na, RoutedEventArgs) =>
-                {
-                    ChiTietCongViec chitiet = new ChiTietCongViec(congviec, ungvien);
-                    chitiet.Show();
-                };
+                UCCongViec ucCongViec = new UCCongViec(congviec, ungvien);
                 ltvCongviec.Items.Add(ucCongViec);
             }
         }

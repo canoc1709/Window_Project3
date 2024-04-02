@@ -10,8 +10,8 @@ using System.Windows.Resources;
 
 namespace Test
 {
-    public class UngVien
-    {
+	public class UngVien
+	{
 		private int id;
 		public int ID
 		{
@@ -41,14 +41,14 @@ namespace Test
 		private string experience;
 
 		public string Experience
-        {
+		{
 			get { return experience; }
 			set { experience = value; }
 		}
 		private DateTime birthdate;
 
 		public DateTime Birthdate
-        {
+		{
 			get { return birthdate; }
 			set { birthdate = value; }
 		}
@@ -71,7 +71,7 @@ namespace Test
 			Mail = (string)dr[5];
 			Experience = (string)dr[6];
 		}
-		public UngVien(int id,string name,string sex,string phonenumber,string mail, DateTime birthdate, string experience)
+		public UngVien(int id, string name, string sex, string phonenumber, string mail, DateTime birthdate, string experience)
 		{
 			ID = id;
 			Name = name;
@@ -80,15 +80,15 @@ namespace Test
 			Mail = mail;
 			Birthdate = birthdate;
 			Experience = experience;
-        }
+		}
 		public bool Checknull(object myObject)
 		{
-			foreach(PropertyInfo pi in myObject.GetType().GetProperties())
+			foreach (PropertyInfo pi in myObject.GetType().GetProperties())
 			{
-				if(pi.PropertyType == typeof(string))
+				if (pi.PropertyType == typeof(string))
 				{
 					string value = (string)pi.GetValue(myObject);
-					if(string.IsNullOrEmpty(value))
+					if (string.IsNullOrEmpty(value))
 					{
 						return false;
 					}
@@ -99,6 +99,10 @@ namespace Test
 		public bool Checkmail()
 		{
 			return Regex.IsMatch(mail, @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
+		}
+		public string Print()
+		{
+			return id.ToString() + " " + name.ToString();	
 		}
 	}
 }
