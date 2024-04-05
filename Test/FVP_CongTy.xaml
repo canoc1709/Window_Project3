@@ -9,51 +9,51 @@
         TextElement.FontSize="13"
         TextOptions.TextFormattingMode="Ideal"
         TextOptions.TextRenderingMode="Auto"
-        Background="{DynamicResource MaterialDesignPaper}"
+       
         FontFamily="{DynamicResource MaterialDesignFont}"
         Loaded="FVP_CongTy_Load"
         mc:Ignorable="d"
-        Title="Van Phong Cong Ty" Height="460" Width="837">
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Title="Van Phong Cong Ty" Height="460" Width="837" Background="White">
     <Grid Margin="0,0,0,-6">
-        <Grid.Background>
-            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="Black"/>
-                <GradientStop Color="#FFCEC5F9" Offset="0.448"/>
-            </LinearGradientBrush>
-        </Grid.Background>
+
         <StackPanel Margin="20,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="159" Width="159" >
             <Image x:Name="imgCongTy"
             Source="Images/profile.png"/>
         </StackPanel>
-        <StackPanel Margin="208,0,38,360" VerticalAlignment="Center">
-            <TextBox x:Name="txtTenCongTy" TextWrapping="Wrap" Text="CÔNG TY TRÁCH NHIỆM HỮU HẠN BA THÀNH VIÊN" Height="72" FontFamily="Segoe Print" FontSize="20" TextAlignment="Center" FontWeight="Bold" Background="#FF8E8EFD"  Width="588" VerticalContentAlignment="Center"/>
+        <StackPanel Margin="208,17,10,0" VerticalAlignment="Top">
+            <TextBox x:Name="txtTenCongTy" TextWrapping="Wrap" Text="CÔNG TY TRÁCH NHIỆM HỮU HẠN BA THÀNH VIÊN" Height="72" FontFamily="Segoe Print" FontSize="20" TextAlignment="Center" FontWeight="Bold" Background="#181735"  Width="619" VerticalContentAlignment="Center" Foreground="White" TextChanged="txtTenCongTy_TextChanged"/>
         </StackPanel>
-        <TextBox x:Name="txtSdt"  Margin="27,261,621,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="29" IsReadOnly="True"/>
-        <TextBox x:Name="txtMail"  HorizontalAlignment="Left" Margin="27,316,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="152" Height="30" IsReadOnly="True"/>
+        <TextBox x:Name="txtSdt"  Margin="27,271,658,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" IsReadOnly="True"/>
+        <TextBox x:Name="txtMail"  HorizontalAlignment="Left" Margin="27,315,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="152" Height="30" IsReadOnly="True"/>
         <TextBox x:Name="txtDiachi"  HorizontalAlignment="Left" Margin="27,0,0,0" TextWrapping="Wrap"  VerticalAlignment="Center" Width="152" Height="30" IsReadOnly="True"/>
         <Image x:Name ="iconMail" HorizontalAlignment="Left" Height="31" Margin="24,394,0,0" VerticalAlignment="Top" Width="31" Source="Images/"/>
         <Image x:Name="iconAddress"  HorizontalAlignment="Left" Height="31" Margin="280,394,0,0" VerticalAlignment="Top" Width="31" RenderTransformOrigin="1.27,0.516"/>
         <Image x:Name="iconPhone" HorizontalAlignment="Left" Height="31" Margin="554,394,0,0" VerticalAlignment="Top" Width="31" RenderTransformOrigin="1.27,0.516"/>
-        <TabControl Margin="208,87,10,45">
+        <TabControl Margin="208,94,10,45" BorderBrush="Black">
             <TabItem Header="Tuyển việc" Width="104" Height="44" Background="{x:Null}" BorderBrush="Black" HorizontalContentAlignment="Left" VerticalContentAlignment="Bottom"  FontSize="6" MinWidth="90">
-                <Grid Background="White" Height="272" Width="590">
+                <Grid Height="272" Width="616">
+                
+
 
                     <TextBox x:Name="txtChucvu"  HorizontalAlignment="Left" Margin="105,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Height="28" Grid.ColumnSpan="2" FontSize="12"/>
                     <TextBox x:Name="txtYeucau"  HorizontalAlignment="Left" Margin="105,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Height="25" Grid.ColumnSpan="2" FontSize="12"/>
                     <Label Content="Công việc" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.245,-0.252" Width="75" FontSize="15" FontWeight="Bold" Height="26"/>
                     <Label Content="Yêu cầu" HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.245,-0.252" Width="66" FontSize="15" FontWeight="Bold"/>
                     <Label Content="Mô tả công việc" HorizontalAlignment="Left" Margin="10,171,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.245,-0.252" Width="119" FontSize="15" FontWeight="Bold"/>
-                    <Label Content="Phúc lợi" HorizontalAlignment="Left" Margin="441,16,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.245,-0.252" Width="108" FontSize="20" FontWeight="Bold" Height="30" HorizontalContentAlignment="Center"/>
+                    <Label Content="Phúc lợi" HorizontalAlignment="Left" Margin="460,27,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.245,-0.252" Width="108" FontSize="20" FontWeight="Bold" Height="30" HorizontalContentAlignment="Center"/>
                     <Label Content="Lương" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.245,-0.252" Width="66" FontSize="15" FontWeight="Bold"/>
                     <TextBox x:Name="txtLuong"  HorizontalAlignment="Left" Margin="105,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Height="25" Grid.ColumnSpan="2" FontSize="12"/>
                     <TextBox x:Name="txtMotacv"  HorizontalAlignment="Left" Margin="134,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Height="67" FontSize="12"/>
-                    <TextBox x:Name="txtPhucloi"  HorizontalAlignment="Left" Margin="396,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Height="122" FontSize="12"/>
+                    <TextBox x:Name="txtPhucloi"  HorizontalAlignment="Left" Margin="426,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Height="122" FontSize="12"/>
                     <Button Margin="445,208,33,32" Content="Đăng tuyển" Background="#FFEBB2B2" BorderBrush="{x:Null}" FontSize="14" Click="btnDangtuyen_Click"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Xem hồ sơ" Width="109" Height="40" Background="{x:Null}" BorderBrush="Black" OpacityMask="#FFF3AFAF">
                 <Grid Background="#F8F8FF">
-                    <ListView x:Name="ltvCongviec">
+                    
+                    <ListView x:Name="ltvCongviec" Background="White" Grid.ColumnSpan="2">
                     </ListView>
                 </Grid>
             </TabItem>
@@ -62,7 +62,7 @@
         <Button x:Name="btnLuu" Content="Lưu" Background="#FFEBB2B2" HorizontalAlignment="Left" Margin="124,374,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.833,0.754" Click="btnLuu_Click" Width="55" BorderBrush="{x:Null}" Height="29"/>
         <Button Content="Đăng xuất" Background="#FFEBB2B2"
                 HorizontalAlignment="Left" 
-                Margin="664,394,0,0" 
+                Margin="677,421,0,0" 
                 VerticalAlignment="Top" 
                 Width="92" 
                 Height="30"

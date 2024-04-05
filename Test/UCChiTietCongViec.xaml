@@ -5,26 +5,95 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Test"
              Loaded="UCChiTietCongViec_Load"
-             mc:Ignorable="d" 
+             mc:Ignorable="d"
+             
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="WhiteSmoke">
+    <Grid >
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/backgroundgalaxy.jpg"/>
+        </Grid.Background>
         <Grid Margin="0,0,0,-6">
-            <Image HorizontalAlignment="Left" Height="146" Margin="79,38,0,0" VerticalAlignment="Top" Width="135" Source="./Images/office-building.png">
+            <Image HorizontalAlignment="Left" Height="158" Margin="63,19,0,0" VerticalAlignment="Top" Width="154" Source="./Images/office-building.png">
 
             </Image>
-            <TextBox x:Name="txtTencty"  HorizontalAlignment="Left" Margin="258,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="25" IsReadOnly="True"/>
-            <TextBox x:Name="txtChucvu" HorizontalAlignment="Left" Margin="258,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="25" IsReadOnly="True"/>
-            <TextBox x:Name="txtYeucau"  HorizontalAlignment="Left" Margin="258,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="25" IsReadOnly="True"/>
-            <TextBox x:Name="txtLuong"  HorizontalAlignment="Left" Margin="258,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="25" IsReadOnly="True"/>
-            <TextBox x:Name="txtMotacv"  HorizontalAlignment="Left" Margin="468,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" Height="122" IsReadOnly="True"/>
-            <TextBox x:Name="txtPhucloi"  HorizontalAlignment="Left" Margin="50,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" Height="122" IsReadOnly="True"/>
-            <Label Content="Quyền lợi công việc:" HorizontalAlignment="Left" Margin="123,0,0,0" VerticalAlignment="Center" Width="152" FontSize="16" Foreground="#FFC10F0F"/>
-            <Button x:Name="btnDangki"   Content="NHẬN CÔNG&#xD;&#xA; VIỆC" HorizontalAlignment="Left" Margin="674,36,0,0" VerticalAlignment="Top" Height="50" Width="92" Background="#FF7DD4D6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btnDangki_Click"/>
-            <Label Content="Mô tả công việc:" HorizontalAlignment="Left" Margin="551,0,0,0" VerticalAlignment="Center" Width="152" FontSize="16" Foreground="#FFC10F0F"/>
-            <Button x:Name="btnExit" Content="Quay lại" HorizontalAlignment="Left" Margin="52,371,0,0" VerticalAlignment="Top" Height="29" Width="94" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFFB8686" FontSize="16" FontWeight="Bold" />
-            <Button x:Name="btnSua" Content="Sua" HorizontalAlignment="Left" Margin="674,99,0,0" VerticalAlignment="Top" Height="25" Width="92" Click="btnSua_Click"/>
-            <Button x:Name="btnXoa" Content="Xoa" HorizontalAlignment="Left" Margin="674,136,0,0" VerticalAlignment="Top" Height="24" Width="92"/>
-            <Button x:Name="btnLuu" Content="Luu" HorizontalAlignment="Left" Margin="571,99,0,0" VerticalAlignment="Top" Height="25" Width="92" Click="BtnLuu_Click"/>
+            <TextBox x:Name="txtTencty"  HorizontalAlignment="Left" Margin="258,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="25" IsReadOnly="True" Background="White"/>
+            <TextBox x:Name="txtChucvu" HorizontalAlignment="Left" Margin="258,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="25" IsReadOnly="True" Background="White"/>
+            <TextBox x:Name="txtYeucau"  HorizontalAlignment="Left" Margin="258,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="25" IsReadOnly="True" Background="White"/>
+            <TextBox x:Name="txtLuong"  HorizontalAlignment="Left" Margin="258,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="25" IsReadOnly="True" Background="White"/>
+            <TextBox x:Name="txtMotacv"  HorizontalAlignment="Left" Margin="468,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" Height="122" IsReadOnly="True" BorderBrush="#89FFFFFF" Background="White" FontSize="14"/>
+            <TextBox x:Name="txtPhucloi"  HorizontalAlignment="Left" Margin="63,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" Height="122" IsReadOnly="True" Foreground="White" CaretBrush="White" BorderBrush="#89FFFFFF" Background="White" FontSize="14"/>
+            <Label Content="Quyền lợi công việc:" HorizontalAlignment="Left" Margin="127,215,0,0" VerticalAlignment="Top" Width="152" FontSize="16" Foreground="White" BorderBrush="#FFDC1D1D"/>
+            <Button x:Name="btnDangki"   Content=" Nhận công việc" HorizontalAlignment="Left" Margin="544,38,0,0" VerticalAlignment="Top" Height="29" Width="146" Background="{x:Null}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btnDangki_Click" BorderBrush="White" Foreground="White"/>
+            <Label Content="Mô tả công việc:" HorizontalAlignment="Left" Margin="551,0,0,0" VerticalAlignment="Center" Width="125" FontSize="16" Foreground="White"/>
+            <Button x:Name="btnExit" Content="Quay lại" HorizontalAlignment="Left" Margin="28,390,0,30" Height="36" Width="98" Background="{x:Null}" BorderBrush="White" Foreground="#FFFB8686" FontSize="16" FontWeight="Bold" />
+            <Button x:Name="btnSua" Content="Sửa" HorizontalAlignment="Left" Margin="544,80,0,0" VerticalAlignment="Top" Height="26" Width="63" Click="btnSua_Click" Background="{x:Null}" BorderBrush="White" Foreground="White"/>
+            <Button x:Name="btnXoa" Content="Xóa" HorizontalAlignment="Left" Margin="586,117,0,0" VerticalAlignment="Top" Height="24" Width="62" Background="{x:Null}" BorderBrush="White" Foreground="White"/>
+            <Button x:Name="btnLuu" Content="Lưu" Margin="627,80,110,0" VerticalAlignment="Top" Height="26" Click="BtnLuu_Click" VerticalContentAlignment="Center" Background="{x:Null}" BorderBrush="White" Foreground="White"/>
+            <StackPanel Margin="450,-18,292,418" RenderTransformOrigin="0.5,0.5">
+                <StackPanel.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-20.525"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </StackPanel.RenderTransform>
+                <StackPanel.Background>
+                    <ImageBrush ImageSource="Images/favourite.png"/>
+                </StackPanel.Background>
+            </StackPanel>
+            <StackPanel Margin="352,405,328,-36" RenderTransformOrigin="0.5,0.5">
+                <StackPanel.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-20.525"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </StackPanel.RenderTransform>
+                <StackPanel.Background>
+                    <ImageBrush ImageSource="Images/favourite.png"/>
+                </StackPanel.Background>
+            </StackPanel>
+            <StackPanel Margin="758,129,-46,246" RenderTransformOrigin="0.5,0.5">
+                <StackPanel.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-20.525"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </StackPanel.RenderTransform>
+                <StackPanel.Background>
+                    <ImageBrush ImageSource="Images/favourite.png"/>
+                </StackPanel.Background>
+            </StackPanel>
+            <StackPanel Margin="491,142,257,268" RenderTransformOrigin="0.5,0.5">
+                <StackPanel.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-20.525"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </StackPanel.RenderTransform>
+                <StackPanel.Background>
+                    <ImageBrush ImageSource="Images/favourite.png"/>
+                </StackPanel.Background>
+            </StackPanel>
+            <StackPanel Margin="18,180,730,230" RenderTransformOrigin="0.5,0.5">
+                <StackPanel.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="39.773"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </StackPanel.RenderTransform>
+                <StackPanel.Background>
+                    <ImageBrush ImageSource="Images/favourite.png"/>
+                </StackPanel.Background>
+            </StackPanel>
         </Grid>
     </Grid>
 </UserControl>

@@ -52,7 +52,13 @@ namespace Test
             timKiemCongViec.Show();
             this.Close();
         }
-
+        private void Grid_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                DragMove();
+            }
+        }
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
 

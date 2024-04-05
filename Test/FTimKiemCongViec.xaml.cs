@@ -65,5 +65,12 @@ namespace Test
             FLocTimKiem floctimkiem = new FLocTimKiem();
             floctimkiem.Show();
         }
+        private void Grid_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                DragMove();
+            }
+        }
     }
 }

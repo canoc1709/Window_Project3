@@ -72,6 +72,9 @@
     <Compile Include="FLocTimKiem.xaml.cs">
       <DependentUpon>FLocTimKiem.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Testform.xaml.cs">
+      <DependentUpon>Testform.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UCThongtinUV.xaml.cs">
       <DependentUpon>UCThongtinUV.xaml</DependentUpon>
     </Compile>
@@ -96,6 +99,10 @@
       <DependentUpon>FVP_CongTy.xaml</DependentUpon>
     </Compile>
     <Page Include="FLocTimKiem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Testform.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -257,6 +264,32 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="icons8-planet-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\galaxy.1.png" />
+    <Resource Include="Images\galaxy.png" />
+    <Resource Include="Images\night.png" />
+    <Resource Include="Images\rating.png" />
+    <Resource Include="Images\shooting-star.png" />
+    <Resource Include="Images\stars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\favourite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon_email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Galaxy.2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Galaxy.2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\backgroundgalaxy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="backgroundgalaxy.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.4.9.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.9.0\build\MaterialDesignThemes.targets')" />

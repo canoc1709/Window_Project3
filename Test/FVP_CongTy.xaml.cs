@@ -51,7 +51,7 @@ namespace Test
             DataTable dt = new DataTable();
             congviec = new Congviec();
             dt = congviecDAO.LoadCongviec(congty);
-            foreach(DataRow dr in dt.Rows)
+            foreach (DataRow dr in dt.Rows)
             {
                 congviec = new Congviec(dr);
                 UCCongViec ucCongViec = new UCCongViec(congviec, congty);
@@ -93,6 +93,11 @@ namespace Test
             FTrangChu fTrangChu = new FTrangChu();
             fTrangChu.Show();
             this.Close();
+        }
+
+        private void txtTenCongTy_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

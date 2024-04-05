@@ -14,7 +14,7 @@
         Title="Dangki" Height="517" Width="367" MouseDown="Grid_MouseDown" >
     <Grid Background="#FF2B2B44">
         <Image HorizontalAlignment="Center" Height="97" Margin="0,38,0,0" VerticalAlignment="Top" Width="96" Source="./Images/teamwork.png"/>
-        <Label Content="Xác nhận mật khẩu:" HorizontalAlignment="Left" Margin="15,266,0,0" VerticalAlignment="Top" OpacityMask="Black" Foreground="#FFE2CC39" FontFamily="Arial Black" FontSize="14" RenderTransformOrigin="0.794,0.686"/>
+        <Label Content="Xác nhận mật khẩu:" HorizontalAlignment="Left" Margin="15,266,0,0" VerticalAlignment="Top" OpacityMask="Black" Foreground="#FFE2CC39" FontFamily="Arial Black" FontSize="14" RenderTransformOrigin="0.794,0.686" Height="28"/>
         <Label Content="Email:" HorizontalAlignment="Left" Margin="18,311,0,0" VerticalAlignment="Top" OpacityMask="Black" Foreground="#FFE2CC39" FontFamily="Arial Black" RenderTransformOrigin="1.054,-0.443" FontSize="14"/>
         <Label Content="Tên tài khoản:" HorizontalAlignment="Left" Margin="15,182,0,0" VerticalAlignment="Top" OpacityMask="Black" Foreground="#FFE2CC39" FontFamily="Arial Black" Height="25" FontSize="14"/>
         <Label Content="Mật khẩu:" HorizontalAlignment="Left" Margin="15,226,0,0" VerticalAlignment="Top" OpacityMask="Black" Foreground="#FFE2CC39" FontFamily="Arial Black" FontSize="14"/>

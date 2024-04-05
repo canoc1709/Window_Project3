@@ -7,25 +7,19 @@
         mc:Ignorable="d"
         Loaded="FNhanVien_Load"
         Title="Trangchu"
-         Height="600" Width="1080" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" Foreground="White">
+        MouseDown="Grid_MouseDown"
+        Height="600" Width="1080" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" Foreground="White">
     <Grid Background="#FFEFEEEC">
-        <Grid Height="75" VerticalAlignment="Top" Background="#FF59C0F5" >
+        <Grid Height="70" VerticalAlignment="Top" Background="#FF2B2B44" >
 
             <Button Background="#FF7C9AA9" FontSize="22" HorizontalAlignment="Left" Margin="901,19,0,19" Width="153" Content="Đăng xuất" BorderBrush="{x:Null}" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" Click="Button_Click" />
         </Grid>
-        <Grid Width="200" HorizontalAlignment="Left" Background="#FF073365">
+        <Grid Width="200" HorizontalAlignment="Left" Background="#FF2B2B44">
             <StackPanel>
-                <Grid Height="150" Background="White">
-                    <StackPanel>
-                        <StackPanel.Background>
-                            <ImageBrush ImageSource="/icons8-planet-100.png"/>
-                        </StackPanel.Background>
-                    </StackPanel>
-
-
-
+                <Grid Height="150" >
+                    
                 </Grid>
-                <ListView Background="#FF073365" Height="449">
+                <ListView Background="#FF2B2B44" Height="488">
                     <ListViewItem Height="90" FontSize="16">
                         <Grid Height="60">
                             <Button VerticalAlignment="Center" HorizontalAlignment="Left" Height="60" FontSize="20"  Width="200" Margin="-10,0,0,0" Background="{x:Null}" BorderBrush="{x:Null}" Content="Trang chủ" Click="Button_Click_1" Foreground="White" />
@@ -39,14 +33,50 @@
 
                     <ListViewItem Width="202" Height="82">
                         <Grid Height="60">
-                            <Button  VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,3,0,0" Height="57" FontSize="20" Width="191" Background="{x:Null}" BorderBrush="{x:Null}" Content="Công việc hiện tại" Click="Button_Click_3" Foreground="White"/>
+                            <Button  VerticalAlignment="Top" HorizontalAlignment="Left" Margin="-11,3,0,0" Height="57" FontSize="20" Width="202" Background="{x:Null}" BorderBrush="{x:Null}" Content="Công việc hiện tại" Click="Button_Click_3" Foreground="White"/>
                         </Grid>
                     </ListViewItem>
                 </ListView>
             </StackPanel>
         </Grid>
-        <StackPanel x:Name="spnLoad" Margin="205,75,0,0"/>
+        <StackPanel x:Name="spnLoad" Margin="205,75,10,5"/>
         <ComboBox HorizontalAlignment="Left" Margin="577,-49,0,0" VerticalAlignment="Top" Width="120"/>
+        <StackPanel Margin="484,0,484,530">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="Images/night.png"/>
+            </StackPanel.Background>
+        </StackPanel>
+        <StackPanel Margin="40,10,920,482">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="Images/galaxy.1.png"/>
+            </StackPanel.Background>
+        </StackPanel>
+        <StackPanel Margin="253,-10,795,570" RenderTransformOrigin="0.5,0.5">
+            <StackPanel.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-5.508"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </StackPanel.RenderTransform>
+            <StackPanel.Background>
+                <ImageBrush ImageSource="Images/favourite.png"/>
+            </StackPanel.Background>
+        </StackPanel>
+        <StackPanel Margin="772,19,276,541" RenderTransformOrigin="0.5,0.5">
+            <StackPanel.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="35.656"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </StackPanel.RenderTransform>
+            <StackPanel.Background>
+                <ImageBrush ImageSource="Images/favourite.png"/>
+            </StackPanel.Background>
+        </StackPanel>
     </Grid>
 </Window>
 

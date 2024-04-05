@@ -227,33 +227,26 @@ C:\Users\HAI DANG\source\repos\Window_Project3\Test\bin\Debug\MaterialDesignThem
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\bin\Debug\Microsoft.Xaml.Behaviors.pdb
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\bin\Debug\Microsoft.Xaml.Behaviors.xml
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\ProjectWF.csproj.AssemblyReference.cache
-C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\ChiTietCongViec.g.cs
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\FLocTimKiem.g.cs
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\UCCongViec.g.cs
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\FDangki.g.cs
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\FDangnhap.g.cs
-C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\FHoSoDangKi.g.cs
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\FTrangChu.g.cs
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\FTimKiemCongViec.g.cs
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\FNhanVien.g.cs
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\FVP_CongTy.g.cs
-C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\UC_ChiTietCongViec.g.cs
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\App.g.cs
-C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\Test_MarkupCompile.cache
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\Test_MarkupCompile.lref
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\App.baml
-C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\ChiTietCongViec.baml
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\FLocTimKiem.baml
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\UCCongViec.baml
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\FDangki.baml
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\FDangnhap.baml
-C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\FHoSoDangKi.baml
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\FTrangChu.baml
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\FTimKiemCongViec.baml
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\FNhanVien.baml
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\FVP_CongTy.baml
-C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\UC_ChiTietCongViec.baml
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\Test.g.resources
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\Test.Properties.Resources.resources
 C:\Users\HAI DANG\source\repos\Window_Project3\Test\obj\Debug\ProjectWF.csproj.GenerateResource.cache
@@ -350,3 +343,10 @@ C:\Users\tuankiet\Source\Repos\Window_Project3\Test\obj\Debug\UCThongtinUV.g.cs
 C:\Users\tuankiet\Source\Repos\Window_Project3\Test\obj\Debug\UCThongtinUV.baml
 C:\Users\tuankiet\source\repos\Window_Project3\Test\obj\Debug\UCChiTietCongViec.g.cs
 C:\Users\tuankiet\source\repos\Window_Project3\Test\obj\Debug\UCChiTietCongViec.baml
+C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\UCThongtinUV.g.cs
+C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\UCChiTietCongViec.g.cs
+C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\UCThongtinUV.baml
+C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\UCChiTietCongViec.baml
+C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\Testform.g.cs
+C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\Testform.baml
+C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\GeneratedInternalTypeHelper.g.cs
