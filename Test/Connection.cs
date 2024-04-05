@@ -11,8 +11,8 @@ namespace Test
 {
     internal class Connection
     {
-        //string strcon = @"Data Source=DESKTOP-K8C76HP;Initial Catalog=QLCongviec;Integrated Security=True;Encrypt=False";
-        string strcon = "Data Source=LAPTOP-GPLGAEAL\\YORDLEYUU;Initial Catalog=Test;Integrated Security=True";
+        string strcon = @"Data Source=DESKTOP-K8C76HP;Initial Catalog=QLCongviec;Integrated Security=True;Encrypt=False";
+        //string strcon = "Data Source=LAPTOP-GPLGAEAL\\YORDLEYUU;Initial Catalog=Test;Integrated Security=True";
         SqlConnection conn = null;
         public void ThucThi(string s)  
         {

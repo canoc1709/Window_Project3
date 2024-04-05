@@ -66,17 +66,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ChiTietCongViec.xaml.cs">
-      <DependentUpon>ChiTietCongViec.xaml</DependentUpon>
-    </Compile>
     <Compile Include="CongtyDAO.cs" />
     <Compile Include="Congviec.cs" />
     <Compile Include="CongviecDAO.cs" />
     <Compile Include="FLocTimKiem.xaml.cs">
       <DependentUpon>FLocTimKiem.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UC_ChiTietCongViec.xaml.cs">
-      <DependentUpon>UC_ChiTietCongViec.xaml</DependentUpon>
+    <Compile Include="UCThongtinUV.xaml.cs">
+      <DependentUpon>UCThongtinUV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UCChiTietCongViec.xaml.cs">
+      <DependentUpon>UCChiTietCongViec.xaml</DependentUpon>
     </Compile>
     <Compile Include="UngvienDAO.cs" />
     <Compile Include="Congty.cs" />
@@ -84,9 +84,6 @@
       <DependentUpon>UCCongViec.xaml</DependentUpon>
     </Compile>
     <Compile Include="Connection.cs" />
-    <Compile Include="FHoSoDangKi.xaml.cs">
-      <DependentUpon>FHoSoDangKi.xaml</DependentUpon>
-    </Compile>
     <Compile Include="TaiKhoan.cs" />
     <Compile Include="FTimKiemCongViec.xaml.cs">
       <DependentUpon>FTimKiemCongViec.xaml</DependentUpon>
@@ -98,10 +95,6 @@
     <Compile Include="FVP_CongTy.xaml.cs">
       <DependentUpon>FVP_CongTy.xaml</DependentUpon>
     </Compile>
-    <Page Include="ChiTietCongViec.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="FLocTimKiem.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -115,10 +108,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="FDangnhap.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="FHoSoDangKi.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -152,7 +141,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UC_ChiTietCongViec.xaml">
+    <Page Include="UCThongtinUV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UCChiTietCongViec.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

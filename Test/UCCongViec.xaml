@@ -8,20 +8,16 @@
              mc:Ignorable="d" Height="151" Width="650">
     <Grid>
         <Rectangle HorizontalAlignment="Center" Height="151" VerticalAlignment="Top" Width="650" RadiusY="5" RadiusX="5" Fill="#FF9C8181"/>
-        <StackPanel Orientation="Horizontal">
-            <Rectangle Height="125" Width="190" RadiusX="50" RadiusY="50" Margin="30,0,0,0">
-                <Rectangle.Fill>
-                    <ImageBrush ImageSource="{Binding URL}" Stretch="Uniform" />
-                </Rectangle.Fill>
-            </Rectangle>
-
+        <StackPanel x:Name="stp" Orientation="Horizontal" Margin="0,138,0,0">
+            <ListView x:Name="ltv">
+            </ListView>
         </StackPanel>
         <StackPanel Margin="0,0,165,0">
             <TextBox x:Name="lblTencty" Height="68" Text="Company:" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18" IsReadOnly="True" Width="485" Foreground="#FFFFFF"/>
             <TextBox x:Name="lblChucvu" Height="38" Text="Job:" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18" IsReadOnly="True" Foreground="#FFFFFF"/>
             <TextBox x:Name="lblLuong" Height="36" Text="Salary:" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18" IsReadOnly="True" Foreground="#FFFFFF"/>
         </StackPanel>
-        <StackPanel Margin="501,0,37,0" >
+        <StackPanel Margin="501,0,0,0" >
             <Button x:Name="btnChitiet" Height="150" Width="110" Content="Details" Background="{x:Null}" BorderBrush="{x:Null}"/>
         </StackPanel>
     </Grid>

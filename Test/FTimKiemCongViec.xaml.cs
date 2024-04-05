@@ -44,6 +44,7 @@ namespace Test
         }
         private void btnTimKiem_Click(object sender,RoutedEventArgs e)
         {
+            ltvCongviec.Items.Clear();
             DataTable dt = new DataTable();
             dt = congviecDAO.LoadCongviec();
             foreach(DataRow dr in dt.Rows)
@@ -55,16 +56,10 @@ namespace Test
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            FNhanVien trangchu = new FNhanVien();
+            FNhanVien trangchu = new FNhanVien(ungvien);
             trangchu.Show();
             this.Close();
         }
-        private void button_click(object sender, RoutedEventArgs e, Congviec congviec)
-        {
-            ChiTietCongViec chitiet = new ChiTietCongViec(congviec, ungvien);
-            chitiet.Show();
-        }
-
         private void btnLoc_Click(object sender, RoutedEventArgs e)
         {
             FLocTimKiem floctimkiem = new FLocTimKiem();

@@ -45,11 +45,7 @@
                 </ListView>
             </StackPanel>
         </Grid>
-        <StackPanel Margin="205,75,0,0">
-            <local:FHoSoDangKi x:Name="ucThongtin" Width="903"/>
-
-
-        </StackPanel>
+        <StackPanel x:Name="spnLoad" Margin="205,75,0,0"/>
         <ComboBox HorizontalAlignment="Left" Margin="577,-49,0,0" VerticalAlignment="Top" Width="120"/>
     </Grid>
 </Window>

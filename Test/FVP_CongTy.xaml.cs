@@ -58,6 +58,11 @@ namespace Test
                 ltvCongviec.Items.Add(ucCongViec);
             }
         }
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            ltvCongviec.Items.Clear();
+            load(congty);
+        }
         private void btnDangtuyen_Click(object sender, RoutedEventArgs e)
         {
             congviec = new Congviec(int.Parse(txtLuong.Text),txtMotacv.Text,txtYeucau.Text,txtPhucloi.Text,txtChucvu.Text,txtTenCongTy.Text);
