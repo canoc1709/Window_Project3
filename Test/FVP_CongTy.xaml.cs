@@ -36,11 +36,15 @@ namespace Test
         }
         private void FVP_CongTy_Load(object sender, RoutedEventArgs e)
         {
+            load();
+            load(congty);
+        }
+        private void load()
+        {
             txtDiachi.Text = congty.Address;
             txtMail.Text = congty.Mail;
             txtSdt.Text = congty.Phonenumber;
             txtTenCongTy.Text = congty.Name;
-            load(congty);
         }
         private void load(Congty congty)
         {
@@ -76,6 +80,7 @@ namespace Test
             txtDiachi.IsReadOnly = true;
             txtMail.IsReadOnly = true;
             txtSdt.IsReadOnly = true;
+            load();
         }
 
         private void btnDangxuat_Click(object sender, RoutedEventArgs e)

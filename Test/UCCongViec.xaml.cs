@@ -53,13 +53,17 @@ namespace Test
         }
         private void UCCongViec_Load(object sender, RoutedEventArgs e)
         {
-            lblChucvu.Text = "Cong viec: " + congviec.Chucvu;
-            lblLuong.Text = "Luong:" + congviec.Luong.ToString();
-            lblTencty.Text = "Ten cong ty: " + congviec.Tencty;
+            load();
             if (ungvien.ID == 0)
                 btnChitiet.Click += btnChitiet_Click1;
             if (congty.ID == 0)
                 btnChitiet.Click += btnChitiet_Click2;
+        }
+        private void load()
+        {
+            lblChucvu.Text = "Cong viec: " + congviec.Chucvu;
+            lblLuong.Text = "Luong:" + congviec.Luong.ToString();
+            lblTencty.Text = "Ten cong ty: " + congviec.Tencty;
         }
         private void btnChitiet_Click1(object sender, RoutedEventArgs e)
         {
