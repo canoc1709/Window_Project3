@@ -41,5 +41,12 @@ namespace Test
                 "Yeucau = '{3}', Phucloi = '{4}' where ID = {5}", congviec.Chucvu, congviec.Luong, congviec.Motacv, congviec.Yeucau, congviec.Phucloi, congviec.ID);
             connection.ThucThi(s);
         }
+        public DataTable LoadUngvien(Congviec congviec)
+        {
+            DataTable dt = new DataTable();
+            string s = string.Format("select uv.* from Hoso hs inner join Ungvien uv on hs.MaUV = uv.ID where hs.MaTV = {0}", congviec.ID);
+            dt = connection.load(s);
+            return dt;
+        }
     }
 }

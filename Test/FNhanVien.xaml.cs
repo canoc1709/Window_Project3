@@ -40,7 +40,7 @@ namespace Test
         {
             ucThongtin.TxtTen.Text = ungvien.Name;
             ucThongtin.TxtGioitinh.Text = ungvien.Sex;
-            ucThongtin.TxtNgaysinh.Text = ungvien.Birthdate.ToString();
+            ucThongtin.TxtNgaysinh.Text = ungvien.Birthdate.ToString("dd/MM/yyyy");
             ucThongtin.TxtSdt.Text = ungvien.Phonenumber;
             ucThongtin.TxtKinhnghiem.Text = ungvien.Experience;
             ucThongtin.TxtMail.Text = ungvien.Mail;
@@ -72,6 +72,7 @@ namespace Test
             ucThongtin.TxtSdt.IsReadOnly = false;
             ucThongtin.TxtKinhnghiem.IsReadOnly = false;
             ucThongtin.TxtMail.IsReadOnly = false;
+            ucThongtin.DtpNgaysinh.SelectedDate = DateTime.Now;
             ucThongtin.DtpNgaysinh.Visibility = Visibility.Visible;
         }
         private void btnLuu_Click(object sender, RoutedEventArgs e)
