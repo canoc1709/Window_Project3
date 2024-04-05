@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Test"
         xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes"
-        mc:Ignorable="d" Height="450" Width="800"  Title="Tìm kiếm"  WindowStyle="None"
- ResizeMode="NoResize"
+        mc:Ignorable="d" Height="450" Width="800"  Title="Tìm kiếm"   WindowStyle="None"
+ResizeMode="NoResize"
+ 
         >
 
     <Grid Margin="0,10,0,-16" Background="#38395d" MouseDown="Grid_MouseDown">
@@ -15,7 +16,7 @@
         <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Tìm kiếm..."  Width="396"
                   VerticalContentAlignment="Center"
                   HorizontalAlignment="Left"
-                  Margin="147,30,0,364" Background="{x:Null}" BorderBrush="#89FFFFFF" FontSize="14" Foreground="White" SelectionBrush="Red" CaretBrush="Red"
+                  Margin="147,30,0,364" Background="{x:Null}" BorderBrush="#89FFFFFF" FontSize="16" Foreground="White" SelectionBrush="Red" CaretBrush="Red"
             />
 
         <Button x:Name="btnTimkiem" Content="" HorizontalAlignment="Left" Margin="570,59,0,0" VerticalAlignment="Top" Height="33" Width="33" BorderBrush="{x:Null}" Click="btnTimKiem_Click">

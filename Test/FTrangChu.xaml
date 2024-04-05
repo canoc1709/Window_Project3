@@ -44,14 +44,14 @@
                 <StackPanel Orientation="Horizontal">
                     <Image Source="Image/icons8-quit-48.png" Stretch="Uniform"/>
                 </StackPanel>
-         
+
 
             </Button>
         </Grid>
         <StackPanel Grid.Row="1" VerticalAlignment="Center" Margin="56,0,114,0" Height="285">
 
             <StackPanel Orientation="Horizontal" Width="398">
-                <Image Width="46" Height="42"
+                <Image Width="46" Height="58"
                        Source="Images/portfolio.png"/>
                 <TextBlock Text="Công việc vủa bạn"
                            Foreground="White"
@@ -77,7 +77,7 @@
                        FontSize="12"
                        FontWeight="Medium"
                        TextWrapping="Wrap"
-                       Margin="0,15,0,0" Height="56" Width="222" FontFamily="Candara Light"/>
+                       Margin="0,15,0,0" Height="60" Width="226" FontFamily="Candara Light"/>
             <StackPanel Orientation="Horizontal" Height="49">
                 <Button Content=" Đăng nhập"
             Foreground="White"
