@@ -11,18 +11,20 @@
        Background="{DynamicResource MaterialDesignPaper}"
        FontFamily="{DynamicResource MaterialDesignFont}"
         mc:Ignorable="d"
+        WindowStyle="None"
+ResizeMode="NoResize"
         Title="Dangnhap" Height="463" Width="310" MouseDown="Grid_MouseDown">
     <Grid Background="Black" Margin="0,10,0,0" HorizontalAlignment="Center" Width="812" >
 
-        <Rectangle HorizontalAlignment="Left" Height="465" Margin="252,-28,0,0" VerticalAlignment="Top" Width="312" Fill="#FF2B2B44" RadiusX="42" RadiusY="42"/>
+        <Rectangle HorizontalAlignment="Left" Height="511" Margin="244,0,0,0" VerticalAlignment="Center" Width="320" Fill="#FF2B2B44" RadiusX="42" RadiusY="42"/>
         <StackPanel Margin="228,34,31,33" Grid.RowSpan="3"/>
-        <Label Content="Đăng nhập" HorizontalAlignment="Left" Margin="328,58,0,0" VerticalAlignment="Top" Width="152" Foreground="#FF00FFFA" Height="44" FontSize="24" FontFamily="Arial Black" FontWeight="Bold" Background="{x:Null}"/>
-        <Image HorizontalAlignment="Left" Height="38" Margin="275,148,0,0" VerticalAlignment="Top" Width="47" Source="./Images/tk.png" RenderTransformOrigin="0.556,1.528"/>
-        <Image HorizontalAlignment="Left" Height="37" Margin="278,219,0,0" VerticalAlignment="Top" Width="36" Source="./Images/locked.png"/>
+        <Label Content="Đăng nhập" HorizontalAlignment="Left" Margin="328,58,0,0" VerticalAlignment="Top" Width="149" Foreground="White" Height="44" FontSize="24" FontFamily="Arial Black" FontWeight="Bold" Background="{x:Null}"/>
+        <Image HorizontalAlignment="Left" Height="35" Margin="281,154,0,0" VerticalAlignment="Top" Width="38" Source="./Images/tk.png" RenderTransformOrigin="0.556,1.528"/>
+        <Image HorizontalAlignment="Left" Height="36" Margin="282,220,0,0" VerticalAlignment="Top" Width="36" Source="./Images/locked.png"/>
 
-        <Button Content="Quay lại" HorizontalAlignment="Left" Margin="281,283,0,0" VerticalAlignment="Top" Click="Button_Click" Height="29" Width="94" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFFB8686" FontSize="16" FontWeight="Bold"/>
-        <Button Content="Đăng kí" HorizontalAlignment="Left" Margin="427,283,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.505,0.603" Background="{x:Null}" Width="94" BorderBrush="{x:Null}" Foreground="#FFFB8686" FontSize="16" FontWeight="Bold" Height="33" Click="Button_Click_2"/>
-        <Button Content="Đăng nhập" HorizontalAlignment="Left" Margin="348,321,0,0" VerticalAlignment="Top" Width="104" Height="27" Background="#FF232323" RenderTransformOrigin="0.515,0.519" BorderBrush="{x:Null}"  Foreground="#FFFB8686" FontSize="16" Click="Dangnhap_click">
+        <Button Content="Quay lại" HorizontalAlignment="Left" Margin="294,289,0,0" VerticalAlignment="Top" Click="Button_Click" Height="33" Width="97" Background="{x:Null}" BorderBrush="White" Foreground="#FFFB8686" FontSize="18" FontWeight="Bold"/>
+        <Button Content="Đăng kí" HorizontalAlignment="Left" Margin="418,289,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.505,0.603" Background="{x:Null}" Width="97" BorderBrush="White" Foreground="#FFFB8686" FontSize="18" FontWeight="Bold" Height="33" Click="Button_Click_2"/>
+        <Button Content="Đăng nhập" HorizontalAlignment="Center" Margin="0,339,0,0" VerticalAlignment="Top" Width="112" Height="38" Background="#FF232323" RenderTransformOrigin="0.515,0.519" BorderBrush="{x:Null}"  Foreground="#FFFB8686" FontSize="16" Click="Dangnhap_click">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -34,8 +36,8 @@
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border Width="100" Height="25"
-                CornerRadius="15"
-                Background="{TemplateBinding Background}">
+                CornerRadius="5"
+                Background="{TemplateBinding Background}" Margin="6,6,6,6">
                         <ContentPresenter VerticalAlignment="Center"
                            HorizontalAlignment="Center"/>
                     </Border>
@@ -44,14 +46,100 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <RadioButton x:Name="Check_Ungvien" Content="Ứng viên" HorizontalAlignment="Left" Height="16" Margin="305,102,0,0" VerticalAlignment="Top" Width="86" Foreground="#FF00FFFA" BorderBrush="White" Background="White" OpacityMask="White"/>
-        <RadioButton x:Name="Check_Nhanvien" Content="Nhân viên" HorizontalAlignment="Left" Height="16" Margin="418,102,0,0" VerticalAlignment="Top" Width="86" Foreground="#FF00FFFA" BorderBrush="White" Background="White" OpacityMask="White"/>
+        <RadioButton x:Name="Check_Ungvien" Content="Ứng viên" HorizontalAlignment="Left" Height="16" Margin="305,102,0,0" VerticalAlignment="Top" Width="86" Foreground="White" BorderBrush="White" Background="White" OpacityMask="White"/>
+        <RadioButton x:Name="Check_Nhanvien" Content="Nhân viên" HorizontalAlignment="Left" Height="16" Margin="418,102,0,0" VerticalAlignment="Top" Width="86" Foreground="White" BorderBrush="White" Background="White" OpacityMask="White"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="764,132,0,0" VerticalAlignment="Top"/>
-        <StackPanel Margin="318,148,308,162">
-            <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Username" Margin="5 5 5 27" x:Name="txtUsername" TextWrapping="Wrap" Width="177" BorderBrush="#FF2F5EEC" CaretBrush="#FF23C7E6" Background="White" Height="36" VerticalContentAlignment="Center" HorizontalContentAlignment="Left"    />
-            <PasswordBox Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" x:Name="PB_Password" CaretBrush="#FF23C7E6" BorderBrush="#FF2F5EEC"  Background="White" materialDesign:HintAssist.Hint="Password" Width="177" Height="36" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"  Margin="5 5 5 27"/>
+        <StackPanel Margin="318,148,308,182">
+            <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Username" Margin="5 5 5 27" x:Name="txtUsername" TextWrapping="Wrap" Width="177" BorderBrush="#FF2F5EEC" CaretBrush="Black" Background="White" Height="36" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontSize="14" SelectionBrush="Black"    />
+            <PasswordBox Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" x:Name="PB_Password" CaretBrush="Black" BorderBrush="#FF2F5EEC"  Background="White" materialDesign:HintAssist.Hint="Password" Width="177" Height="36" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"  Margin="5 5 5 27" FontSize="14" SelectionBrush="Black"/>
         </StackPanel>
+        <StackPanel Margin="244,-15,496,398">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="Images/comet.png" Stretch="Fill"/>
+            </StackPanel.Background>
 
+        </StackPanel>
+        <StackPanel Margin="461,327,204,-13">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="Images/constellation.png" Stretch="Fill"/>
+            </StackPanel.Background>
+
+        </StackPanel>
+        <StackPanel Margin="265,381,417,-46" RenderTransformOrigin="0.5,0.5">
+            <StackPanel.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-38.341"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </StackPanel.RenderTransform>
+            <StackPanel.Background>
+                <ImageBrush ImageSource="Images/galaxy (1).png" Stretch="Fill"/>
+            </StackPanel.Background>
+        </StackPanel>
+        <StackPanel Margin="482,-42,204,373">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="Images/saturn.png" Stretch="Fill"/>
+            </StackPanel.Background>
+
+        </StackPanel>
+        <StackPanel Margin="501,130,295,311" RenderTransformOrigin="0.5,0.5">
+            <StackPanel.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-23.736"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </StackPanel.RenderTransform>
+            <StackPanel.Background>
+                <ImageBrush ImageSource="Images/favourite.png" Stretch="Fill"/>
+            </StackPanel.Background>
+
+        </StackPanel>
+        <StackPanel Margin="246,206,550,235" RenderTransformOrigin="0.5,0.5">
+            <StackPanel.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-23.736"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </StackPanel.RenderTransform>
+            <StackPanel.Background>
+                <ImageBrush ImageSource="Images/favourite.png" Stretch="Fill"/>
+            </StackPanel.Background>
+
+        </StackPanel>
+        <StackPanel Margin="550,252,246,189" RenderTransformOrigin="0.5,0.5">
+            <StackPanel.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-23.736"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </StackPanel.RenderTransform>
+            <StackPanel.Background>
+                <ImageBrush ImageSource="Images/favourite.png" Stretch="Fill"/>
+            </StackPanel.Background>
+
+        </StackPanel>
+        <StackPanel Margin="429,399,367,42" RenderTransformOrigin="0.5,0.5">
+            <StackPanel.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-23.736"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </StackPanel.RenderTransform>
+            <StackPanel.Background>
+                <ImageBrush ImageSource="Images/favourite.png" Stretch="Fill"/>
+            </StackPanel.Background>
+
+        </StackPanel>
 
 
 

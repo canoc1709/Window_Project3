@@ -5,20 +5,20 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Test"
              Loaded="UCCongViec_Load"
-             mc:Ignorable="d" Height="160" Width="767">
+             mc:Ignorable="d" Height="160" Width="698">
     <Grid>
-        <Rectangle HorizontalAlignment="Center" Height="151" VerticalAlignment="Top" Width="767" RadiusY="5" RadiusX="5" Fill="#FF9C8181"/>
+        <Rectangle HorizontalAlignment="Center" Height="151" VerticalAlignment="Top" Width="767" RadiusY="5" RadiusX="5" Fill="White"/>
         <StackPanel x:Name="stp" Orientation="Horizontal" Margin="0,107,0,-88">
             <ListView x:Name="ltv">
             </ListView>
         </StackPanel>
         <StackPanel Margin="0,0,165,0">
-            <TextBox x:Name="lblTencty" Height="39" Text="Company:" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18" IsReadOnly="True" Width="607" Foreground="#FFFFFF"/>
-            <TextBox x:Name="lblChucvu" Height="38" Text="Job:" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18" IsReadOnly="True" Foreground="#FFFFFF"/>
-            <TextBox x:Name="lblLuong" Height="36" Text="Salary:" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18" IsReadOnly="True" Foreground="#FFFFFF"/>
+            <TextBox x:Name="lblTencty" Height="39" Text="Company:" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18" IsReadOnly="True" Width="607" Foreground="Black"/>
+            <TextBox x:Name="lblChucvu" Height="38" Text="Job:" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18" IsReadOnly="True" Foreground="Black"/>
+            <TextBox x:Name="lblLuong" Height="36" Text="Salary:" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18" IsReadOnly="True" Foreground="Black"/>
         </StackPanel>
         <StackPanel Margin="501,0,0,0" >
-            <Button x:Name="btnChitiet" Height="150" Width="110" Content="Details" Background="{x:Null}" BorderBrush="{x:Null}"/>
+            <Button x:Name="btnChitiet" Height="150" Width="108" Content="Details" Background="{x:Null}" BorderBrush="{x:Null}"/>
         </StackPanel>
     </Grid>
 </UserControl>

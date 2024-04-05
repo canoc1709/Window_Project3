@@ -291,6 +291,17 @@
   <ItemGroup>
     <Resource Include="backgroundgalaxy.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="galaxy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\comet.png" />
+    <Resource Include="Images\constellation.png" />
+    <Resource Include="Images\galaxy %281%29.png" />
+    <Resource Include="Images\outer-space.png" />
+    <Resource Include="Images\saturn.png" />
+    <Resource Include="Images\universe.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.4.9.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.9.0\build\MaterialDesignThemes.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

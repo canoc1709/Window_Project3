@@ -8,6 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("backgroundgalaxy.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/comet.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/constellation.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/galaxy%20(1).png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/outer-space.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/saturn.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/universe.png")]
 
 
