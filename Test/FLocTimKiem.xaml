@@ -6,9 +6,11 @@
         xmlns:local="clr-namespace:Test"
         mc:Ignorable="d"
         Title="FLocTimKiem" Height="450" Width="800"
+        
         WindowStyle="None"
         AllowsTransparency="True"
-        Background="Transparent">
+        Background="Transparent"
+        WindowStartupLocation="Manual" Left="10">
 
     <Grid Background="#38395d" MouseDown="Grid_MouseDown">
         <StackPanel Margin="0,0,10,0">
