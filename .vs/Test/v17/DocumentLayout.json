@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\tuankiet\\source\\repos\\Window_Project3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6E4BFF15-E1B9-428A-8BFC-9773277C2721}|Test\\ProjectWF.csproj|C:\\Users\\tuankiet\\source\\repos\\Window_Project3\\test\\ftimkiemcongviec.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E4BFF15-E1B9-428A-8BFC-9773277C2721}|Test\\ProjectWF.csproj|solutionrelative:test\\ftimkiemcongviec.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E4BFF15-E1B9-428A-8BFC-9773277C2721}|Test\\ProjectWF.csproj|c:\\users\\tuankiet\\source\\repos\\window_project3\\test\\ftimkiemcongviec.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6E4BFF15-E1B9-428A-8BFC-9773277C2721}|Test\\ProjectWF.csproj|solutionrelative:test\\ftimkiemcongviec.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E4BFF15-E1B9-428A-8BFC-9773277C2721}|Test\\ProjectWF.csproj|c:\\users\\tuankiet\\source\\repos\\window_project3\\test\\ucchitietcongviec.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E4BFF15-E1B9-428A-8BFC-9773277C2721}|Test\\ProjectWF.csproj|solutionrelative:test\\ucchitietcongviec.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E4BFF15-E1B9-428A-8BFC-9773277C2721}|Test\\ProjectWF.csproj|c:\\users\\tuankiet\\source\\repos\\window_project3\\test\\uccongviec.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E4BFF15-E1B9-428A-8BFC-9773277C2721}|Test\\ProjectWF.csproj|solutionrelative:test\\uccongviec.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6E4BFF15-E1B9-428A-8BFC-9773277C2721}|Test\\ProjectWF.csproj|C:\\Users\\tuankiet\\source\\repos\\Window_Project3\\test\\uccongviec.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6E4BFF15-E1B9-428A-8BFC-9773277C2721}|Test\\ProjectWF.csproj|solutionrelative:test\\uccongviec.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E4BFF15-E1B9-428A-8BFC-9773277C2721}|Test\\ProjectWF.csproj|C:\\Users\\tuankiet\\source\\repos\\Window_Project3\\test\\uccongviec.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E4BFF15-E1B9-428A-8BFC-9773277C2721}|Test\\ProjectWF.csproj|solutionrelative:test\\uccongviec.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E4BFF15-E1B9-428A-8BFC-9773277C2721}|Test\\ProjectWF.csproj|c:\\users\\tuankiet\\source\\repos\\window_project3\\test\\fchitietcongviec.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E4BFF15-E1B9-428A-8BFC-9773277C2721}|Test\\ProjectWF.csproj|solutionrelative:test\\fchitietcongviec.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E4BFF15-E1B9-428A-8BFC-9773277C2721}|Test\\ProjectWF.csproj|c:\\users\\tuankiet\\source\\repos\\window_project3\\test\\ucchitietcongviec.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6E4BFF15-E1B9-428A-8BFC-9773277C2721}|Test\\ProjectWF.csproj|solutionrelative:test\\ucchitietcongviec.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{6E4BFF15-E1B9-428A-8BFC-9773277C2721}|Test\\ProjectWF.csproj|c:\\users\\tuankiet\\source\\repos\\window_project3\\test\\fchitietcongviec.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6E4BFF15-E1B9-428A-8BFC-9773277C2721}|Test\\ProjectWF.csproj|solutionrelative:test\\fchitietcongviec.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E4BFF15-E1B9-428A-8BFC-9773277C2721}|Test\\ProjectWF.csproj|C:\\Users\\tuankiet\\source\\repos\\Window_Project3\\test\\ftimkiemcongviec.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E4BFF15-E1B9-428A-8BFC-9773277C2721}|Test\\ProjectWF.csproj|solutionrelative:test\\ftimkiemcongviec.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E4BFF15-E1B9-428A-8BFC-9773277C2721}|Test\\ProjectWF.csproj|C:\\Users\\tuankiet\\source\\repos\\Window_Project3\\test\\ftimkiemcongviec.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6E4BFF15-E1B9-428A-8BFC-9773277C2721}|Test\\ProjectWF.csproj|solutionrelative:test\\ftimkiemcongviec.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6E4BFF15-E1B9-428A-8BFC-9773277C2721}|Test\\ProjectWF.csproj|C:\\Users\\tuankiet\\source\\repos\\Window_Project3\\test\\ucthongtinuv.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -150,32 +150,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FTimKiemCongViec.xaml",
-              "DocumentMoniker": "C:\\Users\\tuankiet\\source\\repos\\Window_Project3\\Test\\FTimKiemCongViec.xaml",
-              "RelativeDocumentMoniker": "Test\\FTimKiemCongViec.xaml",
-              "ToolTip": "C:\\Users\\tuankiet\\source\\repos\\Window_Project3\\Test\\FTimKiemCongViec.xaml",
-              "RelativeToolTip": "Test\\FTimKiemCongViec.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-05T08:42:34.015Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UCChiTietCongViec.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\tuankiet\\source\\repos\\Window_Project3\\Test\\UCChiTietCongViec.xaml.cs",
-              "RelativeDocumentMoniker": "Test\\UCChiTietCongViec.xaml.cs",
-              "ToolTip": "C:\\Users\\tuankiet\\source\\repos\\Window_Project3\\Test\\UCChiTietCongViec.xaml.cs",
-              "RelativeToolTip": "Test\\UCChiTietCongViec.xaml.cs",
-              "ViewState": "AQIAAEAAAAAAAAAAAAAcwEQAAAAJAAAA",
+              "Title": "FChitietcongviec.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\tuankiet\\source\\repos\\Window_Project3\\Test\\FChitietcongviec.xaml.cs",
+              "RelativeDocumentMoniker": "Test\\FChitietcongviec.xaml.cs",
+              "ToolTip": "C:\\Users\\tuankiet\\source\\repos\\Window_Project3\\Test\\FChitietcongviec.xaml.cs",
+              "RelativeToolTip": "Test\\FChitietcongviec.xaml.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAgwC8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-05T08:36:34.351Z",
+              "WhenOpened": "2024-04-06T09:46:49.95Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "FChitietcongviec.xaml",
+              "DocumentMoniker": "C:\\Users\\tuankiet\\source\\repos\\Window_Project3\\Test\\FChitietcongviec.xaml",
+              "RelativeDocumentMoniker": "Test\\FChitietcongviec.xaml",
+              "ToolTip": "C:\\Users\\tuankiet\\source\\repos\\Window_Project3\\Test\\FChitietcongviec.xaml",
+              "RelativeToolTip": "Test\\FChitietcongviec.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-06T09:44:05.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "FTimKiemCongViec.xaml.cs",
               "DocumentMoniker": "C:\\Users\\tuankiet\\source\\repos\\Window_Project3\\Test\\FTimKiemCongViec.xaml.cs",
               "RelativeDocumentMoniker": "Test\\FTimKiemCongViec.xaml.cs",
@@ -183,25 +183,35 @@
               "RelativeToolTip": "Test\\FTimKiemCongViec.xaml.cs",
               "ViewState": "AQIAAC0AAAAAAAAAAAAQwDkAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T16:00:59.423Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-24T16:00:59.423Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "UCCongViec.xaml.cs",
               "DocumentMoniker": "C:\\Users\\tuankiet\\source\\repos\\Window_Project3\\Test\\UCCongViec.xaml.cs",
               "RelativeDocumentMoniker": "Test\\UCCongViec.xaml.cs",
               "ToolTip": "C:\\Users\\tuankiet\\source\\repos\\Window_Project3\\Test\\UCCongViec.xaml.cs",
               "RelativeToolTip": "Test\\UCCongViec.xaml.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAmwE8AAAAAAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwE0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-24T16:06:31.631Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
+              "Title": "FTimKiemCongViec.xaml",
+              "DocumentMoniker": "C:\\Users\\tuankiet\\source\\repos\\Window_Project3\\Test\\FTimKiemCongViec.xaml",
+              "RelativeDocumentMoniker": "Test\\FTimKiemCongViec.xaml",
+              "ToolTip": "C:\\Users\\tuankiet\\source\\repos\\Window_Project3\\Test\\FTimKiemCongViec.xaml",
+              "RelativeToolTip": "Test\\FTimKiemCongViec.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-05T08:42:34.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "UCCongViec.xaml",
               "DocumentMoniker": "C:\\Users\\tuankiet\\source\\repos\\Window_Project3\\Test\\UCCongViec.xaml",
               "RelativeDocumentMoniker": "Test\\UCCongViec.xaml",
@@ -213,18 +223,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UCChiTietCongViec.xaml",
-              "DocumentMoniker": "C:\\Users\\tuankiet\\source\\repos\\Window_Project3\\Test\\UCChiTietCongViec.xaml",
-              "RelativeDocumentMoniker": "Test\\UCChiTietCongViec.xaml",
-              "ToolTip": "C:\\Users\\tuankiet\\source\\repos\\Window_Project3\\Test\\UCChiTietCongViec.xaml",
-              "RelativeToolTip": "Test\\UCChiTietCongViec.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-05T08:36:23.926Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 8,
               "Title": "FNhanVien.xaml",
               "DocumentMoniker": "C:\\Users\\tuankiet\\source\\repos\\Window_Project3\\Test\\FNhanVien.xaml",
@@ -232,8 +230,7 @@
               "ToolTip": "C:\\Users\\tuankiet\\source\\repos\\Window_Project3\\Test\\FNhanVien.xaml",
               "RelativeToolTip": "Test\\FNhanVien.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-24T14:03:46.205Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-24T14:03:46.205Z"
             },
             {
               "$type": "Document",
@@ -339,8 +336,7 @@
               "ToolTip": "C:\\Users\\tuankiet\\source\\repos\\Window_Project3\\Test\\FDangki.xaml",
               "RelativeToolTip": "Test\\FDangki.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-24T11:40:12.558Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-24T11:40:12.558Z"
             },
             {
               "$type": "Document",
@@ -398,8 +394,7 @@
               "ToolTip": "C:\\Users\\tuankiet\\source\\repos\\Window_Project3\\Test\\FVP_CongTy.xaml",
               "RelativeToolTip": "Test\\FVP_CongTy.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-26T08:00:11.38Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-26T08:00:11.38Z"
             },
             {
               "$type": "Document",
@@ -410,8 +405,7 @@
               "ToolTip": "C:\\Users\\tuankiet\\source\\repos\\Window_Project3\\Test\\FLocTimKiem.xaml",
               "RelativeToolTip": "Test\\FLocTimKiem.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-26T08:00:18.398Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-26T08:00:18.398Z"
             },
             {
               "$type": "Document",
@@ -446,8 +440,7 @@
               "ToolTip": "C:\\Users\\tuankiet\\source\\repos\\Window_Project3\\Test\\FTrangChu.xaml",
               "RelativeToolTip": "Test\\FTrangChu.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-24T13:25:13.762Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-24T13:25:13.762Z"
             },
             {
               "$type": "Document",
@@ -458,8 +451,7 @@
               "ToolTip": "C:\\Users\\tuankiet\\source\\repos\\Window_Project3\\Test\\FDangnhap.xaml",
               "RelativeToolTip": "Test\\FDangnhap.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-24T11:40:16.123Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-24T11:40:16.123Z"
             },
             {
               "$type": "Document",

@@ -341,8 +341,6 @@ C:\Users\Yordle\OneDrive\Desktop\WF_PROJECT\Test\obj\Debug\Test.exe
 C:\Users\Yordle\OneDrive\Desktop\WF_PROJECT\Test\obj\Debug\Test.pdb
 C:\Users\tuankiet\Source\Repos\Window_Project3\Test\obj\Debug\UCThongtinUV.g.cs
 C:\Users\tuankiet\Source\Repos\Window_Project3\Test\obj\Debug\UCThongtinUV.baml
-C:\Users\tuankiet\source\repos\Window_Project3\Test\obj\Debug\UCChiTietCongViec.g.cs
-C:\Users\tuankiet\source\repos\Window_Project3\Test\obj\Debug\UCChiTietCongViec.baml
 C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\UCThongtinUV.g.cs
 C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\UCChiTietCongViec.g.cs
 C:\Users\HAI DANG\Source\Repos\Window_Project3\Test\obj\Debug\UCThongtinUV.baml
@@ -396,3 +394,5 @@ C:\Users\Yordle\OneDrive\Desktop\WF_Project2\Test\obj\Debug\Test.Properties.Reso
 C:\Users\Yordle\OneDrive\Desktop\WF_Project2\Test\obj\Debug\ProjectWF.csproj.GenerateResource.cache
 C:\Users\Yordle\OneDrive\Desktop\WF_Project2\Test\obj\Debug\ProjectWF.csproj.CoreCompileInputs.cache
 C:\Users\Yordle\OneDrive\Desktop\WF_Project2\Test\obj\Debug\ProjectWF.csproj.CopyComplete
+C:\Users\tuankiet\Source\Repos\Window_Project3\Test\obj\Debug\FChitietcongviec.g.cs
+C:\Users\tuankiet\Source\Repos\Window_Project3\Test\obj\Debug\FChitietcongviec.baml

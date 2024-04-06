@@ -69,17 +69,14 @@
     <Compile Include="CongtyDAO.cs" />
     <Compile Include="Congviec.cs" />
     <Compile Include="CongviecDAO.cs" />
+    <Compile Include="FChitietcongviec.xaml.cs">
+      <DependentUpon>FChitietcongviec.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FLocTimKiem.xaml.cs">
       <DependentUpon>FLocTimKiem.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Testform.xaml.cs">
-      <DependentUpon>Testform.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UCThongtinUV.xaml.cs">
       <DependentUpon>UCThongtinUV.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UCChiTietCongViec.xaml.cs">
-      <DependentUpon>UCChiTietCongViec.xaml</DependentUpon>
     </Compile>
     <Compile Include="UngvienDAO.cs" />
     <Compile Include="Congty.cs" />
@@ -98,11 +95,11 @@
     <Compile Include="FVP_CongTy.xaml.cs">
       <DependentUpon>FVP_CongTy.xaml</DependentUpon>
     </Compile>
-    <Page Include="FLocTimKiem.xaml">
+    <Page Include="FChitietcongviec.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Testform.xaml">
+    <Page Include="FLocTimKiem.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -149,10 +146,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UCThongtinUV.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UCChiTietCongViec.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -10,42 +10,46 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Test
 {
     /// <summary>
-    /// Interaction logic for UC_ChiTietCongViec.xaml
+    /// Interaction logic for FChitietcongviec.xaml
     /// </summary>
-    public partial class UCChiTietCongViec : UserControl
+    public partial class FChitietcongviec : Window
     {
         UngVien ungvien = new UngVien();
         Congty congty = new Congty();
         Congviec congviec = new Congviec();
         CongviecDAO congviecDAO = new CongviecDAO();
+        public Congviec CongViec
+        {
+            get { return congviec; }
+            set { congviec = value; }
+        }
         public Button BtnExit
         {
             get { return btnExit; }
             set { btnExit = value; }
         }
-        public UCChiTietCongViec()
+        public FChitietcongviec()
         {
             InitializeComponent();
         }
-        public UCChiTietCongViec(Congviec congviec, UngVien ungvien)
+        public FChitietcongviec(Congviec congviec, UngVien ungvien)
         {
             this.congviec = congviec;
             this.ungvien = ungvien;
             InitializeComponent();
         }
-        public UCChiTietCongViec(Congviec congviec, Congty congty)
+        public FChitietcongviec(Congviec congviec, Congty congty)
         {
             this.congviec = congviec;
             this.congty = congty;
             InitializeComponent();
         }
-        private void UCChiTietCongViec_Load(object sender, RoutedEventArgs e)
+        private void FChitietcongviec_Load(object sender, RoutedEventArgs e)
         {
             load();
             if (congty.ID != 0)
@@ -80,7 +84,7 @@ namespace Test
             txtMotacv.IsReadOnly = false;
             txtChucvu.IsReadOnly = false;
         }
-        private void BtnLuu_Click(object sender, RoutedEventArgs e)
+        private void btnLuu_Click(object sender, RoutedEventArgs e)
         {
             int id = (int)congviec.ID;
             congviec = new Congviec(id, int.Parse(txtLuong.Text), txtMotacv.Text, txtYeucau.Text, txtPhucloi.Text,
@@ -91,6 +95,10 @@ namespace Test
             txtLuong.IsReadOnly = true;
             txtMotacv.IsReadOnly = true;
             txtChucvu.IsReadOnly = true;
+        }
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            DialogResult = true;
         }
     }
 }

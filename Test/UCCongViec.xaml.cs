@@ -67,13 +67,18 @@ namespace Test
         }
         private void btnChitiet_Click1(object sender, RoutedEventArgs e)
         {
-            UCChiTietCongViec ucChiTietCongViec = new UCChiTietCongViec(congviec, congty);
-            ltv.Items.Add(ucChiTietCongViec);
+            FChitietcongviec chitietcongviec = new FChitietcongviec(congviec, congty);
+            chitietcongviec.ShowDialog();
+            if (chitietcongviec.DialogResult.HasValue && chitietcongviec.DialogResult.Value)
+            {
+                congviec = chitietcongviec.CongViec;
+                load();
+            }
         }
         private void btnChitiet_Click2(object sender, RoutedEventArgs e)
         {
-            UCChiTietCongViec ucChiTietCongViec = new UCChiTietCongViec(congviec, ungvien);
-            ltv.Items.Add(ucChiTietCongViec);
+            FChitietcongviec chitietcongviec = new FChitietcongviec(congviec, ungvien);
+            chitietcongviec.Show();
         }
     }
 }
