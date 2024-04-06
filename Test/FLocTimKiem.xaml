@@ -10,18 +10,18 @@
         AllowsTransparency="True"
         Background="Transparent">
 
-    <Grid Background="#38395d">
+    <Grid Background="#38395d" MouseDown="Grid_MouseDown">
         <StackPanel Margin="0,0,10,0">
             <Expander Header ="Ngành nghề" Width="274" x:Name="JobExpander" HorizontalAlignment="Left" Margin="100,40,0,0">
                 <Grid Height="200" >
-                    <ListView x:Name="LV_NganhNghe" Margin="0,0,183,0"/>
+                    <ListView x:Name="LV_NganhNghe" Margin="10,0,10,0"/>
                 </Grid>
             </Expander>
         </StackPanel>
         <StackPanel>
             <Expander Header ="Cấp Bậc" Width="276" x:Name="PositionExpander" HorizontalAlignment="Right" Margin="0,40,100,0">
                 <Grid Height="200" >
-                    <ListView x:Name="LV_CapBac" Margin="0,0,183,0"/>
+                    <ListView x:Name="LV_CapBac" HorizontalAlignment="Center" Width="256"/>
                 </Grid>
             </Expander>
             <Image Height="96" Source="/icons8-over-the-moon-96.png" Stretch="Fill" Width="96"/>

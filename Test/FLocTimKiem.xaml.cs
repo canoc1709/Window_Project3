@@ -23,13 +23,44 @@ namespace Test
         public FLocTimKiem()
         {
             InitializeComponent();
+            Load();
         }
-
-        
 
         private void btnok_Loc_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+        private void Load()
+        {
+            string[] NganhNghe = { "Bán Lẻ/Tiêu Dùng", "Bảo Hiểm","Bất Động Sản", "Dược", "Dịch Vụ Khách Hàng", "Dịch Vụ Ăn Uống", "Kế Toán/Kiểm Toán",
+            "Kỹ Thuật", "Nhà Hàng - Khách Sạn"};
+            for (int i = 0; i < NganhNghe.Length; i++)
+            {
+                CheckBox checkBox = new CheckBox();
+                checkBox.Width = 150;
+                checkBox.Height = 50;
+                checkBox.HorizontalContentAlignment = HorizontalAlignment.Left;
+                checkBox.VerticalContentAlignment = VerticalAlignment.Center;
+                checkBox.VerticalAlignment = VerticalAlignment.Center;
+                checkBox.Content = NganhNghe[i];
+                ListViewItem listViewItem = new ListViewItem();
+                listViewItem.Height = 50;
+                listViewItem.Content = checkBox;
+                LV_NganhNghe.Items.Add(listViewItem);
+            }
+
+        }
+        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                DragMove();
+            }
+        }
+
+        private void btnquit_click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
