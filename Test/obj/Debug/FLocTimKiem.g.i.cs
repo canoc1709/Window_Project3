@@ -41,9 +41,33 @@ namespace Test {
     public partial class FLocTimKiem : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
-        #line 230 "..\..\FLocTimKiem.xaml"
+        #line 15 "..\..\FLocTimKiem.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button btnok_Loc;
+        internal System.Windows.Controls.Expander JobExpander;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 17 "..\..\FLocTimKiem.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.ListView LV_NganhNghe;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 22 "..\..\FLocTimKiem.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Expander PositionExpander;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 24 "..\..\FLocTimKiem.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.ListView LV_CapBac;
         
         #line default
         #line hidden
@@ -79,10 +103,21 @@ namespace Test {
             switch (connectionId)
             {
             case 1:
-            this.btnok_Loc = ((System.Windows.Controls.Button)(target));
+            this.JobExpander = ((System.Windows.Controls.Expander)(target));
+            return;
+            case 2:
+            this.LV_NganhNghe = ((System.Windows.Controls.ListView)(target));
+            return;
+            case 3:
+            this.PositionExpander = ((System.Windows.Controls.Expander)(target));
+            return;
+            case 4:
+            this.LV_CapBac = ((System.Windows.Controls.ListView)(target));
+            return;
+            case 5:
             
-            #line 230 "..\..\FLocTimKiem.xaml"
-            this.btnok_Loc.Click += new System.Windows.RoutedEventHandler(this.btnok_Loc_Click);
+            #line 30 "..\..\FLocTimKiem.xaml"
+            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.btnquit_click);
             
             #line default
             #line hidden

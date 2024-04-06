@@ -302,6 +302,18 @@
     <Resource Include="Images\saturn.png" />
     <Resource Include="Images\universe.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\X.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icons8-over-the-moon-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icons8-galaxy-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icons8-galaxy-62.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.4.9.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.9.0\build\MaterialDesignThemes.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
