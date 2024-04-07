@@ -45,8 +45,9 @@ namespace Test
         private void btnTimKiem_Click(object sender,RoutedEventArgs e)
         {
             ltvCongviec.Items.Clear();
+            string s = txtTimkiem.Text;
             DataTable dt = new DataTable();
-            dt = congviecDAO.LoadCongviec();
+            dt = congviecDAO.LoadCongviec(s);
             foreach(DataRow dr in dt.Rows)
             {
                 congviec = new Congviec(dr);

@@ -16,10 +16,10 @@ namespace Test
                 "values('{0}','{1}','{2}','{3}','{4}',{5})", congviec.Chucvu, Convert.ToInt32(congviec.Luong), congviec.Motacv, congviec.Yeucau, congviec.Phucloi, congty.ID);
             connection.ThucThi(s);
         }
-        public DataTable LoadCongviec()
+        public DataTable LoadCongviec(string a)
         {
             DataTable dt = new DataTable();
-            string s = string.Format("select * from v_Tuyenviec");
+            string s = string.Format("select * from v_Tuyenviec where Tenct like '%{0}%' or Chucvu like '%{0}%'", a);
             dt = connection.load(s);
             return dt;
         }
