@@ -59,6 +59,13 @@ namespace Test
                 imgNhanVien.Source = bitmapImage;
             }
         }
+        private void DP_ChonNamSinh(object sender, RoutedEventArgs e)
+        {
+            if(dtpNgaysinh.SelectedDate.HasValue)
+            {
+                txtNamSinh_Dangky.Text = dtpNgaysinh.SelectedDate.Value.ToString("dd/MM/yyyy");
+            }
+        }
         private void btnSua_Click(object sender, RoutedEventArgs e)
         {
             txtHoTen_Dangky.IsReadOnly = false;

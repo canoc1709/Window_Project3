@@ -3,11 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:local="clr-namespace:Test"
              Loaded="UCThongtinUV_Load"
              mc:Ignorable="d" d:DesignWidth="875" Height="525"
              Background="Transparent">
+    <UserControl.Resources>
+        <!-- Colors -->
 
+        <!-- Primary Colors -->
+        <SolidColorBrush x:Key="PrimaryBlueColor" Color="#004BFF"/>
+        <SolidColorBrush x:Key="PrimaryGrayColor" Color="#64677A"/>
+
+        <!-- Secundary Colors -->
+        <SolidColorBrush x:Key="SecundaryBlueColor" Color="#496FFF"/>
+        <SolidColorBrush x:Key="SecundaryGrayColor" Color="#64677A"/>
+
+    </UserControl.Resources>
 
     <Grid x:Name="ltv" Background="#FF2B2B44" Margin="1,0,-1,0">
 
@@ -16,9 +28,8 @@
        Source="Images/profile.png"/>
         </StackPanel>
         <Button x:Name="btnChonAnh" Click="TaiAnh_Click" Content="Chọn ảnh" Margin="50,204,723,289" Background="#FFFB8686" BorderThickness="0" FontStyle="Normal" VerticalContentAlignment="Center"/>
-        <Button x:Name="btnSua" Click="btnSua_Click"  Content="Sửa" HorizontalAlignment="Left" Margin="694,170,0,0" VerticalAlignment="Top" Height="27" Width="64" Background="#FFFB8686" BorderThickness="0" VerticalContentAlignment="Center"/>
+        <Button x:Name="btnSua" Click="btnSua_Click"  Content="Sửa" HorizontalAlignment="Left" Margin="50,369,0,0" VerticalAlignment="Top" Height="27" Width="64" Background="#FFFB8686" BorderThickness="0" VerticalContentAlignment="Center"/>
         <Button x:Name="btnLuu" Click="btnLuu_Click" Content="Lưu" HorizontalAlignment="Left" Margin="694,0,0,0" VerticalAlignment="Center" Height="26" Width="64" Background="#FFFB8686" BorderThickness="0" VerticalContentAlignment="Center"/>
-        <DatePicker x:Name="dtpNgaysinh" HorizontalAlignment="Left" Margin="552,133,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
 
         <Label x:Name="lbHoTen" Content="Họ tên" HorizontalAlignment="Left" Margin="200,40,0,0" VerticalAlignment="Top" Height="28" Width="54" x:FieldModifier="private" Foreground="#DDFFFFFF" FontSize="14"/>
         <Label x:Name="lbNamSinh" Content="Năm sinh" HorizontalAlignment="Left" Margin="200,120,0,0" VerticalAlignment="Top" Height="28" Width="80" x:FieldModifier="private" Foreground="#DDFFFFFF" FontSize="14"/>
@@ -27,15 +38,114 @@
         <Label x:Name="lbSDT" Content="SĐT" HorizontalAlignment="Left" Margin="200,360,0,0" VerticalAlignment="Top" Height="28" Width="80" x:FieldModifier="private" Foreground="#DDFFFFFF" FontSize="14"/>
         <Label x:Name="lbKinhNghiem" Content="Kinh nghiệm" HorizontalAlignment="Left" Margin="200,440,0,0" VerticalAlignment="Top" Height="30" Width="81" x:FieldModifier="private" Foreground="#DDFFFFFF" FontSize="14"/>
 
+        <TextBox 
+            x:Name="txtHoTen_Dangky"
+            IsReadOnly="True" 
+            VerticalAlignment="Top"
+            materialDesign:HintAssist.Hint="Họ tên"
+            Style="{StaticResource MaterialDesignFilledTextBox}" Margin="338,32,280,0" Foreground="#FFFFFF">
+            <TextBox.Text>
+                <Binding
+                    Path="Họ tên"
+                    UpdateSourceTrigger="PropertyChanged">
+                    <Binding.ValidationRules>
 
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+        <TextBox 
+            x:Name="txtNamSinh_Dangky"
+            IsReadOnly="True" 
+            VerticalAlignment="Top"
+            materialDesign:HintAssist.Hint="Năm Sinh"
+            Style="{StaticResource MaterialDesignFilledTextBox}" Margin="338,112,280,0" Foreground="#FFFFFF">
+            <TextBox.Text>
+                <Binding
+            Path="Năm sinh"
+            UpdateSourceTrigger="PropertyChanged">
+                    <Binding.ValidationRules>
 
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+        <TextBox 
+            x:Name="txtEmail_Dangky"
+            IsReadOnly="True" 
+            VerticalAlignment="Top"
+            materialDesign:HintAssist.Hint="Email"
+            Style="{StaticResource MaterialDesignFilledTextBox}" Margin="338,192,280,0" Foreground="#FFFFFF">
+            <TextBox.Text>
+                <Binding
+        Path="Email"
+        UpdateSourceTrigger="PropertyChanged">
+                    <Binding.ValidationRules>
 
-        <TextBox  x:Name="txtHoTen_Dangky" Height="40" HorizontalAlignment="Left" Margin="338,34,0,451" TextWrapping="Wrap" Width="257" RenderTransformOrigin="0.037,0.601" IsReadOnly="True" x:FieldModifier="private" Style="{DynamicResource MaterialDesignOutlinedTextBox}"/>
-        <TextBox  x:Name="txtNamSinh_Dangky" Height="40" HorizontalAlignment="Left" Margin="338,114,0,371" TextWrapping="Wrap" Width="257" RenderTransformOrigin="0.15,0.445" IsReadOnly="True" x:FieldModifier="private" Style="{DynamicResource MaterialDesignOutlinedTextBox}"/>
-        <TextBox  x:Name="txtEmail_Dangky" Height="40" HorizontalAlignment="Left" Margin="338,194,0,291" TextWrapping="Wrap" Width="257" IsReadOnly="True" x:FieldModifier="private"  Style="{DynamicResource MaterialDesignOutlinedTextBox}"/>
-        <TextBox  x:Name="txtGioiTinh" Height="40" HorizontalAlignment="Left" Margin="338,274,0,211" TextWrapping="Wrap" Width="257" RenderTransformOrigin="0.037,0.601" IsReadOnly="True" x:FieldModifier="private"  Style="{DynamicResource MaterialDesignOutlinedTextBox}"/>
-        <TextBox  x:Name="txtSDT" Height="40" HorizontalAlignment="Left" Margin="338,354,0,131" TextWrapping="Wrap" Width="257" RenderTransformOrigin="0.15,0.445" IsReadOnly="True" x:FieldModifier="private"  Style="{DynamicResource MaterialDesignOutlinedTextBox}"/>
-        <TextBox  x:Name="txtKinhNghiem" Height="40" HorizontalAlignment="Left" Margin="338,435,0,50" TextWrapping="Wrap" Width="257" IsReadOnly="True"  Style="{DynamicResource MaterialDesignOutlinedTextBox}" />
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+        <TextBox 
+            x:Name="txtGioiTinh"
+            IsReadOnly="True" 
+            VerticalAlignment="Top"
+            materialDesign:HintAssist.Hint="Giới tính"
+            Style="{StaticResource MaterialDesignFilledTextBox}" Margin="338,280,280,0" Foreground="#FFFFFF">
+            <TextBox.Text>
+                <Binding
+        Path="Email"
+        UpdateSourceTrigger="PropertyChanged">
+                    <Binding.ValidationRules>
+
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+        <TextBox 
+            x:Name="txtSDT"
+            IsReadOnly="True" 
+            VerticalAlignment="Top"
+            materialDesign:HintAssist.Hint="Số điện thoại"
+            Style="{StaticResource MaterialDesignFilledTextBox}" Margin="338,352,280,0" Foreground="#FFFFFF">
+            <TextBox.Text>
+                <Binding
+        Path="Số điện thoại"
+        UpdateSourceTrigger="PropertyChanged">
+                    <Binding.ValidationRules>
+
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+        <TextBox 
+            x:Name="txtKinhNghiem"
+            IsReadOnly="True" 
+            VerticalAlignment="Top"
+            materialDesign:HintAssist.Hint="Kinh nghiệm"
+            Style="{StaticResource MaterialDesignFilledTextBox}" Margin="338,433,280,0" Foreground="#FFFFFF">
+            <TextBox.Text>
+                <Binding
+        Path="Kinh Nghiệm"
+        UpdateSourceTrigger="PropertyChanged">
+                    <Binding.ValidationRules>
+
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+        <DatePicker
+            x:Name="dtpNgaysinh"
+            materialDesign:HintAssist.Hint="Năm Sinh"
+            materialDesign:TextFieldAssist.HasClearButton="True"
+            Style="{DynamicResource MaterialDesignDatePicker}" Margin="625,112,136,0" VerticalAlignment="Top" Height="45" 
+            SelectedDateChanged="DP_ChonNamSinh">
+            <DatePicker.FocusVisualStyle>
+                <Style>
+
+                </Style>
+            </DatePicker.FocusVisualStyle>
+        </DatePicker>
         <StackPanel Margin="760,80,93,423" RenderTransformOrigin="0.5,0.5">
             <StackPanel.RenderTransform>
                 <TransformGroup>
