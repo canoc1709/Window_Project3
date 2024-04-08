@@ -36,17 +36,38 @@ namespace Test
             "Kỹ Thuật", "Nhà Hàng - Khách Sạn"};
             for (int i = 0; i < NganhNghe.Length; i++)
             {
-                CheckBox checkBox = new CheckBox();
-                checkBox.Width = 150;
-                checkBox.Height = 50;
-                checkBox.HorizontalContentAlignment = HorizontalAlignment.Left;
-                checkBox.VerticalContentAlignment = VerticalAlignment.Center;
-                checkBox.VerticalAlignment = VerticalAlignment.Center;
-                checkBox.Content = NganhNghe[i];
-                ListViewItem listViewItem = new ListViewItem();
-                listViewItem.Height = 50;
-                listViewItem.Content = checkBox;
-                LV_NganhNghe.Items.Add(listViewItem);
+                ComboBoxItem cbItem = new ComboBoxItem();
+                cbItem.Content = NganhNghe[i];
+                CB_Job.Items.Add(cbItem);
+            }
+
+            string[] DiaDiem = {"An Giang", "Bà rịa-Vũng Tàu", "Bạc Liêu", "Bắc Giang", "Bắc Kạn", "Bắc Ninh", "Bến Tre", "Bình Dương", "Bình Định",
+            "Bình Phước", "Bình Thuận", "Cà Mau", "Cao Bằng", "Cần Thơ", "Đà Nẵng", "Đắk Lắk", "Điện Biên", "Đồng Nai", "Đồng Tháp", "Gia Lai",
+                "Hà Giang", "Hà Nam", "Hà Nội", "Hà Tĩnh", "Hải Dương", "Hải Phòng", "Hậu Giang", "Hòa Bình", "Hưng Yên", "Khánh Hòa", "Kiên Giang", "Kon Tum",
+            "Lai Châu", "Lạng Sơn", "Lào Cai", "Lâm Đồng", "Long An", "Nam Định", "Nghệ An", "Ninh Bình", "Ninh Thuận", "Phú Thọ", "Phụ Yên", "Quảng Bình",
+            "Quảng Nam", "Quảng Ngãi", "Quảng Ninh", "Quảng Trị", "Sóc Trăng", "Sơn La", "Tây Ninh", "Thái Bình", "Thái Nguyên", "Thanh Hóa", "Thừa Thiên Huế",
+            "Tiền Giang", "TP Hồ Chí Minh", "Trà Vinh", "Tuyên Quang", "Vĩnh Long", "Vĩnh Phúc", "Yên Bái"};
+            for (int i = 0; i < DiaDiem.Length; i++)
+            {
+                ComboBoxItem cbItem = new ComboBoxItem();
+                cbItem.Content = DiaDiem[i];
+                CB_Location.Items.Add(cbItem);
+            }
+
+            string[] CapBac = { "Thực tập sinh", "Nhân viên", "Quản lý" };
+            for (int i = 0; i < CapBac.Length; i++)
+            {
+                ComboBoxItem cbItem = new ComboBoxItem();
+                cbItem.Content = CapBac[i];
+                CB_Level.Items.Add(cbItem);
+            }
+
+            string[] MucLuong = { "Dưới 5 triệu", "5 - 10 triệu", "10 - 15 triệu", "Trên 15 triệu" };
+            for (int i = 0; i < MucLuong.Length; i++)
+            {
+                ComboBoxItem cbItem = new ComboBoxItem();
+                cbItem.Content = MucLuong[i];
+                CB_Salary.Items.Add(cbItem);
             }
 
         }
@@ -62,5 +83,12 @@ namespace Test
         {
             this.Close();
         }
+
+        private void Minimize_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow.WindowState = WindowState.Minimized;
+        }
+
+
     }
 }

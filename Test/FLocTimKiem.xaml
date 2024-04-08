@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Test"
+        xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         Title="FLocTimKiem" Height="450" Width="800"
         
@@ -11,35 +12,63 @@
         AllowsTransparency="True"
         Background="Transparent"
         WindowStartupLocation="Manual" Left="10">
+    <Window.Resources>
+        <Style x:Key="CustomExpander" TargetType="{x:Type Expander}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Expander}">
+                        <DockPanel>
+                            <ToggleButton x:Name="HeaderSite" DockPanel.Dock="Top">
+                                <ToggleButton.Content>
+                                    <StackPanel Orientation="Horizontal">
+
+                                        <Image x:Name="ExpandImage" Source="Images/X.png" Width="16" Height="16" HorizontalAlignment="Left"/>
+                                        <!-- Tiêu đề của Expander -->
+                                        <ContentPresenter ContentSource="Header" Margin="5,0,0,0" Height="19" Width="100"/>
+                                    </StackPanel>
+                                </ToggleButton.Content>
+                            </ToggleButton>
+                        </DockPanel>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
 
     <Grid Background="#38395d" MouseDown="Grid_MouseDown">
-        <StackPanel Margin="0,0,10,0">
-            <Expander Header ="Ngành nghề" Width="274" x:Name="JobExpander" HorizontalAlignment="Left" Margin="100,40,0,0">
-                <Grid Height="200" >
-                    <ListView x:Name="LV_NganhNghe" Margin="10,0,10,0"/>
-                </Grid>
-            </Expander>
-        </StackPanel>
-        <StackPanel>
-            <Expander Header ="Cấp Bậc" Width="276" x:Name="PositionExpander" HorizontalAlignment="Right" Margin="0,40,100,0">
-                <Grid Height="200" >
-                    <ListView x:Name="LV_CapBac" HorizontalAlignment="Center" Width="256"/>
-                </Grid>
-            </Expander>
-            <Image Height="96" Source="/icons8-over-the-moon-96.png" Stretch="Fill" Width="96"/>
-        </StackPanel>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="661*"/>
+            <ColumnDefinition Width="139*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Margin="0,0,10,0" Grid.ColumnSpan="2">
+            <ComboBox x:Name="CB_Job" materialDesign:HintAssist.Hint="Chọn ngành nghề" Width="274" FontSize="15" HorizontalAlignment="Left" Margin="100,40,0,0" Background="#FFFFFF" Height="50">
 
-        <Button Content="" Click="btnquit_click" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" BorderBrush="{x:Null}" RenderTransformOrigin="0.41,0.41">
+            </ComboBox>
+            <ComboBox x:Name="CB_Location" materialDesign:HintAssist.Hint="Chọn địa điểm" Width="274" FontSize="15" HorizontalAlignment="Left" Margin="100,80,0,0" Background="#FFFFFF" Height="50">
+
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Grid.ColumnSpan="2">
+            <ComboBox Width="289" x:Name="CB_Level"  materialDesign:HintAssist.Hint="Chọn cấp bậc" FontSize="15" HorizontalAlignment="Right" Margin="0,40,100,0" Background="#FFFFFF" Height="50">
+
+            </ComboBox>
+            <ComboBox x:Name="CB_Salary" materialDesign:HintAssist.Hint="Chọn mức lương" FontSize="15" Width="289" HorizontalAlignment="Right" Margin="0,80,100,0" Background="#FFFFFF" Height="50">
+
+            </ComboBox>
+
+        </StackPanel>
+        <materialDesign:PackIcon Kind="WindowMinimize" Height="30" Width="30" Margin="73,0,0,0" MouseDown="Minimize_Click" Grid.Column="1"/>
+        <Button Content="" Click="btnquit_click" Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" BorderBrush="{x:Null}" RenderTransformOrigin="0.41,0.41" Grid.Column="1">
             <Button.Background>
                 <ImageBrush ImageSource="Images/X.png"/>
             </Button.Background>
         </Button>
-        <Image Source="Images/icons8-over-the-moon-96.png" Margin="78,246,683,161" RenderTransformOrigin="-0.011,0.583"/>
-        <Image Source="Images/icons8-galaxy-64.png" Margin="687,171,15,171"/>
-        <Image Source="/Images/icons8-galaxy-64.png" Margin="29,66,673,276"/>
-        <Image Source="/Images/icons8-over-the-moon-96.png" Margin="601,369,128,10"/>
-        <Image Source="/Images/icons8-over-the-moon-96.png" Margin="374,126,392,293" RenderTransformOrigin="0.002,-0.667"/>
-        <Image Source="/Images/icons8-over-the-moon-96.png" Margin="722,67,53,358"/>
-        <Image Source="/Images/icons8-over-the-moon-96.png" Margin="288,369,460,8"/>
+        <Image Source="Images/icons8-over-the-moon-96.png" Margin="78,246,544,161" RenderTransformOrigin="-0.011,0.583"/>
+        <Image Source="Images/icons8-galaxy-64.png" Margin="26,171,15,171" Grid.Column="1"/>
+        <Image Source="/Images/icons8-galaxy-64.png" Margin="29,66,534,276"/>
+        <Image Source="/Images/icons8-over-the-moon-96.png" Margin="601,369,128,10" Grid.ColumnSpan="2"/>
+        <Image Source="/Images/icons8-over-the-moon-96.png" Margin="374,126,253,293" RenderTransformOrigin="0.002,-0.667"/>
+        <Image Source="/Images/icons8-over-the-moon-96.png" Margin="61,67,53,358" Grid.Column="1"/>
+        <Image Source="/Images/icons8-over-the-moon-96.png" Margin="288,369,321,8"/>
     </Grid>
 </Window>
