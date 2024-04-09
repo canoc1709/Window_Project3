@@ -15,10 +15,10 @@
             <Image HorizontalAlignment="Left" Height="158" Margin="63,19,0,0" VerticalAlignment="Top" Width="154" Source="./Images/office-building.png">
 
             </Image>
-            <TextBox x:Name="txtTencty"  HorizontalAlignment="Left" Margin="258,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="25" IsReadOnly="True" Background="White"/>
-            <TextBox x:Name="txtChucvu" HorizontalAlignment="Left" Margin="258,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="25" IsReadOnly="True" Background="White"/>
-            <TextBox x:Name="txtYeucau"  HorizontalAlignment="Left" Margin="258,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="25" IsReadOnly="True" Background="White"/>
-            <TextBox x:Name="txtLuong"  HorizontalAlignment="Left" Margin="258,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="25" IsReadOnly="True" Background="White"/>
+            <TextBox x:Name="txtTencty"  HorizontalAlignment="Left" Margin="258,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="25" IsReadOnly="True" Background="White"/>
+            <TextBox x:Name="txtCapbac" HorizontalAlignment="Left" Margin="258,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="26" IsReadOnly="True" Background="White"/>
+            <TextBox x:Name="txtNganhnghe"  HorizontalAlignment="Left" Margin="258,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="24" IsReadOnly="True" Background="White"/>
+            <TextBox x:Name="txtLuong"  HorizontalAlignment="Left" Margin="258,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="25" IsReadOnly="True" Background="White"/>
             <TextBox x:Name="txtMotacv"  HorizontalAlignment="Left" Margin="468,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" Height="122" IsReadOnly="True" BorderBrush="#89FFFFFF" Background="White" FontSize="14"/>
             <TextBox x:Name="txtPhucloi"  HorizontalAlignment="Left" Margin="63,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" Height="122" IsReadOnly="True" Foreground="White" CaretBrush="White" BorderBrush="#89FFFFFF" Background="White" FontSize="14"/>
             <Label Content="Quyền lợi công việc:" HorizontalAlignment="Left" Margin="127,215,0,0" VerticalAlignment="Top" Width="152" FontSize="16" Foreground="White" BorderBrush="#FFDC1D1D"/>
@@ -93,6 +93,7 @@
                     <ImageBrush ImageSource="Images/favourite.png"/>
                 </StackPanel.Background>
             </StackPanel>
+            <TextBox x:Name="txtYeucau"  HorizontalAlignment="Left" Margin="258,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="25" IsReadOnly="True" Background="White"/>
         </Grid>
     </Grid>
 </Window>

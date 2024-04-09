@@ -48,7 +48,7 @@ namespace Test
             string s = txtTimkiem.Text;
             DataTable dt = new DataTable();
             dt = congviecDAO.LoadCongviec(s);
-            foreach(DataRow dr in dt.Rows)
+            foreach (DataRow dr in dt.Rows)
             {
                 congviec = new Congviec(dr);
                 UCCongViec ucCongViec = new UCCongViec(congviec, ungvien);

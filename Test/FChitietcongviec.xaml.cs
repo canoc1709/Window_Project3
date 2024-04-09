@@ -66,7 +66,8 @@ namespace Test
         private void load()
         {
             txtTencty.Text += congviec.Tencty;
-            txtChucvu.Text += congviec.Chucvu;
+            txtNganhnghe.Text += congviec.Nganhnghe;
+            txtCapbac.Text += congviec.Capbac;
             txtLuong.Text += congviec.Luong.ToString();
             txtPhucloi.Text += congviec.Phucloi;
             txtYeucau.Text += congviec.Phucloi;
@@ -82,19 +83,21 @@ namespace Test
             txtPhucloi.IsReadOnly = false;
             txtLuong.IsReadOnly = false;
             txtMotacv.IsReadOnly = false;
-            txtChucvu.IsReadOnly = false;
+            txtCapbac.IsReadOnly = false;
+            txtNganhnghe.IsReadOnly = false;
         }
         private void btnLuu_Click(object sender, RoutedEventArgs e)
         {
             int id = (int)congviec.ID;
             congviec = new Congviec(id, int.Parse(txtLuong.Text), txtMotacv.Text, txtYeucau.Text, txtPhucloi.Text,
-                txtChucvu.Text, txtTencty.Text);
+                txtNganhnghe.Text, txtCapbac.Text, txtTencty.Text);
             congviecDAO.Sua(congviec);
             txtYeucau.IsReadOnly = true;
             txtPhucloi.IsReadOnly = true;
             txtLuong.IsReadOnly = true;
             txtMotacv.IsReadOnly = true;
-            txtChucvu.IsReadOnly = true;
+            txtNganhnghe.IsReadOnly = true;
+            txtCapbac.IsReadOnly = true;
         }
         private void btnExit_Click(object sender, RoutedEventArgs e)
         {

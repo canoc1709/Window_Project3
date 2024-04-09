@@ -61,9 +61,10 @@ namespace Test
         }
         private void load()
         {
-            lblChucvu.Text = "Cong viec: " + congviec.Chucvu;
-            lblLuong.Text = "Luong:" + congviec.Luong.ToString();
-            lblTencty.Text = "Ten cong ty: " + congviec.Tencty;
+            lblCapbac.Content += congviec.Capbac;
+            lblTencty.Content += congviec.Tencty;
+            lblLuong.Content += congviec.Luong.ToString();
+            lblNganhnghe.Content += congviec.Nganhnghe;
         }
         private void btnChitiet_Click1(object sender, RoutedEventArgs e)
         {

@@ -34,12 +34,12 @@
         <TabControl Margin="208,94,10,45" BorderBrush="Black">
             <TabItem Header="Tuyển việc" Width="104" Height="44" Background="{x:Null}" BorderBrush="Black" HorizontalContentAlignment="Left" VerticalContentAlignment="Bottom"  FontSize="6" MinWidth="90">
                 <Grid Height="272" Width="616">
-                
 
 
-                    <TextBox x:Name="txtChucvu"  HorizontalAlignment="Left" Margin="105,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Height="28" Grid.ColumnSpan="2" FontSize="12" Background="White"/>
+
+                    <TextBox x:Name="txtCapbac"  HorizontalAlignment="Left" Margin="105,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Height="28" Grid.ColumnSpan="2" FontSize="12" Background="White"/>
                     <TextBox x:Name="txtYeucau"  HorizontalAlignment="Left" Margin="105,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Height="25" Grid.ColumnSpan="2" FontSize="12"/>
-                    <Label Content="Công việc" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.245,-0.252" Width="75" FontSize="15" FontWeight="Bold" Height="26"/>
+                    <Label Content="Cấp bậc" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.245,-0.252" Width="75" FontSize="15" FontWeight="Bold" Height="26"/>
                     <Label Content="Yêu cầu" HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.245,-0.252" Width="66" FontSize="15" FontWeight="Bold"/>
                     <Label Content="Mô tả công việc" HorizontalAlignment="Left" Margin="10,171,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.245,-0.252" Width="119" FontSize="15" FontWeight="Bold"/>
                     <Label Content="Phúc lợi" HorizontalAlignment="Left" Margin="460,27,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.245,-0.252" Width="108" FontSize="20" FontWeight="Bold" Height="30" HorizontalContentAlignment="Center"/>
@@ -48,11 +48,13 @@
                     <TextBox x:Name="txtMotacv"  HorizontalAlignment="Left" Margin="134,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Height="67" FontSize="12"/>
                     <TextBox x:Name="txtPhucloi"  HorizontalAlignment="Left" Margin="426,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Height="122" FontSize="12"/>
                     <Button Margin="445,208,33,32" Content="Đăng tuyển" Background="#FFEBB2B2" BorderBrush="{x:Null}" FontSize="14" Click="btnDangtuyen_Click"/>
+                    <Label Content="Ngành nghề" HorizontalAlignment="Left" Margin="10,24,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.245,-0.252" Width="90" FontSize="15" FontWeight="Bold" Height="26"/>
+                    <TextBox x:Name="txtNganhnghe"  HorizontalAlignment="Left" Margin="105,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Height="28" FontSize="12" Background="White"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Xem hồ sơ" Width="109" Height="40" Background="{x:Null}" BorderBrush="Black" OpacityMask="#FFF3AFAF">
                 <Grid Background="#F8F8FF">
-                    
+
                     <ListView x:Name="ltvCongviec" Background="White" Grid.ColumnSpan="2">
                     </ListView>
                 </Grid>

@@ -39,12 +39,20 @@ namespace Test
             get { return phucloi; }
             set { phucloi = value; }
         }
-        private string chucvu;
-        public string Chucvu
+        private string nganhnghe;
+        public string Nganhnghe
         {
-            get { return chucvu; }
-            set { chucvu = value; }
+            get { return nganhnghe; }
+            set { nganhnghe = value; }
         }
+        private string capbac;
+
+        public string Capbac
+        {
+            get { return capbac; }
+            set { capbac = value; }
+        }
+
         private string tencty;
         public string Tencty
         {
@@ -56,30 +64,33 @@ namespace Test
         {
             Tencty = (string)dr[0];
             ID = (int)dr[1];
-            Chucvu = (string)dr[2];
-            Luong = (int)dr[3];
-            Motacv = (string)dr[4];
-            Yeucau = (string)dr[5];
-            Phucloi = (string)dr[6];
+            Nganhnghe = (string)dr[2];
+            Capbac = (string)dr[3];
+            Luong = (int)dr[4];
+            Motacv = (string)dr[5];
+            Yeucau = (string)dr[6];
+            Phucloi = (string)dr[7];
         }
-        public Congviec(int iD, int luong, string motacv, string yeucau, string phucloi, string chucvu, string tencty)
+        public Congviec(int iD, int luong, string motacv, string yeucau, string phucloi, string nganhnghe,string capbac, string tencty)
         {
             ID = iD;
             Luong = luong;
             Motacv = motacv;
             Yeucau = yeucau;
             Phucloi = phucloi;
-            Chucvu = chucvu;
+            Nganhnghe = nganhnghe;
+            Capbac = capbac;
             Tencty = tencty;
         }
 
-        public Congviec(int luong, string motacv, string yeucau, string phucloi, string chucvu, string tencty)
+        public Congviec(int luong, string motacv, string yeucau, string phucloi, string nganhnghe,string capbac, string tencty)
         {
             Luong = luong;
             Motacv = motacv;
             Yeucau = yeucau;
             Phucloi = phucloi;
-            Chucvu = chucvu;
+            Nganhnghe = nganhnghe;
+            Capbac = capbac;
             Tencty = tencty;
         }
     }

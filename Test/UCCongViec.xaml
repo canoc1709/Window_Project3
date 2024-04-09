@@ -7,15 +7,12 @@
              Loaded="UCCongViec_Load"
              mc:Ignorable="d" Height="160" Width="698">
     <Grid>
-        <Rectangle HorizontalAlignment="Center" Height="151" VerticalAlignment="Top" Width="767" RadiusY="5" RadiusX="5" Fill="White"/>
-        <StackPanel x:Name="stp" Orientation="Horizontal" Margin="0,107,0,-88">
-            <ListView x:Name="ltv">
-            </ListView>
-        </StackPanel>
+        <Rectangle HorizontalAlignment="Center" Height="151" VerticalAlignment="Top" Width="698" RadiusY="5" RadiusX="5" Fill="White"/>
         <StackPanel Margin="0,0,165,0">
-            <TextBox x:Name="lblTencty" Height="39" Text="Company:" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18" IsReadOnly="True" Width="607" Foreground="Black"/>
-            <TextBox x:Name="lblChucvu" Height="38" Text="Job:" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18" IsReadOnly="True" Foreground="Black"/>
-            <TextBox x:Name="lblLuong" Height="36" Text="Salary:" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18" IsReadOnly="True" Foreground="Black"/>
+            <Label x:Name="lblTencty" Height="39"  Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18"  Width="607" Foreground="Black" Content="Company"/>
+            <Label x:Name="lblNganhnghe" Height="38"  Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18"  Foreground="Black" Content="Job"/>
+            <Label  x:Name="lblCapbac" Height="36"  Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18"  Foreground="Black" Content="Level"/>
+            <Label  x:Name="lblLuong" Height="36"  Background="{x:Null}" BorderBrush="{x:Null}" FontSize="18"  Foreground="Black" Content="Salary"/>
         </StackPanel>
         <StackPanel Margin="501,0,0,0" >
             <Button x:Name="btnChitiet" Height="150" Width="108" Content="Details" Background="{x:Null}" BorderBrush="{x:Null}"/>

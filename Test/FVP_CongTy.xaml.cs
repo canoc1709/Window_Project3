@@ -65,7 +65,7 @@ namespace Test
         }
         private void btnDangtuyen_Click(object sender, RoutedEventArgs e)
         {
-            congviec = new Congviec(int.Parse(txtLuong.Text),txtMotacv.Text,txtYeucau.Text,txtPhucloi.Text,txtChucvu.Text,txtTenCongTy.Text);
+            congviec = new Congviec(int.Parse(txtLuong.Text), txtMotacv.Text, txtYeucau.Text, txtPhucloi.Text, txtNganhnghe.Text,txtCapbac.Text, txtTenCongTy.Text);
             congviecDAO.Themcongviec(congviec, congty);
             load(congty);
         }
